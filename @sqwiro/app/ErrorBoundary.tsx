@@ -1,4 +1,3 @@
-import { axiosinstance } from '@pesapurse/ppapp/app/store/store';
 import React from 'react';
 import { View, Text } from 'react-native';
 
@@ -14,10 +13,10 @@ class ErrorBoundary extends React.Component {
       if (error && Object.keys(error).length > 0) {
         this.setState({ hasError: true, error: JSON.stringify(error) });
       }
-      axiosinstance().post('/dev/logerror', {
-        error,
-        errorInfo,
-      });
+      // axiosinstance().post('/dev/logerror', {
+      //   error,
+      //   errorInfo,
+      // });
     } catch (error) {
       //
     }

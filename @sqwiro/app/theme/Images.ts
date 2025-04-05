@@ -19,6 +19,7 @@ import Splash from '@sqwiro/app/assets/images/splash.png';
 import blankSplash from '@sqwiro/app/assets/images/splashblank.jpg';
 
 import LicensePlaceholder from '@sqwiro/app/assets/images/examples/license.png';
+import placeholder from '@sqwiro/app/assets/images/placeholder.webp';
 
 const backgroundscreens = [
   homescreen1,
@@ -34,6 +35,8 @@ const images = {
   darklogoicon: darklogoicon,
   whitelogoicon: whitelogoicon,
   Background: sample(backgroundscreens),
+
+  placeholder,
 
   // App images
   ...Images,

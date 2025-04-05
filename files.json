@@ -1,2287 +1,465 @@
 {
-  "createdAt": 1741584976648,
-  "updatedAt": 1741584976648,
-  "id": "109660280",
-  "_id": "emasomo_package/109660280",
-  "CourseName": null,
-  "CourseCode": null,
-  "Description": "",
-  "Course": {
-    "id": "591ebf44f1a12032277e7852",
-    "_id": "eschool_course/591ebf44f1a12032277e7852",
-    "_ref": "eschool_course/591ebf44f1a12032277e7852",
-    "CourseCode": "Accounting Technicians Diploma (ATD)",
-    "CourseName": "ATD",
-    "CourseLevels": []
-  },
-  "Subject": {
-    "id": "5b6f05238e52ab1a996adf7f",
-    "_id": "eschool_subject/5b6f05238e52ab1a996adf7f",
-    "_ref": "eschool_subject/5b6f05238e52ab1a996adf7f",
-    "Course": {
-      "id": "591ebf44f1a12032277e7852",
-      "_id": "eschool_course/591ebf44f1a12032277e7852",
-      "_ref": "eschool_course/591ebf44f1a12032277e7852",
-      "CourseCode": "Accounting Technicians Diploma (ATD)",
-      "CourseName": "ATD"
+  "_reactInternalInstance": {},
+  "_reactInternals": {
+    "_debugHookTypes": null,
+    "_debugNeedsRemount": false,
+    "_debugOwner": {
+      "_debugHookTypes": "[Array]",
+      "_debugNeedsRemount": false,
+      "_debugOwner": "[FiberNode]",
+      "actualDuration": 3.255899429321289,
+      "actualStartTime": 5015695030.919791,
+      "alternate": "[FiberNode]",
+      "child": "[FiberNode]",
+      "childLanes": 2,
+      "deletions": null,
+      "dependencies": null,
+      "elementType": "[Function PlayerComponent]",
+      "flags": 0,
+      "index": 0,
+      "key": null,
+      "lanes": 0,
+      "memoizedProps": "[Object]",
+      "memoizedState": "[Object]",
+      "mode": 2,
+      "pendingProps": "[Object]",
+      "ref": null,
+      "refCleanup": null,
+      "return": "[FiberNode]",
+      "selfBaseDuration": 0.590083122253418,
+      "sibling": null,
+      "stateNode": null,
+      "subtreeFlags": 14682629,
+      "tag": 0,
+      "treeBaseDuration": 4.345572471618652,
+      "type": "[Function PlayerComponent]",
+      "updateQueue": null
     },
-    "CourseLevel": {
-      "id": "Level_I",
-      "_id": "eschool_courselevel/Level_I",
-      "_ref": "eschool_courselevel/Level_I",
-      "LevelCode": "Level_I",
-      "LevelName": "Level I"
+    "actualDuration": 3.245486259460449,
+    "actualStartTime": 5015695030.965041,
+    "alternate": {
+      "_debugHookTypes": null,
+      "_debugNeedsRemount": false,
+      "_debugOwner": "[FiberNode]",
+      "actualDuration": 0.2241678237915039,
+      "actualStartTime": 5015695037.392208,
+      "alternate": "[Circular]",
+      "child": "[FiberNode]",
+      "childLanes": 0,
+      "deletions": null,
+      "dependencies": null,
+      "elementType": "[Function VideoPlayer]",
+      "flags": 6291456,
+      "index": 0,
+      "key": null,
+      "lanes": 0,
+      "memoizedProps": "[Object]",
+      "memoizedState": "[Object]",
+      "mode": 2,
+      "pendingProps": "[Object]",
+      "ref": "[Object]",
+      "refCleanup": null,
+      "return": "[FiberNode]",
+      "selfBaseDuration": 0.28629112243652344,
+      "sibling": "[FiberNode]",
+      "stateNode": "[Circular]",
+      "subtreeFlags": 14680069,
+      "tag": 1,
+      "treeBaseDuration": 3.1431589126586914,
+      "type": "[Function VideoPlayer]",
+      "updateQueue": "[Object]"
     },
-    "SubjectCode": "PBL",
-    "SubjectName": "Principles of Business Law"
-  },
-  "Contents": [
-    {
-      "Title": "SAMPLE PAPER 1",
-      "Videos": [
-        {
-          "id": "5c6abf83dcc92c7b083e7c7c",
-          "Vid": "f10d3caa065ff0fd82c1d2a9ff284855",
-          "_id": "video/5c6abf83dcc92c7b083e7c7c",
-          "_key": "5c6abf83dcc92c7b083e7c7c",
-          "p320": "",
-          "p480": "",
-          "p720": "",
-          "Views": 0,
-          "p1080": "",
-          "Course": {
-            "id": "5c499f53db9e070c116dd02a",
-            "CourseCode": "BL Sec 1 - Blocks",
-            "CourseName": "CPA Sec 1- Business Law"
-          },
-          "isFree": false,
-          "KeyFile": "9ad29f2a83fdd8294cf6077ad853f78f.key",
-          "VideoUrl": "/KASNEB/CPA/BLOCKREVISION/COMMLAW/NOV_2018/Q1/NOV18Q1.m3u8",
-          "VideoName": "Sample paper - Q1",
-          "createdAt": 1550499715555,
-          "updatedAt": 1550842912517,
-          "Transcript": null,
-          "Instructors": [
-            {
-              "id": "5b2a8915ced70e4f6688926d",
-              "InstructorName": "Timothy Kyalo"
-            }
-          ],
-          "PublishDate": 1550499715556,
-          "ExerciseFiles": [
-            {
-              "fd": "/files/e78432df-a775-47c8-ae42-8eedc41f223f.pdf",
-              "Key": "files/e78432df-a775-47c8-ae42-8eedc41f223f.pdf",
-              "uid": "e78432df-a775-47c8-ae42-8eedc41f223f.pdf",
-              "url": "/cloud/files/e78432df-a775-47c8-ae42-8eedc41f223f.pdf",
-              "ETag": "\"c96e59ba18651ad77cfdf42a92c6fa39-1\"",
-              "name": "BUSINESS LAW NOVEMBER 2018 Q1.pdf",
-              "size": 167341,
-              "Bucket": "manvideos",
-              "status": "done",
-              "Location": "https://manvideos.s3.amazonaws.com/files%2Fe78432df-a775-47c8-ae42-8eedc41f223f.pdf",
-              "filename": "BUSINESS LAW NOVEMBER 2018 Q1.pdf",
-              "downloads": 0,
-              "uploaddate": 1550842911398
-            }
-          ],
-          "PractiseQuestions": []
-        },
-        {
-          "id": "5c6ac00adcc92c7b083e7c7d",
-          "Vid": "62ae1c22171a3c3ec33079dcb837a675",
-          "_id": "video/5c6ac00adcc92c7b083e7c7d",
-          "_key": "5c6ac00adcc92c7b083e7c7d",
-          "p320": "",
-          "p480": "",
-          "p720": "",
-          "Views": 0,
-          "p1080": "",
-          "Course": {
-            "id": "5c499f53db9e070c116dd02a",
-            "CourseCode": "BL Sec 1 - Blocks",
-            "CourseName": "CPA Sec 1- Business Law"
-          },
-          "isFree": false,
-          "KeyFile": "cb4537349b41bfdedb31155047b7ee87.key",
-          "VideoUrl": "/KASNEB/CPA/BLOCKREVISION/COMMLAW/NOV_2018/Q2/NOV18Q2.m3u8",
-          "VideoName": "Sample paper - Q2",
-          "createdAt": 1550499850197,
-          "updatedAt": 1550842927970,
-          "Transcript": null,
-          "Instructors": [
-            {
-              "id": "5b2a8915ced70e4f6688926d",
-              "InstructorName": "Timothy Kyalo"
-            }
-          ],
-          "PublishDate": 1550499850198,
-          "ExerciseFiles": [
-            {
-              "fd": "/files/d3b1df81-8820-4e2c-9c9d-1d8fd30eb35e.pdf",
-              "Key": "files/d3b1df81-8820-4e2c-9c9d-1d8fd30eb35e.pdf",
-              "uid": "d3b1df81-8820-4e2c-9c9d-1d8fd30eb35e.pdf",
-              "url": "/cloud/files/d3b1df81-8820-4e2c-9c9d-1d8fd30eb35e.pdf",
-              "ETag": "\"37e1515b305a19b5c9ab1f1aeae6dfd1-1\"",
-              "name": "BUSINESS LAW NOVEMBER 2018 Q2.pdf",
-              "size": 170165,
-              "Bucket": "manvideos",
-              "status": "done",
-              "Location": "https://manvideos.s3.amazonaws.com/files%2Fd3b1df81-8820-4e2c-9c9d-1d8fd30eb35e.pdf",
-              "filename": "BUSINESS LAW NOVEMBER 2018 Q2.pdf",
-              "downloads": 0,
-              "uploaddate": 1550842927547
-            }
-          ],
-          "PractiseQuestions": []
-        },
-        {
-          "id": "5c6ac06ddcc92c7b083e7c7e",
-          "Vid": "c9bb05774f2a705bf5e42e075f1c46ac",
-          "_id": "video/5c6ac06ddcc92c7b083e7c7e",
-          "_key": "5c6ac06ddcc92c7b083e7c7e",
-          "p320": "",
-          "p480": "",
-          "p720": "",
-          "Views": 0,
-          "p1080": "",
-          "Course": {
-            "id": "5c499f53db9e070c116dd02a",
-            "CourseCode": "BL Sec 1 - Blocks",
-            "CourseName": "CPA Sec 1- Business Law"
-          },
-          "isFree": false,
-          "KeyFile": "f9194279ab537d477e51ae46be5ac3cd.key",
-          "VideoUrl": "/KASNEB/CPA/BLOCKREVISION/COMMLAW/NOV_2018/Q3/NOV18Q3.m3u8",
-          "VideoName": "Sample paper - Q3",
-          "createdAt": 1550499949449,
-          "updatedAt": 1550842945150,
-          "Transcript": null,
-          "Instructors": [
-            {
-              "id": "5b2a8915ced70e4f6688926d",
-              "InstructorName": "Timothy Kyalo"
-            }
-          ],
-          "PublishDate": 1550499949450,
-          "ExerciseFiles": [
-            {
-              "fd": "/files/a44b988a-bd48-48cb-af0b-ffa46ce04f9a.pdf",
-              "Key": "files/a44b988a-bd48-48cb-af0b-ffa46ce04f9a.pdf",
-              "uid": "a44b988a-bd48-48cb-af0b-ffa46ce04f9a.pdf",
-              "url": "/cloud/files/a44b988a-bd48-48cb-af0b-ffa46ce04f9a.pdf",
-              "ETag": "\"074a53b7ba909e62a2384974ec1f66c8-1\"",
-              "name": "BUSINESS LAW NOVEMBER 2018 Q3.pdf",
-              "size": 167767,
-              "Bucket": "manvideos",
-              "status": "done",
-              "Location": "https://manvideos.s3.amazonaws.com/files%2Fa44b988a-bd48-48cb-af0b-ffa46ce04f9a.pdf",
-              "filename": "BUSINESS LAW NOVEMBER 2018 Q3.pdf",
-              "downloads": 0,
-              "uploaddate": 1550842942938
-            }
-          ],
-          "PractiseQuestions": []
-        },
-        {
-          "id": "5c6ac1bbdcc92c7b083e7c7f",
-          "Vid": "29277e78c3dc949910ec5bfb2ffbf0e1",
-          "_id": "video/5c6ac1bbdcc92c7b083e7c7f",
-          "_key": "5c6ac1bbdcc92c7b083e7c7f",
-          "p320": "",
-          "p480": "",
-          "p720": "",
-          "Views": 0,
-          "p1080": "",
-          "Course": {
-            "id": "5c499f53db9e070c116dd02a",
-            "CourseCode": "BL Sec 1 - Blocks",
-            "CourseName": "CPA Sec 1- Business Law"
-          },
-          "isFree": false,
-          "KeyFile": "264d92811dfaf4ac7085d5e5cd776d69.key",
-          "VideoUrl": "/KASNEB/CPA/BLOCKREVISION/COMMLAW/NOV_2018/Q4/BLNOV18Q4.m3u8",
-          "VideoName": "Sample paper - Q4",
-          "createdAt": 1550500283196,
-          "updatedAt": 1550842961195,
-          "Transcript": null,
-          "Instructors": [
-            {
-              "id": "5b2a8915ced70e4f6688926d",
-              "InstructorName": "Timothy Kyalo"
-            }
-          ],
-          "PublishDate": 1550500283197,
-          "ExerciseFiles": [
-            {
-              "uid": "rc-upload-1550820167612-183",
-              "url": "",
-              "name": "BUSINESS LAW NOVEMBER 2018 Q4.pdf",
-              "size": 168718,
-              "type": "application/pdf",
-              "status": "done",
-              "percent": 100,
-              "FileName": "BUSINESS LAW NOVEMBER 2018 Q4.",
-              "lastModified": 1550828673846,
-              "originFileObj": {
-                "uid": "rc-upload-1550820167612-183"
-              },
-              "lastModifiedDate": "2019-02-22T09:44:33.846Z"
-            }
-          ],
-          "PractiseQuestions": []
-        },
-        {
-          "id": "5ca7c4552935a43fced58382",
-          "Vid": "d3179d3e0646d71cfccd77c42f64106e",
-          "_id": "video/5ca7c4552935a43fced58382",
-          "_key": "5ca7c4552935a43fced58382",
-          "p320": "",
-          "p480": "",
-          "p720": "",
-          "Views": 0,
-          "p1080": "",
-          "Course": {
-            "id": "5c499f53db9e070c116dd02a",
-            "CourseCode": "BL Sec 1 - Blocks",
-            "CourseName": "CPA Sec 1- BUSINESS LAW"
-          },
-          "isFree": false,
-          "KeyFile": "72addaebeba0b8ab42f6447d22fa6d65.key",
-          "VideoUrl": "/KASNEB/CPA/BLOCKREVISION/COMMLAW/NOV_2018/Q5/BLNOV18Q5.m3u8",
-          "VideoName": "Sample paper - Q5",
-          "createdAt": 1554498645691,
-          "updatedAt": 1559306393317,
-          "Transcript": null,
-          "Instructors": [
-            {
-              "id": "5b2a8915ced70e4f6688926d",
-              "InstructorName": "Timothy Kyalo"
-            }
-          ],
-          "PublishDate": 1554498645692,
-          "ExerciseFiles": [],
-          "PractiseQuestions": []
-        },
-        {
-          "id": "5c6ac28adcc92c7b083e7c80",
-          "Vid": "04f1f78201f9331727ed74df47b98b16",
-          "_id": "video/5c6ac28adcc92c7b083e7c80",
-          "_key": "5c6ac28adcc92c7b083e7c80",
-          "p320": "",
-          "p480": "",
-          "p720": "",
-          "Views": 0,
-          "p1080": "",
-          "Course": {
-            "id": "5c499f53db9e070c116dd02a",
-            "CourseCode": "BL Sec 1 - Blocks",
-            "CourseName": "CPA Sec 1- Business Law"
-          },
-          "isFree": false,
-          "KeyFile": "e40f507db180562bc8f165fda32ea9d1.key",
-          "VideoUrl": "/KASNEB/CPA/BLOCKREVISION/COMMLAW/NOV_2018/Q6/BLNOV18Q6.m3u8",
-          "VideoName": "Sample paper  - Q6",
-          "createdAt": 1550500490221,
-          "updatedAt": 1550842974815,
-          "Transcript": null,
-          "Instructors": [
-            {
-              "id": "5b2a8915ced70e4f6688926d",
-              "InstructorName": "Timothy Kyalo"
-            }
-          ],
-          "PublishDate": 1550500490222,
-          "ExerciseFiles": [
-            {
-              "uid": "rc-upload-1550820167612-187",
-              "url": "",
-              "name": "BUSINESS LAW NOVEMBER 2018 Q6.pdf",
-              "size": 173041,
-              "type": "application/pdf",
-              "status": "done",
-              "percent": 100,
-              "FileName": "BUSINESS LAW NOVEMBER 2018 Q6.",
-              "lastModified": 1550830140936,
-              "originFileObj": {
-                "uid": "rc-upload-1550820167612-187"
-              },
-              "lastModifiedDate": "2019-02-22T10:09:00.936Z"
-            }
-          ],
-          "PractiseQuestions": []
-        },
-        {
-          "id": "5c6ac2dbdcc92c7b083e7c81",
-          "Vid": "da861e7b11bf08b27b29abf583047ed8",
-          "_id": "video/5c6ac2dbdcc92c7b083e7c81",
-          "_key": "5c6ac2dbdcc92c7b083e7c81",
-          "p320": "",
-          "p480": "",
-          "p720": "",
-          "Views": 0,
-          "p1080": "",
-          "Course": {
-            "id": "5c499f53db9e070c116dd02a",
-            "CourseCode": "BL Sec 1 - Blocks",
-            "CourseName": "CPA Sec 1- Business Law"
-          },
-          "isFree": false,
-          "KeyFile": "da861e7b11bf08b27b29abf583047ed8.key",
-          "VideoUrl": "/KASNEB/CPA/BLOCKREVISION/COMMLAW/NOV_2018/Q7/BLNOV18Q7.m3u8",
-          "VideoName": "Sample paper - Q7 ",
-          "createdAt": 1550500571729,
-          "updatedAt": 1550842992792,
-          "Transcript": null,
-          "Instructors": [
-            {
-              "id": "5b2a8915ced70e4f6688926d",
-              "InstructorName": "Timothy Kyalo"
-            }
-          ],
-          "PublishDate": 1550500571730,
-          "ExerciseFiles": [
-            {
-              "fd": "/files/4997e808-8620-49fb-8ded-78490af6e43d.pdf",
-              "Key": "files/4997e808-8620-49fb-8ded-78490af6e43d.pdf",
-              "uid": "4997e808-8620-49fb-8ded-78490af6e43d.pdf",
-              "url": "/cloud/files/4997e808-8620-49fb-8ded-78490af6e43d.pdf",
-              "ETag": "\"c9eae849643fc3313737d5e1634267b2-1\"",
-              "name": "BUSINESS LAW NOVEMBER 2018 Q7.pdf",
-              "size": 169007,
-              "Bucket": "manvideos",
-              "status": "done",
-              "Location": "https://manvideos.s3.amazonaws.com/files%2F4997e808-8620-49fb-8ded-78490af6e43d.pdf",
-              "filename": "BUSINESS LAW NOVEMBER 2018 Q7.pdf",
-              "downloads": 0,
-              "uploaddate": 1550842989532
-            }
-          ],
-          "PractiseQuestions": []
-        }
-      ]
+    "child": {
+      "_debugHookTypes": null,
+      "_debugNeedsRemount": false,
+      "_debugOwner": "[Circular]",
+      "actualDuration": 2.9580698013305664,
+      "actualStartTime": 5015695031.252583,
+      "alternate": "[FiberNode]",
+      "child": "[FiberNode]",
+      "childLanes": 2,
+      "deletions": null,
+      "dependencies": null,
+      "elementType": "[Function TouchableWithoutFeedback]",
+      "flags": 4194309,
+      "index": 0,
+      "key": null,
+      "lanes": 0,
+      "memoizedProps": "[Object]",
+      "memoizedState": "[Object]",
+      "mode": 2,
+      "pendingProps": "[Object]",
+      "ref": null,
+      "refCleanup": null,
+      "return": "[Circular]",
+      "selfBaseDuration": 0.06266593933105469,
+      "sibling": null,
+      "stateNode": "[TouchableWithoutFeedback]",
+      "subtreeFlags": 14682629,
+      "tag": 1,
+      "treeBaseDuration": 2.8559064865112305,
+      "type": "[Function TouchableWithoutFeedback]",
+      "updateQueue": "[Object]"
     },
-    {
-      "Title": "SAMPLE PAPER 2",
-      "Videos": [
-        {
-          "id": "5c49a36ef7591a0c37420905",
-          "Vid": "ebf9ee90d96a5b8cafb1d34f779cc4f9",
-          "_id": "video/5c49a36ef7591a0c37420905",
-          "_key": "5c49a36ef7591a0c37420905",
-          "p320": "",
-          "p480": "",
-          "p720": "",
-          "Views": 0,
-          "p1080": "",
-          "Course": {
-            "id": "5c499f53db9e070c116dd02a",
-            "CourseCode": "BL Sec 1 - Blocks",
-            "CourseName": "CPA Sec 1- Business Law"
-          },
-          "isFree": false,
-          "KeyFile": "677fdbe6304cd4b9a622f261889f8440.key",
-          "VideoUrl": "/KASNEB/CPA/BLOCKREVISION/COMMLAW/MAY_2018/Q1/BLMAY18Q1.m3u8",
-          "VideoName": "Sample paper - Q1",
-          "createdAt": 1548329838452,
-          "updatedAt": 1548329838452,
-          "Transcript": null,
-          "Instructors": [
-            {
-              "id": "5b2a8915ced70e4f6688926d",
-              "InstructorName": "Timothy Kyalo"
-            }
-          ],
-          "PublishDate": 1548329838454,
-          "ExerciseFiles": [],
-          "PractiseQuestions": []
-        },
-        {
-          "id": "5c49a3eef7591a0c37420906",
-          "Vid": "3672b52fc4a2d2c151ba9bd4b85a253c",
-          "_id": "video/5c49a3eef7591a0c37420906",
-          "_key": "5c49a3eef7591a0c37420906",
-          "p320": "",
-          "p480": "",
-          "p720": "",
-          "Views": 0,
-          "p1080": "",
-          "Course": {
-            "id": "5c499f53db9e070c116dd02a",
-            "CourseCode": "BL Sec 1 - Blocks",
-            "CourseName": "CPA Sec 1- Business Law"
-          },
-          "isFree": false,
-          "KeyFile": "9a1c9d1f5f55410d1be97f57c1bf84ad.key",
-          "VideoUrl": "/KASNEB/CPA/BLOCKREVISION/COMMLAW/MAY_2018/Q2/BLMAY18Q2.m3u8",
-          "VideoName": "Sample paper - Q2",
-          "createdAt": 1548329966100,
-          "updatedAt": 1550840690173,
-          "Transcript": null,
-          "Instructors": [
-            {
-              "id": "5b2a8915ced70e4f6688926d",
-              "InstructorName": "Timothy Kyalo"
-            }
-          ],
-          "PublishDate": 1548329966101,
-          "ExerciseFiles": [
-            {
-              "fd": "/files/b1f4ccad-9e38-4788-99bf-498de65e730e.pdf",
-              "Key": "files/b1f4ccad-9e38-4788-99bf-498de65e730e.pdf",
-              "uid": "b1f4ccad-9e38-4788-99bf-498de65e730e.pdf",
-              "url": "/cloud/files/b1f4ccad-9e38-4788-99bf-498de65e730e.pdf",
-              "ETag": "\"2d4217f57310063e8d76872e6e63c4b9-1\"",
-              "name": "BUSINESS LAW MAY 2018 Q2.pdf",
-              "size": 169724,
-              "Bucket": "manvideos",
-              "status": "done",
-              "Location": "https://manvideos.s3.amazonaws.com/files%2Fb1f4ccad-9e38-4788-99bf-498de65e730e.pdf",
-              "filename": "BUSINESS LAW MAY 2018 Q2.pdf",
-              "downloads": 0,
-              "uploaddate": 1550840688091
-            }
-          ],
-          "PractiseQuestions": []
-        },
-        {
-          "id": "5c61d931126203131b2ed0da",
-          "Vid": "1131d3b7bf8a262563a2c55f9746433c",
-          "_id": "video/5c61d931126203131b2ed0da",
-          "_key": "5c61d931126203131b2ed0da",
-          "p320": "",
-          "p480": "",
-          "p720": "",
-          "Views": 0,
-          "p1080": "",
-          "Course": {
-            "id": "5c499f53db9e070c116dd02a",
-            "CourseCode": "BL Sec 1 - Blocks",
-            "CourseName": "CPA Sec 1- Business Law"
-          },
-          "isFree": false,
-          "KeyFile": "261f4353c3e55b9a84ce3e08a333e62c.key",
-          "VideoUrl": "/KASNEB/CPA/BLOCKREVISION/COMMLAW/MAY_2018/Q3/Q3.m3u8",
-          "VideoName": "Sample paper - Q3",
-          "createdAt": 1549916465970,
-          "updatedAt": 1550840932102,
-          "Transcript": null,
-          "Instructors": [
-            {
-              "id": "5b2a8915ced70e4f6688926d",
-              "InstructorName": "Timothy Kyalo"
-            }
-          ],
-          "PublishDate": 1549916465973,
-          "ExerciseFiles": [
-            {
-              "fd": "/files/8935d734-369e-4f02-ab4f-3df370228c0d.pdf",
-              "Key": "files/8935d734-369e-4f02-ab4f-3df370228c0d.pdf",
-              "uid": "8935d734-369e-4f02-ab4f-3df370228c0d.pdf",
-              "url": "/cloud/files/8935d734-369e-4f02-ab4f-3df370228c0d.pdf",
-              "ETag": "\"d3a354602eb7d70ffc03454682472d97-1\"",
-              "name": "BUSINESS LAW MAY 2018 Q3.pdf",
-              "size": 168902,
-              "Bucket": "manvideos",
-              "status": "done",
-              "FileName": "BUSINESS LAW MAY 2018 Q3.",
-              "Location": "https://manvideos.s3.amazonaws.com/files%2F8935d734-369e-4f02-ab4f-3df370228c0d.pdf",
-              "filename": "BUSINESS LAW MAY 2018 Q3.pdf",
-              "downloads": 0,
-              "uploaddate": 1550840923333
-            }
-          ],
-          "PractiseQuestions": []
-        },
-        {
-          "id": "5c61d9cd126203131b2ed0db",
-          "Vid": "832ece9be9b11b7c566424c86c872b11",
-          "_id": "video/5c61d9cd126203131b2ed0db",
-          "_key": "5c61d9cd126203131b2ed0db",
-          "p320": "",
-          "p480": "",
-          "p720": "",
-          "Views": 0,
-          "p1080": "",
-          "Course": {
-            "id": "5c499f53db9e070c116dd02a",
-            "CourseCode": "BL Sec 1 - Blocks",
-            "CourseName": "CPA Sec 1- Business Law"
-          },
-          "isFree": false,
-          "KeyFile": "e7d3c70881a3d09d84566e4679e753ff.key",
-          "VideoUrl": "/KASNEB/CPA/BLOCKREVISION/COMMLAW/MAY_2018/Q4/Q4.m3u8",
-          "VideoName": "Sample paper - Q4",
-          "createdAt": 1549916621610,
-          "updatedAt": 1550840950674,
-          "Transcript": null,
-          "Instructors": [
-            {
-              "id": "5b2a8915ced70e4f6688926d",
-              "InstructorName": "Timothy Kyalo"
-            }
-          ],
-          "PublishDate": 1549916621611,
-          "ExerciseFiles": [
-            {
-              "fd": "/files/931f15b1-c559-4f27-8c93-491545c90dd8.pdf",
-              "Key": "files/931f15b1-c559-4f27-8c93-491545c90dd8.pdf",
-              "uid": "931f15b1-c559-4f27-8c93-491545c90dd8.pdf",
-              "url": "/cloud/files/931f15b1-c559-4f27-8c93-491545c90dd8.pdf",
-              "ETag": "\"d6ffdb4159b703eea4bf4a410575f4c4-1\"",
-              "name": "BUSINESS LAW MAY 2018 Q4.pdf",
-              "size": 171942,
-              "Bucket": "manvideos",
-              "status": "done",
-              "FileName": "BUSINESS LAW MAY 2018 Q4.",
-              "Location": "https://manvideos.s3.amazonaws.com/files%2F931f15b1-c559-4f27-8c93-491545c90dd8.pdf",
-              "filename": "BUSINESS LAW MAY 2018 Q4.pdf",
-              "downloads": 0,
-              "uploaddate": 1550840943722
-            }
-          ],
-          "PractiseQuestions": []
-        },
-        {
-          "id": "5c61da58126203131b2ed0dc",
-          "Vid": "cf32a2670a1aefc36d670f084ff40ef3",
-          "_id": "video/5c61da58126203131b2ed0dc",
-          "_key": "5c61da58126203131b2ed0dc",
-          "p320": "",
-          "p480": "",
-          "p720": "",
-          "Views": 0,
-          "p1080": "",
-          "Course": {
-            "id": "5c499f53db9e070c116dd02a",
-            "CourseCode": "BL Sec 1 - Blocks",
-            "CourseName": "CPA Sec 1- Business Law"
-          },
-          "isFree": false,
-          "KeyFile": "bc1165562982bec7d831753d60fd2168.key",
-          "VideoUrl": "/KASNEB/CPA/BLOCKREVISION/COMMLAW/MAY_2018/Q5/Q5.m3u8",
-          "VideoName": "Sample paper - Q5",
-          "createdAt": 1549916760479,
-          "updatedAt": 1550840968180,
-          "Transcript": null,
-          "Instructors": [
-            {
-              "id": "5b2a8915ced70e4f6688926d",
-              "InstructorName": "Timothy Kyalo"
-            }
-          ],
-          "PublishDate": 1549916760480,
-          "ExerciseFiles": [
-            {
-              "fd": "/files/0a40e8bc-6fc5-4370-8dc8-8081ec228729.pdf",
-              "Key": "files/0a40e8bc-6fc5-4370-8dc8-8081ec228729.pdf",
-              "uid": "0a40e8bc-6fc5-4370-8dc8-8081ec228729.pdf",
-              "url": "/cloud/files/0a40e8bc-6fc5-4370-8dc8-8081ec228729.pdf",
-              "ETag": "\"4272f6a29910f8b63b5541c163c45c93-1\"",
-              "name": "BUSINESS LAW MAY 2018 Q5.pdf",
-              "size": 170425,
-              "Bucket": "manvideos",
-              "status": "done",
-              "FileName": "BUSINESS LAW MAY 2018 Q5.",
-              "Location": "https://manvideos.s3.amazonaws.com/files%2F0a40e8bc-6fc5-4370-8dc8-8081ec228729.pdf",
-              "filename": "BUSINESS LAW MAY 2018 Q5.pdf",
-              "downloads": 0,
-              "uploaddate": 1550840963052
-            }
-          ],
-          "PractiseQuestions": []
-        },
-        {
-          "id": "5c61daed126203131b2ed0dd",
-          "Vid": "19cc7e0234c1c3e5fc0043ad1f165b32",
-          "_id": "video/5c61daed126203131b2ed0dd",
-          "_key": "5c61daed126203131b2ed0dd",
-          "p320": "",
-          "p480": "",
-          "p720": "",
-          "Views": 0,
-          "p1080": "",
-          "Course": {
-            "id": "5c499f53db9e070c116dd02a",
-            "CourseCode": "BL Sec 1 - Blocks",
-            "CourseName": "CPA Sec 1- Business Law"
-          },
-          "isFree": false,
-          "KeyFile": "185acfd14543b5ea558cd3378fc084d1.key",
-          "VideoUrl": "/KASNEB/CPA/BLOCKREVISION/COMMLAW/MAY_2018/Q6/Q6.m3u8",
-          "VideoName": "Sample paper - Q6",
-          "createdAt": 1549916909961,
-          "updatedAt": 1550841034492,
-          "Transcript": null,
-          "Instructors": [
-            {
-              "id": "5b2a8915ced70e4f6688926d",
-              "InstructorName": "Timothy Kyalo"
-            }
-          ],
-          "PublishDate": 1549916909962,
-          "ExerciseFiles": [
-            {
-              "fd": "/files/b156bcff-f6fe-48e8-a00a-e5c2f1b2f2cf.pdf",
-              "Key": "files/b156bcff-f6fe-48e8-a00a-e5c2f1b2f2cf.pdf",
-              "uid": "b156bcff-f6fe-48e8-a00a-e5c2f1b2f2cf.pdf",
-              "url": "/cloud/files/b156bcff-f6fe-48e8-a00a-e5c2f1b2f2cf.pdf",
-              "ETag": "\"b33137743eb0050074aa12f6f761f8b5-1\"",
-              "name": "BUSINESS LAW MAY 2018 Q6.pdf",
-              "size": 109273,
-              "Bucket": "manvideos",
-              "status": "done",
-              "FileName": "BUSINESS LAW MAY 2018 Q6.",
-              "Location": "https://manvideos.s3.amazonaws.com/files%2Fb156bcff-f6fe-48e8-a00a-e5c2f1b2f2cf.pdf",
-              "filename": "BUSINESS LAW MAY 2018 Q6.pdf",
-              "downloads": 0,
-              "uploaddate": 1550841022476
-            }
-          ],
-          "PractiseQuestions": []
-        },
-        {
-          "id": "5c61db96126203131b2ed0de",
-          "Vid": "1d23cd8df6dec06dca734b3ab7d3e827",
-          "_id": "video/5c61db96126203131b2ed0de",
-          "_key": "5c61db96126203131b2ed0de",
-          "p320": "",
-          "p480": "",
-          "p720": "",
-          "Views": 0,
-          "p1080": "",
-          "Course": {
-            "id": "5c499f53db9e070c116dd02a",
-            "CourseCode": "BL Sec 1 - Blocks",
-            "CourseName": "CPA Sec 1- Business Law"
-          },
-          "isFree": false,
-          "KeyFile": "4af8efd7c7adf09ea1ace7778141c054.key",
-          "VideoUrl": "/KASNEB/CPA/BLOCKREVISION/COMMLAW/MAY_2018/Q7/Q7.m3u8",
-          "VideoName": "Sample paper - Q7",
-          "createdAt": 1549917078243,
-          "updatedAt": 1550841051720,
-          "Transcript": null,
-          "Instructors": [
-            {
-              "id": "5b2a8915ced70e4f6688926d",
-              "InstructorName": "Timothy Kyalo"
-            }
-          ],
-          "PublishDate": 1549917078244,
-          "ExerciseFiles": [
-            {
-              "fd": "/files/2c952a0e-96b0-4964-b50c-842da9106c46.pdf",
-              "Key": "files/2c952a0e-96b0-4964-b50c-842da9106c46.pdf",
-              "uid": "2c952a0e-96b0-4964-b50c-842da9106c46.pdf",
-              "url": "/cloud/files/2c952a0e-96b0-4964-b50c-842da9106c46.pdf",
-              "ETag": "\"33ae73deb56394e40d93b127325e2fae-1\"",
-              "name": "BUSINESS LAW MAY 2018 Q7.pdf",
-              "size": 109144,
-              "Bucket": "manvideos",
-              "status": "done",
-              "FileName": "BUSINESS LAW MAY 2018 Q7.",
-              "Location": "https://manvideos.s3.amazonaws.com/files%2F2c952a0e-96b0-4964-b50c-842da9106c46.pdf",
-              "filename": "BUSINESS LAW MAY 2018 Q7.pdf",
-              "downloads": 0,
-              "uploaddate": 1550841046639
-            }
-          ],
-          "PractiseQuestions": []
-        }
-      ]
+    "childLanes": 2,
+    "deletions": null,
+    "dependencies": null,
+    "elementType": "[Function VideoPlayer]",
+    "flags": 6291461,
+    "index": 0,
+    "key": null,
+    "lanes": 0,
+    "memoizedProps": {
+      "bufferingStrategy": "Default",
+      "controlAnimationTiming": 500,
+      "controls": true,
+      "controlsStyles": "[Object]",
+      "doubleTapTime": 130,
+      "fullscreen": false,
+      "isFullscreen": true,
+      "muted": false,
+      "onAspectRatio": "[Function onAspectRatio]",
+      "onBuffer": "[Function onVideoBuffer]",
+      "onEnd": "[Function onEnd]",
+      "onEnterFullscreen": "[Function anonymous]",
+      "onError": "[Function onError]",
+      "onExitFullscreen": "[Function anonymous]",
+      "onLoad": "[Function onLoad]",
+      "onLoadStart": "[Function onVideoLoadStart]",
+      "onPlaybackStateChanged": "[Function onPlaybackStateChanged]",
+      "onProgress": "[Function onProgress]",
+      "onReadyForDisplay": "[Function onReadyForDisplay]",
+      "paused": false,
+      "playInBackground": false,
+      "playWhenInactive": false,
+      "preventsDisplaySleepDuringVideoPlayback": true,
+      "progressUpdateInterval": 1000,
+      "rate": 1,
+      "renderLoader": "undefined",
+      "repeat": false,
+      "resizeMode": "contain",
+      "showHours": false,
+      "showNotificationControls": false,
+      "showOnStart": true,
+      "showTimeRemaining": true,
+      "source": "[Object]",
+      "style": "[Object]",
+      "title": "",
+      "toggleResizeModeOnFullscreen": false,
+      "volume": 1
     },
-    {
-      "Title": "SAMPLE PAPER 3",
-      "Videos": [
-        {
-          "id": "5c6ab6e4dcc92c7b083e7c6f",
-          "Vid": "b4f4c86ef790c0c20963ffb7b88c7096",
-          "_id": "video/5c6ab6e4dcc92c7b083e7c6f",
-          "_key": "5c6ab6e4dcc92c7b083e7c6f",
-          "p320": "",
-          "p480": "",
-          "p720": "",
-          "Views": 0,
-          "p1080": "",
-          "Course": {
-            "id": "5c499f53db9e070c116dd02a",
-            "CourseCode": "BL Sec 1 - Blocks",
-            "CourseName": "CPA Sec 1- Business Law"
-          },
-          "isFree": false,
-          "KeyFile": "2dfacb77629f1c333dcaee30db78194f.key",
-          "VideoUrl": "/KASNEB/CPA/BLOCKREVISION/COMMLAW/NOV_2017/Q1/Q1.m3u8",
-          "VideoName": "Sample paper - Q1",
-          "createdAt": 1550497508793,
-          "updatedAt": 1550842418396,
-          "Transcript": null,
-          "Instructors": [
-            {
-              "id": "5b2a8915ced70e4f6688926d",
-              "InstructorName": "Timothy Kyalo"
-            }
-          ],
-          "PublishDate": 1550497508794,
-          "ExerciseFiles": [
-            {
-              "fd": "/files/84b84d7c-e35f-487b-a618-574acf994b84.pdf",
-              "Key": "files/84b84d7c-e35f-487b-a618-574acf994b84.pdf",
-              "uid": "84b84d7c-e35f-487b-a618-574acf994b84.pdf",
-              "url": "/cloud/files/84b84d7c-e35f-487b-a618-574acf994b84.pdf",
-              "ETag": "\"d741cc7ece9e8db427d2c45b9cf9d574-1\"",
-              "name": "BUSINESS LAW NOVEMBER 2017 Q1.pdf",
-              "size": 173167,
-              "Bucket": "manvideos",
-              "status": "done",
-              "Location": "https://manvideos.s3.amazonaws.com/files%2F84b84d7c-e35f-487b-a618-574acf994b84.pdf",
-              "filename": "BUSINESS LAW NOVEMBER 2017 Q1.pdf",
-              "downloads": 0,
-              "uploaddate": 1550842396839
-            }
-          ],
-          "PractiseQuestions": []
-        },
-        {
-          "id": "5c6ab7b7dcc92c7b083e7c70",
-          "Vid": "bf3f37c55bd39764094a8992a7abb7e9",
-          "_id": "video/5c6ab7b7dcc92c7b083e7c70",
-          "_key": "5c6ab7b7dcc92c7b083e7c70",
-          "p320": "",
-          "p480": "",
-          "p720": "",
-          "Views": 0,
-          "p1080": "",
-          "Course": {
-            "id": "5c499f53db9e070c116dd02a",
-            "CourseCode": "BL Sec 1 - Blocks",
-            "CourseName": "CPA Sec 1- Business Law"
-          },
-          "isFree": false,
-          "KeyFile": "92b0f948e56cb32d3ee73d7fa5bb65f8.key",
-          "VideoUrl": "/KASNEB/CPA/BLOCKREVISION/COMMLAW/NOV_2017/Q2/Q2.m3u8",
-          "VideoName": "Sample paper - Q2",
-          "createdAt": 1550497719406,
-          "updatedAt": 1550842438441,
-          "Transcript": null,
-          "Instructors": [
-            {
-              "id": "5b2a8915ced70e4f6688926d",
-              "InstructorName": "Timothy Kyalo"
-            }
-          ],
-          "PublishDate": 1550497719407,
-          "ExerciseFiles": [
-            {
-              "fd": "/files/9673091b-4cd3-4292-952c-f563ff5c9157.pdf",
-              "Key": "files/9673091b-4cd3-4292-952c-f563ff5c9157.pdf",
-              "uid": "9673091b-4cd3-4292-952c-f563ff5c9157.pdf",
-              "url": "/cloud/files/9673091b-4cd3-4292-952c-f563ff5c9157.pdf",
-              "ETag": "\"2e9fd642aeb1ed094e0c998b4d1592b4-1\"",
-              "name": "BUSINESS LAW NOVEMBER 2017 Q2.pdf",
-              "size": 169604,
-              "Bucket": "manvideos",
-              "status": "done",
-              "Location": "https://manvideos.s3.amazonaws.com/files%2F9673091b-4cd3-4292-952c-f563ff5c9157.pdf",
-              "filename": "BUSINESS LAW NOVEMBER 2017 Q2.pdf",
-              "downloads": 0,
-              "uploaddate": 1550842433069
-            }
-          ],
-          "PractiseQuestions": []
-        },
-        {
-          "id": "5c6ab81adcc92c7b083e7c71",
-          "Vid": "3a9d9fd5188e0f9f4f8dc356636907cc",
-          "_id": "video/5c6ab81adcc92c7b083e7c71",
-          "_key": "5c6ab81adcc92c7b083e7c71",
-          "p320": "",
-          "p480": "",
-          "p720": "",
-          "Views": 0,
-          "p1080": "",
-          "Course": {
-            "id": "5c499f53db9e070c116dd02a",
-            "CourseCode": "BL Sec 1 - Blocks",
-            "CourseName": "CPA Sec 1- Business Law"
-          },
-          "isFree": false,
-          "KeyFile": "a6be722049802bc2c292c8a5d062eb7c.key",
-          "VideoUrl": "/KASNEB/CPA/BLOCKREVISION/COMMLAW/NOV_2017/Q3/Q3.m3u8",
-          "VideoName": "Sample paper - Q3",
-          "createdAt": 1550497818522,
-          "updatedAt": 1550842522480,
-          "Transcript": null,
-          "Instructors": [
-            {
-              "id": "5b2a8915ced70e4f6688926d",
-              "InstructorName": "Timothy Kyalo"
-            }
-          ],
-          "PublishDate": 1550497818523,
-          "ExerciseFiles": [
-            {
-              "fd": "/files/69145698-dd56-4a8c-9d78-31e8dfaf0fb1.pdf",
-              "Key": "files/69145698-dd56-4a8c-9d78-31e8dfaf0fb1.pdf",
-              "uid": "69145698-dd56-4a8c-9d78-31e8dfaf0fb1.pdf",
-              "url": "/cloud/files/69145698-dd56-4a8c-9d78-31e8dfaf0fb1.pdf",
-              "ETag": "\"9d2a121fe3ead17232f45e968c34ee34-1\"",
-              "name": "BUSINESS LAW NOVEMBER 2017 Q3.pdf",
-              "size": 109254,
-              "Bucket": "manvideos",
-              "status": "done",
-              "FileName": "BUSINESS LAW NOVEMBER 2017 Q3.",
-              "Location": "https://manvideos.s3.amazonaws.com/files%2F69145698-dd56-4a8c-9d78-31e8dfaf0fb1.pdf",
-              "filename": "BUSINESS LAW NOVEMBER 2017 Q3.pdf",
-              "downloads": 0,
-              "uploaddate": 1550842519028
-            }
-          ],
-          "PractiseQuestions": []
-        },
-        {
-          "id": "5c6ab87cdcc92c7b083e7c72",
-          "Vid": "99eccd6e732d3d207408f540a6115036",
-          "_id": "video/5c6ab87cdcc92c7b083e7c72",
-          "_key": "5c6ab87cdcc92c7b083e7c72",
-          "p320": "",
-          "p480": "",
-          "p720": "",
-          "Views": 0,
-          "p1080": "",
-          "Course": {
-            "id": "5c499f53db9e070c116dd02a",
-            "CourseCode": "BL Sec 1 - Blocks",
-            "CourseName": "CPA Sec 1- Business Law"
-          },
-          "isFree": false,
-          "KeyFile": "ae810e7d62d81d60630f1ac20f46b14b.key",
-          "VideoUrl": "/KASNEB/CPA/BLOCKREVISION/COMMLAW/NOV_2017/Q4/Q4.m3u8",
-          "VideoName": "Sample paper - Q4",
-          "createdAt": 1550497916736,
-          "updatedAt": 1550842594351,
-          "Transcript": null,
-          "Instructors": [
-            {
-              "id": "5b2a8915ced70e4f6688926d",
-              "InstructorName": "Timothy Kyalo"
-            }
-          ],
-          "PublishDate": 1550497916737,
-          "ExerciseFiles": [
-            {
-              "fd": "/files/9d70e8c0-9635-466f-a62d-f0a9758da209.pdf",
-              "Key": "files/9d70e8c0-9635-466f-a62d-f0a9758da209.pdf",
-              "uid": "9d70e8c0-9635-466f-a62d-f0a9758da209.pdf",
-              "url": "/cloud/files/9d70e8c0-9635-466f-a62d-f0a9758da209.pdf",
-              "ETag": "\"9953cc98a2f32c59dc9b1d975c2141de-1\"",
-              "name": "BUSINESS LAW NOVEMBER 2017 Q4.pdf",
-              "size": 109445,
-              "Bucket": "manvideos",
-              "status": "done",
-              "FileName": "BUSINESS LAW NOVEMBER 2017 Q4.",
-              "Location": "https://manvideos.s3.amazonaws.com/files%2F9d70e8c0-9635-466f-a62d-f0a9758da209.pdf",
-              "filename": "BUSINESS LAW NOVEMBER 2017 Q4.pdf",
-              "downloads": 0,
-              "uploaddate": 1550842541291
-            }
-          ],
-          "PractiseQuestions": []
-        },
-        {
-          "id": "5c6ab8cbdcc92c7b083e7c73",
-          "Vid": "417fac4704511ccc5517abf0e820b6e8",
-          "_id": "video/5c6ab8cbdcc92c7b083e7c73",
-          "_key": "5c6ab8cbdcc92c7b083e7c73",
-          "p320": "",
-          "p480": "",
-          "p720": "",
-          "Views": 0,
-          "p1080": "",
-          "Course": {
-            "id": "5c499f53db9e070c116dd02a",
-            "CourseCode": "BL Sec 1 - Blocks",
-            "CourseName": "CPA Sec 1- Business Law"
-          },
-          "isFree": false,
-          "KeyFile": "bfac3b8aa6f58c4c1f108a5eb32d31de.key",
-          "VideoUrl": "/KASNEB/CPA/BLOCKREVISION/COMMLAW/NOV_2017/Q5/Q5.m3u8",
-          "VideoName": "Sample paper - Q5",
-          "createdAt": 1550497995249,
-          "updatedAt": 1550842612399,
-          "Transcript": null,
-          "Instructors": [
-            {
-              "id": "5b2a8915ced70e4f6688926d",
-              "InstructorName": "Timothy Kyalo"
-            }
-          ],
-          "PublishDate": 1550497995250,
-          "ExerciseFiles": [
-            {
-              "fd": "/files/fe8fb5c0-1bb0-4811-861d-ab55bd8eed7e.pdf",
-              "Key": "files/fe8fb5c0-1bb0-4811-861d-ab55bd8eed7e.pdf",
-              "uid": "fe8fb5c0-1bb0-4811-861d-ab55bd8eed7e.pdf",
-              "url": "/cloud/files/fe8fb5c0-1bb0-4811-861d-ab55bd8eed7e.pdf",
-              "ETag": "\"e71351b0853b535f49504bc643724efb-1\"",
-              "name": "BUSINESS LAW NOVEMBER 2017 Q5.pdf",
-              "size": 109190,
-              "Bucket": "manvideos",
-              "status": "done",
-              "FileName": "BUSINESS LAW NOVEMBER 2017 Q5.",
-              "Location": "https://manvideos.s3.amazonaws.com/files%2Ffe8fb5c0-1bb0-4811-861d-ab55bd8eed7e.pdf",
-              "filename": "BUSINESS LAW NOVEMBER 2017 Q5.pdf",
-              "downloads": 0,
-              "uploaddate": 1550842607340
-            }
-          ],
-          "PractiseQuestions": []
-        },
-        {
-          "id": "5c6ab966dcc92c7b083e7c76",
-          "Vid": "ab6e0b87f587d5290f4b5e014f16554a",
-          "_id": "video/5c6ab966dcc92c7b083e7c76",
-          "_key": "5c6ab966dcc92c7b083e7c76",
-          "p320": "",
-          "p480": "",
-          "p720": "",
-          "Views": 0,
-          "p1080": "",
-          "Course": {
-            "id": "5c499f53db9e070c116dd02a",
-            "CourseCode": "BL Sec 1 - Blocks",
-            "CourseName": "CPA Sec 1- Business Law"
-          },
-          "isFree": false,
-          "KeyFile": "5bd8398031ac9dc099f5b4c8909fb864.key",
-          "VideoUrl": "/KASNEB/CPA/BLOCKREVISION/COMMLAW/NOV_2017/Q6/Q6.m3u8",
-          "VideoName": "Sample paper - Q6",
-          "createdAt": 1550498150195,
-          "updatedAt": 1550842637940,
-          "Transcript": null,
-          "Instructors": [
-            {
-              "id": "5b2a8915ced70e4f6688926d",
-              "InstructorName": "Timothy Kyalo"
-            }
-          ],
-          "PublishDate": 1550498150198,
-          "ExerciseFiles": [
-            {
-              "fd": "/files/83ec4ae6-c63d-47cb-850c-05e3463d18eb.pdf",
-              "Key": "files/83ec4ae6-c63d-47cb-850c-05e3463d18eb.pdf",
-              "uid": "83ec4ae6-c63d-47cb-850c-05e3463d18eb.pdf",
-              "url": "/cloud/files/83ec4ae6-c63d-47cb-850c-05e3463d18eb.pdf",
-              "ETag": "\"98fba990733ab7ed48c7c8fe30e3bc7c-1\"",
-              "name": "BUSINESS LAW NOVEMBER 2017 Q6.pdf",
-              "size": 110792,
-              "Bucket": "manvideos",
-              "status": "done",
-              "FileName": "BUSINESS LAW NOVEMBER 2017 Q6.",
-              "Location": "https://manvideos.s3.amazonaws.com/files%2F83ec4ae6-c63d-47cb-850c-05e3463d18eb.pdf",
-              "filename": "BUSINESS LAW NOVEMBER 2017 Q6.pdf",
-              "downloads": 0,
-              "uploaddate": 1550842627614
-            }
-          ],
-          "PractiseQuestions": []
-        },
-        {
-          "id": "5c6abbf3dcc92c7b083e7c7b",
-          "Vid": "9a4e0bd559a1dfeb09e431a8029b7197",
-          "_id": "video/5c6abbf3dcc92c7b083e7c7b",
-          "_key": "5c6abbf3dcc92c7b083e7c7b",
-          "p320": "",
-          "p480": "",
-          "p720": "",
-          "Views": 0,
-          "p1080": "",
-          "Course": {
-            "id": "5c499f53db9e070c116dd02a",
-            "CourseCode": "BL Sec 1 - Blocks",
-            "CourseName": "CPA Sec 1- Business Law"
-          },
-          "isFree": false,
-          "KeyFile": "aee079a79e3d22406c634a17dadf9880.key",
-          "VideoUrl": "/KASNEB/CPA/BLOCKREVISION/COMMLAW/NOV_2017/Q7/Q7.m3u8",
-          "VideoName": "Sample paper - Q7",
-          "createdAt": 1550498803072,
-          "updatedAt": 1550842895022,
-          "Transcript": null,
-          "Instructors": [
-            {
-              "id": "5b2a8915ced70e4f6688926d",
-              "InstructorName": "Timothy Kyalo"
-            }
-          ],
-          "PublishDate": 1550498803073,
-          "ExerciseFiles": [
-            {
-              "fd": "/files/1c5ed16e-8fdc-481e-a20d-92d903a38daa.pdf",
-              "Key": "files/1c5ed16e-8fdc-481e-a20d-92d903a38daa.pdf",
-              "uid": "1c5ed16e-8fdc-481e-a20d-92d903a38daa.pdf",
-              "url": "/cloud/files/1c5ed16e-8fdc-481e-a20d-92d903a38daa.pdf",
-              "ETag": "\"9e1f34a15b9047d4bbd3f578980fd692-1\"",
-              "name": "BUSINESS LAW NOVEMBER 2017 Q7.pdf",
-              "size": 169887,
-              "Bucket": "manvideos",
-              "status": "done",
-              "Location": "https://manvideos.s3.amazonaws.com/files%2F1c5ed16e-8fdc-481e-a20d-92d903a38daa.pdf",
-              "filename": "BUSINESS LAW NOVEMBER 2017 Q7.pdf",
-              "downloads": 0,
-              "uploaddate": 1550842894068
-            }
-          ],
-          "PractiseQuestions": []
-        }
-      ]
+    "memoizedState": {
+      "currentTime": 253.001159164,
+      "duration": 596.4580078125,
+      "error": false,
+      "isFullscreen": false,
+      "loading": false,
+      "muted": false,
+      "originallyPaused": false,
+      "paused": true,
+      "rate": 1,
+      "resizeMode": "contain",
+      "scrubbing": false,
+      "seekerFillWidth": 149.73293679538784,
+      "seekerOffset": 149.73293679538784,
+      "seekerPosition": 149.73293679538784,
+      "seeking": false,
+      "showControls": true,
+      "showHours": false,
+      "showTimeRemaining": true,
+      "volume": 1,
+      "volumeFillWidth": 150,
+      "volumeOffset": 150,
+      "volumePosition": 150,
+      "volumeTrackWidth": 0
     },
-    {
-      "Title": "SAMPLE PAPER 4",
-      "Videos": [
-        {
-          "id": "5c6aad22dcc92c7b083e7c68",
-          "Vid": "c2443757b657597d541159606256bbf5",
-          "_id": "video/5c6aad22dcc92c7b083e7c68",
-          "_key": "5c6aad22dcc92c7b083e7c68",
-          "p320": "",
-          "p480": "",
-          "p720": "",
-          "Views": 0,
-          "p1080": "",
-          "Course": {
-            "id": "5c499f53db9e070c116dd02a",
-            "CourseCode": "BL Sec 1 - Blocks",
-            "CourseName": "CPA Sec 1- Business Law"
-          },
-          "isFree": false,
-          "KeyFile": "6fae278dd7140b177e6f911e4b22fe51.key",
-          "VideoUrl": "/KASNEB/CPA/BLOCKREVISION/COMMLAW/MAY_2017/Q1/MAY17Q1.m3u8",
-          "VideoName": "Sample paper - Q1",
-          "createdAt": 1550495010901,
-          "updatedAt": 1550841865549,
-          "Transcript": null,
-          "Instructors": [
-            {
-              "id": "5b2a8915ced70e4f6688926d",
-              "InstructorName": "Timothy Kyalo"
-            }
-          ],
-          "PublishDate": 1550495010912,
-          "ExerciseFiles": [
-            {
-              "uid": "rc-upload-1550820167612-97",
-              "url": "",
-              "name": "BUSINESS LAW MAY 2017 Q1.pdf",
-              "size": 109592,
-              "type": "application/pdf",
-              "status": "done",
-              "percent": 100,
-              "FileName": "BUSINESS LAW MAY 2017 Q1.",
-              "lastModified": 1550835380546,
-              "originFileObj": {
-                "uid": "rc-upload-1550820167612-97"
-              },
-              "lastModifiedDate": "2019-02-22T11:36:20.546Z"
-            }
-          ],
-          "PractiseQuestions": []
-        },
-        {
-          "id": "5c6aad79dcc92c7b083e7c69",
-          "Vid": "97a81f007119d88c1c1b5d6bd2969b53",
-          "_id": "video/5c6aad79dcc92c7b083e7c69",
-          "_key": "5c6aad79dcc92c7b083e7c69",
-          "p320": "",
-          "p480": "",
-          "p720": "",
-          "Views": 0,
-          "p1080": "",
-          "Course": {
-            "id": "5c499f53db9e070c116dd02a",
-            "CourseCode": "BL Sec 1 - Blocks",
-            "CourseName": "CPA Sec 1- Business Law"
-          },
-          "isFree": false,
-          "KeyFile": "8afca4eb940681c229e1826dd3e42153.key",
-          "VideoUrl": "/KASNEB/CPA/BLOCKREVISION/COMMLAW/MAY_2017/Q2/MAY17Q2.m3u8",
-          "VideoName": "Sample paper - Q2",
-          "createdAt": 1550495097750,
-          "updatedAt": 1550841882417,
-          "Transcript": null,
-          "Instructors": [
-            {
-              "id": "5b2a8915ced70e4f6688926d",
-              "InstructorName": "Timothy Kyalo"
-            }
-          ],
-          "PublishDate": 1550495097751,
-          "ExerciseFiles": [
-            {
-              "fd": "/files/5157a001-5bae-4179-82d6-4e657134ae63.pdf",
-              "Key": "files/5157a001-5bae-4179-82d6-4e657134ae63.pdf",
-              "uid": "5157a001-5bae-4179-82d6-4e657134ae63.pdf",
-              "url": "/cloud/files/5157a001-5bae-4179-82d6-4e657134ae63.pdf",
-              "ETag": "\"47463151270d2a77ad3bb77e6fc3c312-1\"",
-              "name": "BUSINESS LAW MAY 2017 Q2.pdf",
-              "size": 170204,
-              "Bucket": "manvideos",
-              "status": "done",
-              "Location": "https://manvideos.s3.amazonaws.com/files%2F5157a001-5bae-4179-82d6-4e657134ae63.pdf",
-              "filename": "BUSINESS LAW MAY 2017 Q2.pdf",
-              "downloads": 0,
-              "uploaddate": 1550841876501
-            }
-          ],
-          "PractiseQuestions": []
-        },
-        {
-          "id": "5c6aadd5dcc92c7b083e7c6a",
-          "Vid": "6bc5b51ffd40283e18a8c68d903dea3e",
-          "_id": "video/5c6aadd5dcc92c7b083e7c6a",
-          "_key": "5c6aadd5dcc92c7b083e7c6a",
-          "p320": "",
-          "p480": "",
-          "p720": "",
-          "Views": 0,
-          "p1080": "",
-          "Course": {
-            "id": "5c499f53db9e070c116dd02a",
-            "CourseCode": "BL Sec 1 - Blocks",
-            "CourseName": "CPA Sec 1- Business Law"
-          },
-          "isFree": false,
-          "KeyFile": "0e38ec88227f81c8b2f3a2078741ae34.key",
-          "VideoUrl": "/KASNEB/CPA/BLOCKREVISION/COMMLAW/MAY_2017/Q3/MAY17Q3.m3u8",
-          "VideoName": "Sample paper - Q3",
-          "createdAt": 1550495189586,
-          "updatedAt": 1550842207741,
-          "Transcript": null,
-          "Instructors": [
-            {
-              "id": "5b2a8915ced70e4f6688926d",
-              "InstructorName": "Timothy Kyalo"
-            }
-          ],
-          "PublishDate": 1550495189587,
-          "ExerciseFiles": [
-            {
-              "fd": "/files/0a9d47fd-c234-47f2-a55f-63e70573912c.pdf",
-              "Key": "files/0a9d47fd-c234-47f2-a55f-63e70573912c.pdf",
-              "uid": "0a9d47fd-c234-47f2-a55f-63e70573912c.pdf",
-              "url": "/cloud/files/0a9d47fd-c234-47f2-a55f-63e70573912c.pdf",
-              "ETag": "\"e17cb28aca58ba9d99cbcd51a15c0a5f-1\"",
-              "name": "BUSINESS LAW MAY 2017 Q3.pdf",
-              "size": 109583,
-              "Bucket": "manvideos",
-              "status": "done",
-              "Location": "https://manvideos.s3.amazonaws.com/files%2F0a9d47fd-c234-47f2-a55f-63e70573912c.pdf",
-              "filename": "BUSINESS LAW MAY 2017 Q3.pdf",
-              "downloads": 0,
-              "uploaddate": 1550842063934
-            }
-          ],
-          "PractiseQuestions": []
-        },
-        {
-          "id": "5c6aae31dcc92c7b083e7c6b",
-          "Vid": "a58959a2d64c93292c2ed40c0cb15fcb",
-          "_id": "video/5c6aae31dcc92c7b083e7c6b",
-          "_key": "5c6aae31dcc92c7b083e7c6b",
-          "p320": "",
-          "p480": "",
-          "p720": "",
-          "Views": 0,
-          "p1080": "",
-          "Course": {
-            "id": "5c499f53db9e070c116dd02a",
-            "CourseCode": "BL Sec 1 - Blocks",
-            "CourseName": "CPA Sec 1- Business Law"
-          },
-          "isFree": false,
-          "KeyFile": "56150eb4c3345b27fdc92734327f70d2.key",
-          "VideoUrl": "/KASNEB/CPA/BLOCKREVISION/COMMLAW/MAY_2017/Q4/BLMAY17Q4.m3u8",
-          "VideoName": "Sample paper - Q4",
-          "createdAt": 1550495281650,
-          "updatedAt": 1550842232817,
-          "Transcript": null,
-          "Instructors": [
-            {
-              "id": "5b2a8915ced70e4f6688926d",
-              "InstructorName": "Timothy Kyalo"
-            }
-          ],
-          "PublishDate": 1550495281653,
-          "ExerciseFiles": [
-            {
-              "fd": "/files/54034110-388b-4c73-8f25-6572bc6a0a86.pdf",
-              "Key": "files/54034110-388b-4c73-8f25-6572bc6a0a86.pdf",
-              "uid": "54034110-388b-4c73-8f25-6572bc6a0a86.pdf",
-              "url": "/cloud/files/54034110-388b-4c73-8f25-6572bc6a0a86.pdf",
-              "ETag": "\"c92df9ee37e0ecad7a71acedefd48328-1\"",
-              "name": "BUSINESS LAW MAY 2017 Q4.pdf",
-              "size": 108869,
-              "Bucket": "manvideos",
-              "status": "done",
-              "FileName": "BUSINESS LAW MAY 2017 Q4.",
-              "Location": "https://manvideos.s3.amazonaws.com/files%2F54034110-388b-4c73-8f25-6572bc6a0a86.pdf",
-              "filename": "BUSINESS LAW MAY 2017 Q4.pdf",
-              "downloads": 0,
-              "uploaddate": 1550842224535
-            }
-          ],
-          "PractiseQuestions": []
-        },
-        {
-          "id": "5c6aaee5dcc92c7b083e7c6c",
-          "Vid": "beccbcd7d0cd019f3e8ddad4090df99b",
-          "_id": "video/5c6aaee5dcc92c7b083e7c6c",
-          "_key": "5c6aaee5dcc92c7b083e7c6c",
-          "p320": "",
-          "p480": "",
-          "p720": "",
-          "Views": 0,
-          "p1080": "",
-          "Course": {
-            "id": "5c499f53db9e070c116dd02a",
-            "CourseCode": "BL Sec 1 - Blocks",
-            "CourseName": "CPA Sec 1- Business Law"
-          },
-          "isFree": false,
-          "KeyFile": "6c2fbb588e25dabd94b565620b4a2e65.key",
-          "VideoUrl": "/KASNEB/CPA/BLOCKREVISION/COMMLAW/MAY_2017/Q5/BLMAY17Q5.m3u8",
-          "VideoName": "Sample paper - Q5",
-          "createdAt": 1550495461095,
-          "updatedAt": 1550842328132,
-          "Transcript": null,
-          "Instructors": [
-            {
-              "id": "5b2a8915ced70e4f6688926d",
-              "InstructorName": "Timothy Kyalo"
-            }
-          ],
-          "PublishDate": 1550495461096,
-          "ExerciseFiles": [
-            {
-              "uid": "rc-upload-1550820167612-117",
-              "url": "",
-              "name": "BUSINESS LAW MAY 2017 Q5.pdf",
-              "size": 109163,
-              "type": "application/pdf",
-              "status": "done",
-              "percent": 100,
-              "FileName": "BUSINESS LAW MAY 2017 Q5.",
-              "lastModified": 1550835950882,
-              "originFileObj": {
-                "uid": "rc-upload-1550820167612-117"
-              },
-              "lastModifiedDate": "2019-02-22T11:45:50.882Z"
-            }
-          ],
-          "PractiseQuestions": []
-        },
-        {
-          "id": "5c6aaf6edcc92c7b083e7c6d",
-          "Vid": "f32b13a6d807ad1627fe47f6deb8dead",
-          "_id": "video/5c6aaf6edcc92c7b083e7c6d",
-          "_key": "5c6aaf6edcc92c7b083e7c6d",
-          "p320": "",
-          "p480": "",
-          "p720": "",
-          "Views": 0,
-          "p1080": "",
-          "Course": {
-            "id": "5c499f53db9e070c116dd02a",
-            "CourseCode": "BL Sec 1 - Blocks",
-            "CourseName": "CPA Sec 1- Business Law"
-          },
-          "isFree": false,
-          "KeyFile": "5c42208a0a1740d19f296c918b0181cc.key",
-          "VideoUrl": "/KASNEB/CPA/BLOCKREVISION/COMMLAW/MAY_2017/Q6/BLMAY17Q6.m3u8",
-          "VideoName": "Sample paper - Q6",
-          "createdAt": 1550495598724,
-          "updatedAt": 1550842359792,
-          "Transcript": null,
-          "Instructors": [
-            {
-              "id": "5b2a8915ced70e4f6688926d",
-              "InstructorName": "Timothy Kyalo"
-            }
-          ],
-          "PublishDate": 1550495598725,
-          "ExerciseFiles": [
-            {
-              "fd": "/files/f4b1c8d2-4087-4967-852d-e412faa671d2.pdf",
-              "Key": "files/f4b1c8d2-4087-4967-852d-e412faa671d2.pdf",
-              "uid": "f4b1c8d2-4087-4967-852d-e412faa671d2.pdf",
-              "url": "/cloud/files/f4b1c8d2-4087-4967-852d-e412faa671d2.pdf",
-              "ETag": "\"148b570a3447dab07f528752b2302511-1\"",
-              "name": "BUSINESS LAW MAY 2017 Q6.pdf",
-              "size": 109848,
-              "Bucket": "manvideos",
-              "status": "done",
-              "Location": "https://manvideos.s3.amazonaws.com/files%2Ff4b1c8d2-4087-4967-852d-e412faa671d2.pdf",
-              "filename": "BUSINESS LAW MAY 2017 Q6.pdf",
-              "downloads": 0,
-              "uploaddate": 1550842356590
-            }
-          ],
-          "PractiseQuestions": []
-        },
-        {
-          "id": "5c6ab02fdcc92c7b083e7c6e",
-          "Vid": "a7317a7fa0491fb853d961e97c966a56",
-          "_id": "video/5c6ab02fdcc92c7b083e7c6e",
-          "_key": "5c6ab02fdcc92c7b083e7c6e",
-          "p320": "",
-          "p480": "",
-          "p720": "",
-          "Views": 0,
-          "p1080": "",
-          "Course": {
-            "id": "5c499f53db9e070c116dd02a",
-            "CourseCode": "BL Sec 1 - Blocks",
-            "CourseName": "CPA Sec 1- Business Law"
-          },
-          "isFree": false,
-          "KeyFile": "087086f9a164108b106686d199871d23.key",
-          "VideoUrl": "/KASNEB/CPA/BLOCKREVISION/COMMLAW/MAY_2017/Q7/BLMAY17Q7.m3u8",
-          "VideoName": "Sample paper - Q7",
-          "createdAt": 1550495791220,
-          "updatedAt": 1550842375222,
-          "Transcript": null,
-          "Instructors": [
-            {
-              "id": "5b2a8915ced70e4f6688926d",
-              "InstructorName": "Timothy Kyalo"
-            }
-          ],
-          "PublishDate": 1550495791221,
-          "ExerciseFiles": [
-            {
-              "uid": "rc-upload-1550820167612-129",
-              "url": "",
-              "name": "BUSINESS LAW MAY 2017 Q7.pdf",
-              "size": 109269,
-              "type": "application/pdf",
-              "status": "done",
-              "percent": 100,
-              "FileName": "BUSINESS LAW MAY 2017 Q7.",
-              "lastModified": 1550836399538,
-              "originFileObj": {
-                "uid": "rc-upload-1550820167612-129"
-              },
-              "lastModifiedDate": "2019-02-22T11:53:19.538Z"
-            }
-          ],
-          "PractiseQuestions": []
-        }
-      ]
+    "mode": 2,
+    "pendingProps": {
+      "bufferingStrategy": "Default",
+      "controlAnimationTiming": 500,
+      "controls": true,
+      "controlsStyles": "[Object]",
+      "doubleTapTime": 130,
+      "fullscreen": false,
+      "isFullscreen": true,
+      "muted": false,
+      "onAspectRatio": "[Function onAspectRatio]",
+      "onBuffer": "[Function onVideoBuffer]",
+      "onEnd": "[Function onEnd]",
+      "onEnterFullscreen": "[Function anonymous]",
+      "onError": "[Function onError]",
+      "onExitFullscreen": "[Function anonymous]",
+      "onLoad": "[Function onLoad]",
+      "onLoadStart": "[Function onVideoLoadStart]",
+      "onPlaybackStateChanged": "[Function onPlaybackStateChanged]",
+      "onProgress": "[Function onProgress]",
+      "onReadyForDisplay": "[Function onReadyForDisplay]",
+      "paused": false,
+      "playInBackground": false,
+      "playWhenInactive": false,
+      "preventsDisplaySleepDuringVideoPlayback": true,
+      "progressUpdateInterval": 1000,
+      "rate": 1,
+      "renderLoader": "undefined",
+      "repeat": false,
+      "resizeMode": "contain",
+      "showHours": false,
+      "showNotificationControls": false,
+      "showOnStart": true,
+      "showTimeRemaining": true,
+      "source": "[Object]",
+      "style": "[Object]",
+      "title": "",
+      "toggleResizeModeOnFullscreen": false,
+      "volume": 1
     },
-    {
-      "Title": "SAMPLE PAPER 5",
-      "Videos": [
-        {
-          "id": "5c49a51bf7591a0c37420908",
-          "Vid": "e0775b7d3fe1bea1f2958106d23e497a",
-          "_id": "video/5c49a51bf7591a0c37420908",
-          "_key": "5c49a51bf7591a0c37420908",
-          "p320": "",
-          "p480": "",
-          "p720": "",
-          "Views": 0,
-          "p1080": "",
-          "Course": {
-            "id": "5b2cfdc7ced70e4f66889292",
-            "CourseCode": "BL Sec 1 - Class",
-            "CourseName": "CPA Sec 1- Business Law"
-          },
-          "isFree": false,
-          "KeyFile": "c576eca4a0347dfb8854ca00b9c3aedc.key",
-          "VideoUrl": "/KASNEB/CPA/BLOCKREVISION/COMMLAW/NOV_2016/Q1/NOV16Q1.m3u8",
-          "VideoName": "Sample paper - Q1",
-          "createdAt": 1548330267882,
-          "updatedAt": 1550840730247,
-          "Transcript": null,
-          "Instructors": [
-            {
-              "id": "5b2a8915ced70e4f6688926d",
-              "InstructorName": "Timothy Kyalo"
-            }
-          ],
-          "PublishDate": 1548330267883,
-          "ExerciseFiles": [
-            {
-              "fd": "/files/a2db54b4-15bd-4f19-8ec9-e5002867896f.pdf",
-              "Key": "files/a2db54b4-15bd-4f19-8ec9-e5002867896f.pdf",
-              "uid": "a2db54b4-15bd-4f19-8ec9-e5002867896f.pdf",
-              "url": "/cloud/files/a2db54b4-15bd-4f19-8ec9-e5002867896f.pdf",
-              "ETag": "\"033189f9ba3abebb02f0c6a105d6191b-1\"",
-              "name": "BUSINESS LAW NOVEMBER 2016 Q1.pdf",
-              "size": 109053,
-              "Bucket": "manvideos",
-              "status": "done",
-              "FileName": "BUSINESS LAW NOVEMBER 2016 Q1.",
-              "Location": "https://manvideos.s3.amazonaws.com/files%2Fa2db54b4-15bd-4f19-8ec9-e5002867896f.pdf",
-              "filename": "BUSINESS LAW NOVEMBER 2016 Q1.pdf",
-              "downloads": 0,
-              "uploaddate": 1550840726597
-            }
-          ],
-          "PractiseQuestions": []
-        },
-        {
-          "id": "5c49a492f7591a0c37420907",
-          "Vid": "7787184618932d36f9a322059ee7a7b6",
-          "_id": "video/5c49a492f7591a0c37420907",
-          "_key": "5c49a492f7591a0c37420907",
-          "p320": "",
-          "p480": "",
-          "p720": "",
-          "Views": 0,
-          "p1080": "",
-          "Course": {
-            "id": "5c499f53db9e070c116dd02a",
-            "CourseCode": "BL Sec 1 - Blocks",
-            "CourseName": "CPA Sec 1- Business Law"
-          },
-          "isFree": false,
-          "KeyFile": "b840298f2c265843c9336f443cab7ac5.key",
-          "VideoUrl": "/KASNEB/CPA/BLOCKREVISION/COMMLAW/NOV_2016/Q2/NOV16Q2.m3u8",
-          "VideoName": "Sample paper - Q2",
-          "createdAt": 1548330130892,
-          "updatedAt": 1550840771497,
-          "Transcript": null,
-          "Instructors": [
-            {
-              "id": "5b2a8915ced70e4f6688926d",
-              "InstructorName": "Timothy Kyalo"
-            }
-          ],
-          "PublishDate": 1548330130894,
-          "ExerciseFiles": [
-            {
-              "fd": "/files/354e4b3a-f4d5-4961-8609-2f87c1946d3d.pdf",
-              "Key": "files/354e4b3a-f4d5-4961-8609-2f87c1946d3d.pdf",
-              "uid": "354e4b3a-f4d5-4961-8609-2f87c1946d3d.pdf",
-              "url": "/cloud/files/354e4b3a-f4d5-4961-8609-2f87c1946d3d.pdf",
-              "ETag": "\"5b8aa618ebbed31dff4dfb2a44f4aa67-1\"",
-              "name": "BUSINESS LAW NOVEMBER 2016 Q2.pdf",
-              "size": 109533,
-              "Bucket": "manvideos",
-              "status": "done",
-              "FileName": "BUSINESS LAW NOVEMBER 2016 Q2.",
-              "Location": "https://manvideos.s3.amazonaws.com/files%2F354e4b3a-f4d5-4961-8609-2f87c1946d3d.pdf",
-              "filename": "BUSINESS LAW NOVEMBER 2016 Q2.pdf",
-              "downloads": 0,
-              "uploaddate": 1550840753634
-            }
-          ],
-          "PractiseQuestions": []
-        },
-        {
-          "id": "5c49a59ef7591a0c37420909",
-          "Vid": "cf5daf3aa06e95c5ab4cc13a38085fd9",
-          "_id": "video/5c49a59ef7591a0c37420909",
-          "_key": "5c49a59ef7591a0c37420909",
-          "p320": "",
-          "p480": "",
-          "p720": "",
-          "Views": 0,
-          "p1080": "",
-          "Course": {
-            "id": "5c499f53db9e070c116dd02a",
-            "CourseCode": "BL Sec 1 - Blocks",
-            "CourseName": "CPA Sec 1- Business Law"
-          },
-          "isFree": false,
-          "KeyFile": "e9107f142501f1d2b4c9d0074d97fc6c.key",
-          "VideoUrl": "/KASNEB/CPA/BLOCKREVISION/COMMLAW/NOV_2016/Q3/NOV16Q3.m3u8",
-          "VideoName": "Sample paper - Q3",
-          "createdAt": 1548330398670,
-          "updatedAt": 1550840797513,
-          "Transcript": null,
-          "Instructors": [
-            {
-              "id": "5b2a8915ced70e4f6688926d",
-              "InstructorName": "Timothy Kyalo"
-            }
-          ],
-          "PublishDate": 1548330398671,
-          "ExerciseFiles": [
-            {
-              "fd": "/files/23cbc254-9fd8-4e5b-a71f-eeb642d2eda0.pdf",
-              "Key": "files/23cbc254-9fd8-4e5b-a71f-eeb642d2eda0.pdf",
-              "uid": "23cbc254-9fd8-4e5b-a71f-eeb642d2eda0.pdf",
-              "url": "/cloud/files/23cbc254-9fd8-4e5b-a71f-eeb642d2eda0.pdf",
-              "ETag": "\"38a02f5fefa0d8e4f6db664edeada89f-1\"",
-              "name": "BUSINESS LAW NOVEMBER  2016 Q3.pdf",
-              "size": 109080,
-              "Bucket": "manvideos",
-              "status": "done",
-              "FileName": "BUSINESS LAW NOVEMBER  2016 Q3.",
-              "Location": "https://manvideos.s3.amazonaws.com/files%2F23cbc254-9fd8-4e5b-a71f-eeb642d2eda0.pdf",
-              "filename": "BUSINESS LAW NOVEMBER  2016 Q3.pdf",
-              "downloads": 0,
-              "uploaddate": 1550840787649
-            }
-          ],
-          "PractiseQuestions": []
-        },
-        {
-          "id": "5c49a679f7591a0c3742090a",
-          "Vid": "2bc7364768d39cfef4066008034a3333",
-          "_id": "video/5c49a679f7591a0c3742090a",
-          "_key": "5c49a679f7591a0c3742090a",
-          "p320": "",
-          "p480": "",
-          "p720": "",
-          "Views": 0,
-          "p1080": "",
-          "Course": {
-            "id": "5c499f53db9e070c116dd02a",
-            "CourseCode": "BL Sec 1 - Blocks",
-            "CourseName": "CPA Sec 1- Business Law"
-          },
-          "isFree": false,
-          "KeyFile": "2964ae094ff101537086c06b1a3c5d70.key",
-          "VideoUrl": "/KASNEB/CPA/BLOCKREVISION/COMMLAW/NOV_2016/Q4/NOV16Q4.m3u8",
-          "VideoName": "Sample paper - Q4",
-          "createdAt": 1548330617090,
-          "updatedAt": 1550840825737,
-          "Transcript": null,
-          "Instructors": [
-            {
-              "id": "5b2a8915ced70e4f6688926d",
-              "InstructorName": "Timothy Kyalo"
-            }
-          ],
-          "PublishDate": 1548330617091,
-          "ExerciseFiles": [
-            {
-              "fd": "/files/88350dea-a489-49be-8690-34ace5d74d1e.pdf",
-              "Key": "files/88350dea-a489-49be-8690-34ace5d74d1e.pdf",
-              "uid": "88350dea-a489-49be-8690-34ace5d74d1e.pdf",
-              "url": "/cloud/files/88350dea-a489-49be-8690-34ace5d74d1e.pdf",
-              "ETag": "\"f0adc07fa43174a3cb12f5d493663858-1\"",
-              "name": "BUSINESS LAW NOVEMBER 2016 Q4.pdf",
-              "size": 109080,
-              "Bucket": "manvideos",
-              "status": "done",
-              "FileName": "BUSINESS LAW NOVEMBER 2016 Q4.",
-              "Location": "https://manvideos.s3.amazonaws.com/files%2F88350dea-a489-49be-8690-34ace5d74d1e.pdf",
-              "filename": "BUSINESS LAW NOVEMBER 2016 Q4.pdf",
-              "downloads": 0,
-              "uploaddate": 1550840819276
-            }
-          ],
-          "PractiseQuestions": []
-        },
-        {
-          "id": "5c49a6e6f7591a0c3742090c",
-          "Vid": "50bd87e427ef1b7f6dcd45e10e474618",
-          "_id": "video/5c49a6e6f7591a0c3742090c",
-          "_key": "5c49a6e6f7591a0c3742090c",
-          "p320": "",
-          "p480": "",
-          "p720": "",
-          "Views": 0,
-          "p1080": "",
-          "Course": {
-            "id": "5b2cfdc7ced70e4f66889292",
-            "CourseCode": "BL Sec 1 - Class",
-            "CourseName": "CPA Sec 1- Business Law"
-          },
-          "isFree": false,
-          "KeyFile": "095f07d3af0b1d28436fe6c59429a5ed.key",
-          "VideoUrl": "/KASNEB/CPA/BLOCKREVISION/COMMLAW/NOV_2016/Q5/BLNOV16Q5.m3u8",
-          "VideoName": "Sample paper - Q5",
-          "createdAt": 1548330726357,
-          "updatedAt": 1550840861441,
-          "Transcript": null,
-          "Instructors": [
-            {
-              "id": "5b2a8915ced70e4f6688926d",
-              "InstructorName": "Timothy Kyalo"
-            }
-          ],
-          "PublishDate": 1548330726357,
-          "ExerciseFiles": [
-            {
-              "fd": "/files/dfdff7b0-8ff9-433f-af28-2dda052cd4db.pdf",
-              "Key": "files/dfdff7b0-8ff9-433f-af28-2dda052cd4db.pdf",
-              "uid": "dfdff7b0-8ff9-433f-af28-2dda052cd4db.pdf",
-              "url": "/cloud/files/dfdff7b0-8ff9-433f-af28-2dda052cd4db.pdf",
-              "ETag": "\"4d54ba19e52220bd0f1e68e6fcfb776d-1\"",
-              "name": "BUSINESS LAW NOVEMBER 2016 Q5.pdf",
-              "size": 108966,
-              "Bucket": "manvideos",
-              "status": "done",
-              "FileName": "BUSINESS LAW NOVEMBER 2016 Q5.",
-              "Location": "https://manvideos.s3.amazonaws.com/files%2Fdfdff7b0-8ff9-433f-af28-2dda052cd4db.pdf",
-              "filename": "BUSINESS LAW NOVEMBER 2016 Q5.pdf",
-              "downloads": 0,
-              "uploaddate": 1550840858874
-            }
-          ],
-          "PractiseQuestions": []
-        },
-        {
-          "id": "5c49a741f7591a0c3742090d",
-          "Vid": "176c18356ea79482528a883ca462ac28",
-          "_id": "video/5c49a741f7591a0c3742090d",
-          "_key": "5c49a741f7591a0c3742090d",
-          "p320": "",
-          "p480": "",
-          "p720": "",
-          "Views": 0,
-          "p1080": "",
-          "Course": {
-            "id": "5c499f53db9e070c116dd02a",
-            "CourseCode": "BL Sec 1 - Blocks",
-            "CourseName": "CPA Sec 1- Business Law"
-          },
-          "isFree": false,
-          "KeyFile": "0582865d882c0ec9a8ccdb45a4648a9d.key",
-          "VideoUrl": "/KASNEB/CPA/BLOCKREVISION/COMMLAW/NOV_2016/Q6/BLNOV16Q6.m3u8",
-          "VideoName": "Sample paper - Q6",
-          "createdAt": 1548330817204,
-          "updatedAt": 1550840877917,
-          "Transcript": null,
-          "Instructors": [
-            {
-              "id": "5b2a8915ced70e4f6688926d",
-              "InstructorName": "Timothy Kyalo"
-            }
-          ],
-          "PublishDate": 1548330817204,
-          "ExerciseFiles": [
-            {
-              "fd": "/files/7aa1047b-bdfc-4c1e-8de2-491216cd95a8.pdf",
-              "Key": "files/7aa1047b-bdfc-4c1e-8de2-491216cd95a8.pdf",
-              "uid": "7aa1047b-bdfc-4c1e-8de2-491216cd95a8.pdf",
-              "url": "/cloud/files/7aa1047b-bdfc-4c1e-8de2-491216cd95a8.pdf",
-              "ETag": "\"328f29b6750f1c3623e9f322190da536-1\"",
-              "name": "BUSINESS LAW NOVEMBER 2016 Q6.pdf",
-              "size": 109180,
-              "Bucket": "manvideos",
-              "status": "done",
-              "FileName": "BUSINESS LAW NOVEMBER 2016 Q6.",
-              "Location": "https://manvideos.s3.amazonaws.com/files%2F7aa1047b-bdfc-4c1e-8de2-491216cd95a8.pdf",
-              "filename": "BUSINESS LAW NOVEMBER 2016 Q6.pdf",
-              "downloads": 0,
-              "uploaddate": 1550840873537
-            }
-          ],
-          "PractiseQuestions": []
-        },
-        {
-          "id": "5c49a81bf7591a0c3742090e",
-          "Vid": "857bb62d7a0969a18b5692b12fd9ed01",
-          "_id": "video/5c49a81bf7591a0c3742090e",
-          "_key": "5c49a81bf7591a0c3742090e",
-          "p320": "",
-          "p480": "",
-          "p720": "",
-          "Views": 0,
-          "p1080": "",
-          "Course": {
-            "id": "5c499f53db9e070c116dd02a",
-            "CourseCode": "BL Sec 1 - Blocks",
-            "CourseName": "CPA Sec 1- Business Law"
-          },
-          "isFree": false,
-          "KeyFile": "583ea80501b01db96b5d6b01502a61d9.key",
-          "VideoUrl": "/KASNEB/CPA/BLOCKREVISION/COMMLAW/NOV_2016/Q7/BLNOV16Q7.m3u8",
-          "VideoName": "Sample paper - Q7",
-          "createdAt": 1548331035069,
-          "updatedAt": 1550840894725,
-          "Transcript": null,
-          "Instructors": [
-            {
-              "id": "5b2a8915ced70e4f6688926d",
-              "InstructorName": "Timothy Kyalo"
-            }
-          ],
-          "PublishDate": 1548331035070,
-          "ExerciseFiles": [
-            {
-              "fd": "/files/d1582ac8-9a48-40dd-8e8e-d608136c1323.pdf",
-              "Key": "files/d1582ac8-9a48-40dd-8e8e-d608136c1323.pdf",
-              "uid": "d1582ac8-9a48-40dd-8e8e-d608136c1323.pdf",
-              "url": "/cloud/files/d1582ac8-9a48-40dd-8e8e-d608136c1323.pdf",
-              "ETag": "\"b55676909e38220987828b86baddcc08-1\"",
-              "name": "BUSINESS LAW NOVEMBER 2016 Q7.pdf",
-              "size": 108872,
-              "Bucket": "manvideos",
-              "status": "done",
-              "FileName": "BUSINESS LAW NOVEMBER 2016 Q7.",
-              "Location": "https://manvideos.s3.amazonaws.com/files%2Fd1582ac8-9a48-40dd-8e8e-d608136c1323.pdf",
-              "filename": "BUSINESS LAW NOVEMBER 2016 Q7.pdf",
-              "downloads": 0,
-              "uploaddate": 1550840889977
-            }
-          ],
-          "PractiseQuestions": []
-        }
-      ]
+    "ref": { "current": "[Circular]" },
+    "refCleanup": null,
+    "return": {
+      "_debugHookTypes": null,
+      "_debugNeedsRemount": false,
+      "_debugOwner": "[FiberNode]",
+      "actualDuration": 3.2477359771728516,
+      "actualStartTime": 5015695030.958625,
+      "alternate": "[FiberNode]",
+      "child": "[Circular]",
+      "childLanes": 2,
+      "deletions": null,
+      "dependencies": null,
+      "elementType": "RCTView",
+      "flags": 2097152,
+      "index": 0,
+      "key": null,
+      "lanes": 0,
+      "memoizedProps": "[Object]",
+      "memoizedState": null,
+      "mode": 2,
+      "pendingProps": "[Object]",
+      "ref": "[Function anonymous]",
+      "refCleanup": "undefined",
+      "return": "[FiberNode]",
+      "selfBaseDuration": 0.01629161834716797,
+      "sibling": null,
+      "stateNode": "[ReactNativeFiberHostComponent]",
+      "subtreeFlags": 14682629,
+      "tag": 5,
+      "treeBaseDuration": 3.162655830383301,
+      "type": "RCTView",
+      "updateQueue": null
     },
-    {
-      "Title": "SAMPLE PAPER 6",
-      "Videos": [
-        {
-          "id": "5c49a01ff7591a0c374208ff",
-          "Vid": "71963b0e150819e90a4ca9b297a84b5e",
-          "_id": "video/5c49a01ff7591a0c374208ff",
-          "_key": "5c49a01ff7591a0c374208ff",
-          "p320": "",
-          "p480": "",
-          "p720": "",
-          "Views": 0,
-          "p1080": "",
-          "Course": {
-            "id": "5c499f53db9e070c116dd02a",
-            "CourseCode": "BL Sec 1 - Blocks",
-            "CourseName": "CPA Sec 1- Business Law"
-          },
-          "isFree": true,
-          "KeyFile": "e4f75abc5a7d5ed5d402d77dffdf80ff.key",
-          "VideoUrl": "/KASNEB/CPA/BLOCKREVISION/COMMLAW/MAY_2016/Q1/BLMAY16Q1.m3u8",
-          "VideoName": "Sample paper - Q1",
-          "createdAt": 1548328991584,
-          "updatedAt": 1550840178515,
-          "Transcript": null,
-          "Instructors": [
-            {
-              "id": "5b2a8915ced70e4f6688926d",
-              "InstructorName": "Timothy Kyalo"
-            }
-          ],
-          "PublishDate": 1548328991586,
-          "ExerciseFiles": [
-            {
-              "fd": "/files/38cf5180-55bd-4ead-a86d-65c10b1c40fb.pdf",
-              "Key": "files/38cf5180-55bd-4ead-a86d-65c10b1c40fb.pdf",
-              "uid": "38cf5180-55bd-4ead-a86d-65c10b1c40fb.pdf",
-              "url": "/cloud/files/38cf5180-55bd-4ead-a86d-65c10b1c40fb.pdf",
-              "ETag": "\"839cdcbf373384519ee76638a7a4ca5f-1\"",
-              "name": "BUSINESS LAW MAY 2016 Q1.pdf",
-              "size": 169400,
-              "Bucket": "manvideos",
-              "status": "done",
-              "Location": "https://manvideos.s3.amazonaws.com/files%2F38cf5180-55bd-4ead-a86d-65c10b1c40fb.pdf",
-              "filename": "BUSINESS LAW MAY 2016 Q1.pdf",
-              "downloads": 0,
-              "uploaddate": 1550840177606
-            }
-          ],
-          "PractiseQuestions": []
-        },
-        {
-          "id": "5c6a7269ca1443715089aad3",
-          "Vid": "4b1e21b0a06dbb9fec744418d59ed0c6",
-          "_id": "video/5c6a7269ca1443715089aad3",
-          "_key": "5c6a7269ca1443715089aad3",
-          "p320": "",
-          "p480": "",
-          "p720": "",
-          "Views": 0,
-          "p1080": "",
-          "Course": {
-            "id": "5c499f53db9e070c116dd02a",
-            "CourseCode": "BL Sec 1 - Blocks",
-            "CourseName": "CPA Sec 1- Business Law"
-          },
-          "isFree": false,
-          "KeyFile": "f665608ac1de9fdbe37d5b027ae02721.key",
-          "VideoUrl": "/KASNEB/CPA/BLOCKREVISION/COMMLAW/MAY_2016/Q2/BLMAY16Q2.m3u8",
-          "VideoName": "Sample paper - Q2",
-          "createdAt": 1550479977575,
-          "updatedAt": 1550841816111,
-          "Transcript": null,
-          "Instructors": [
-            {
-              "id": "5b2a8915ced70e4f6688926d",
-              "InstructorName": "Timothy Kyalo"
-            }
-          ],
-          "PublishDate": 1550479977576,
-          "ExerciseFiles": [
-            {
-              "fd": "/files/3879bbf2-4fe7-41fc-8189-2b9d9c9d106c.pdf",
-              "Key": "files/3879bbf2-4fe7-41fc-8189-2b9d9c9d106c.pdf",
-              "uid": "3879bbf2-4fe7-41fc-8189-2b9d9c9d106c.pdf",
-              "url": "/cloud/files/3879bbf2-4fe7-41fc-8189-2b9d9c9d106c.pdf",
-              "ETag": "\"888bef21c969a107f9539532a89d19cf-1\"",
-              "name": "BUSINESS LAW MAY 2016 Q2.pdf",
-              "size": 169327,
-              "Bucket": "manvideos",
-              "status": "done",
-              "Location": "https://manvideos.s3.amazonaws.com/files%2F3879bbf2-4fe7-41fc-8189-2b9d9c9d106c.pdf",
-              "filename": "BUSINESS LAW MAY 2016 Q2.pdf",
-              "downloads": 0,
-              "uploaddate": 1550841812769
-            }
-          ],
-          "PractiseQuestions": []
-        },
-        {
-          "id": "5c49a08cf7591a0c37420900",
-          "Vid": "e3bf4ac9020a88ee04d3d1954efe767b",
-          "_id": "video/5c49a08cf7591a0c37420900",
-          "_key": "5c49a08cf7591a0c37420900",
-          "p320": "",
-          "p480": "",
-          "p720": "",
-          "Views": 0,
-          "p1080": "",
-          "Course": {
-            "id": "5b2cfdc7ced70e4f66889292",
-            "CourseCode": "BL Sec 1 - Class",
-            "CourseName": "CPA Sec 1- Business Law"
-          },
-          "isFree": false,
-          "KeyFile": "8f8f14dcaa531354e1f6eb220e221dec.key",
-          "VideoUrl": "/KASNEB/CPA/BLOCKREVISION/COMMLAW/MAY_2016/Q3/BLMAY16Q3.m3u8",
-          "VideoName": "Sample paper - Q3",
-          "createdAt": 1548329100314,
-          "updatedAt": 1550840207953,
-          "Transcript": null,
-          "Instructors": [
-            {
-              "id": "5b2a8915ced70e4f6688926d",
-              "InstructorName": "Timothy Kyalo"
-            }
-          ],
-          "PublishDate": 1548329100322,
-          "ExerciseFiles": [
-            {
-              "fd": "/files/e0b62481-1099-4468-8682-2e8fec7cc134.pdf",
-              "Key": "files/e0b62481-1099-4468-8682-2e8fec7cc134.pdf",
-              "uid": "e0b62481-1099-4468-8682-2e8fec7cc134.pdf",
-              "url": "/cloud/files/e0b62481-1099-4468-8682-2e8fec7cc134.pdf",
-              "ETag": "\"8bbf91dfb3ab5e026dd582a9064b5630-1\"",
-              "name": "BUSINESS LAW MAY 2016 Q3.pdf",
-              "size": 109185,
-              "Bucket": "manvideos",
-              "status": "done",
-              "FileName": "BUSINESS LAW MAY 2016 Q3.",
-              "Location": "https://manvideos.s3.amazonaws.com/files%2Fe0b62481-1099-4468-8682-2e8fec7cc134.pdf",
-              "filename": "BUSINESS LAW MAY 2016 Q3.pdf",
-              "downloads": 0,
-              "uploaddate": 1550840203114
-            }
-          ],
-          "PractiseQuestions": []
-        },
-        {
-          "id": "5c6aac13d5d87d79efa8365e",
-          "Vid": "7a6c90e519b8fd31cb5def74183c846f",
-          "_id": "video/5c6aac13d5d87d79efa8365e",
-          "_key": "5c6aac13d5d87d79efa8365e",
-          "p320": "",
-          "p480": "",
-          "p720": "",
-          "Views": 0,
-          "p1080": "",
-          "Course": {
-            "id": "5c499f53db9e070c116dd02a",
-            "CourseCode": "BL Sec 1 - Blocks",
-            "CourseName": "CPA Sec 1- Business Law"
-          },
-          "isFree": false,
-          "KeyFile": "2c0ceed9de15245deced618632498977.key",
-          "VideoUrl": "/KASNEB/CPA/BLOCKREVISION/COMMLAW/MAY_2016/Q4/BLMAY16Q4.m3u8",
-          "VideoName": "Sample paper - Q4",
-          "createdAt": 1550494739482,
-          "updatedAt": 1550841840421,
-          "Transcript": null,
-          "Instructors": [
-            {
-              "id": "5b2a8915ced70e4f6688926d",
-              "InstructorName": "Timothy Kyalo"
-            }
-          ],
-          "PublishDate": 1550494739485,
-          "ExerciseFiles": [
-            {
-              "fd": "/files/45615604-57a7-4550-997c-c20cf0ba6ebe.pdf",
-              "Key": "files/45615604-57a7-4550-997c-c20cf0ba6ebe.pdf",
-              "uid": "45615604-57a7-4550-997c-c20cf0ba6ebe.pdf",
-              "url": "/cloud/files/45615604-57a7-4550-997c-c20cf0ba6ebe.pdf",
-              "ETag": "\"c29a7380fe354f04effc262cba032778-1\"",
-              "name": "BUSINESS LAW MAY 2016 Q4.pdf",
-              "size": 109038,
-              "Bucket": "manvideos",
-              "status": "done",
-              "FileName": "BUSINESS LAW MAY 2016 Q4.",
-              "Location": "https://manvideos.s3.amazonaws.com/files%2F45615604-57a7-4550-997c-c20cf0ba6ebe.pdf",
-              "filename": "BUSINESS LAW MAY 2016 Q4.pdf",
-              "downloads": 0,
-              "uploaddate": 1550841836391
-            }
-          ],
-          "PractiseQuestions": []
-        },
-        {
-          "id": "5c49a10df7591a0c37420901",
-          "Vid": "0a85faa98d39aca8203e88a99d09faba",
-          "_id": "video/5c49a10df7591a0c37420901",
-          "_key": "5c49a10df7591a0c37420901",
-          "p320": "",
-          "p480": "",
-          "p720": "",
-          "Views": 0,
-          "p1080": "",
-          "Course": {
-            "id": "5c499f53db9e070c116dd02a",
-            "CourseCode": "BL Sec 1 - Blocks",
-            "CourseName": "CPA Sec 1- Business Law"
-          },
-          "isFree": false,
-          "KeyFile": "59fb986fc544f7d5294666d6f0132ce8.key",
-          "VideoUrl": "/KASNEB/CPA/BLOCKREVISION/COMMLAW/MAY_2016/Q5/BLMAY16Q5.m3u8",
-          "VideoName": "Sample paper - Q5",
-          "createdAt": 1548329229686,
-          "updatedAt": 1550840231131,
-          "Transcript": null,
-          "Instructors": [
-            {
-              "id": "5b2a8915ced70e4f6688926d",
-              "InstructorName": "Timothy Kyalo"
-            }
-          ],
-          "PublishDate": 1548329229687,
-          "ExerciseFiles": [
-            {
-              "fd": "/files/84783baf-26ea-460a-b6c9-ffdc8d2740ca.pdf",
-              "Key": "files/84783baf-26ea-460a-b6c9-ffdc8d2740ca.pdf",
-              "uid": "84783baf-26ea-460a-b6c9-ffdc8d2740ca.pdf",
-              "url": "/cloud/files/84783baf-26ea-460a-b6c9-ffdc8d2740ca.pdf",
-              "ETag": "\"7f281b593f71886eb80d4477a097bf45-1\"",
-              "name": "BUSINESS LAW MAY 2016 Q5.pdf",
-              "size": 165361,
-              "Bucket": "manvideos",
-              "status": "done",
-              "FileName": "BUSINESS LAW MAY 2016 Q5.",
-              "Location": "https://manvideos.s3.amazonaws.com/files%2F84783baf-26ea-460a-b6c9-ffdc8d2740ca.pdf",
-              "filename": "BUSINESS LAW MAY 2016 Q5.pdf",
-              "downloads": 0,
-              "uploaddate": 1550840221150
-            }
-          ],
-          "PractiseQuestions": []
-        },
-        {
-          "id": "5c49a168f7591a0c37420902",
-          "Vid": "2266289c14b715595d1ce9869c56d600",
-          "_id": "video/5c49a168f7591a0c37420902",
-          "_key": "5c49a168f7591a0c37420902",
-          "p320": "",
-          "p480": "",
-          "p720": "",
-          "Views": 0,
-          "p1080": "",
-          "Course": {
-            "id": "5c499f53db9e070c116dd02a",
-            "CourseCode": "BL Sec 1 - Blocks",
-            "CourseName": "CPA Sec 1- Business Law"
-          },
-          "isFree": false,
-          "KeyFile": "c61881aa2ee06c7518277daa94c04ec4.key",
-          "VideoUrl": "/KASNEB/CPA/BLOCKREVISION/COMMLAW/MAY_2016/Q6/BLMAY2016Q6.m3u8",
-          "VideoName": "Sample paper - Q6",
-          "createdAt": 1548329320698,
-          "updatedAt": 1550840252058,
-          "Transcript": null,
-          "Instructors": [
-            {
-              "id": "5b2a8915ced70e4f6688926d",
-              "InstructorName": "Timothy Kyalo"
-            }
-          ],
-          "PublishDate": 1548329320699,
-          "ExerciseFiles": [
-            {
-              "fd": "/files/2e4d17ed-107f-4343-b510-ab43c037b4b3.pdf",
-              "Key": "files/2e4d17ed-107f-4343-b510-ab43c037b4b3.pdf",
-              "uid": "2e4d17ed-107f-4343-b510-ab43c037b4b3.pdf",
-              "url": "/cloud/files/2e4d17ed-107f-4343-b510-ab43c037b4b3.pdf",
-              "ETag": "\"2db5a37f8d8d70f1f592d63425176624-1\"",
-              "name": "BUSINESS LAW MAY 2016 Q6.pdf",
-              "size": 168644,
-              "Bucket": "manvideos",
-              "status": "done",
-              "FileName": "BUSINESS LAW MAY 2016 Q6.",
-              "Location": "https://manvideos.s3.amazonaws.com/files%2F2e4d17ed-107f-4343-b510-ab43c037b4b3.pdf",
-              "filename": "BUSINESS LAW MAY 2016 Q6.pdf",
-              "downloads": 0,
-              "uploaddate": 1550840248477
-            }
-          ],
-          "PractiseQuestions": []
-        },
-        {
-          "id": "5c49a1ebf7591a0c37420903",
-          "Vid": "1fc77038506e10f9cd031d385d4758a0",
-          "_id": "video/5c49a1ebf7591a0c37420903",
-          "_key": "5c49a1ebf7591a0c37420903",
-          "p320": "",
-          "p480": "",
-          "p720": "",
-          "Views": 0,
-          "p1080": "",
-          "Course": {
-            "id": "5c499f53db9e070c116dd02a",
-            "CourseCode": "BL Sec 1 - Blocks",
-            "CourseName": "CPA Sec 1- Business Law"
-          },
-          "isFree": false,
-          "KeyFile": "22f9816331c0fbfd4ac95b39c3dcb0d0.key",
-          "VideoUrl": "/KASNEB/CPA/BLOCKREVISION/COMMLAW/MAY_2016/Q7/BLMAY16Q7.m3u8",
-          "VideoName": "Sample paper - Q7",
-          "createdAt": 1548329451036,
-          "updatedAt": 1550840264320,
-          "Transcript": null,
-          "Instructors": [
-            {
-              "id": "5b2a8915ced70e4f6688926d",
-              "InstructorName": "Timothy Kyalo"
-            }
-          ],
-          "PublishDate": 1548329451037,
-          "ExerciseFiles": [
-            {
-              "fd": "/files/c796dd92-1202-4a3f-a138-200d933acaf3.pdf",
-              "Key": "files/c796dd92-1202-4a3f-a138-200d933acaf3.pdf",
-              "uid": "c796dd92-1202-4a3f-a138-200d933acaf3.pdf",
-              "url": "/cloud/files/c796dd92-1202-4a3f-a138-200d933acaf3.pdf",
-              "ETag": "\"92c37704d3610e4167c091d1a55b5e5d-1\"",
-              "name": "BUSINESS LAW MAY 2016 Q7.pdf",
-              "size": 167824,
-              "Bucket": "manvideos",
-              "status": "done",
-              "FileName": "BUSINESS LAW MAY 2016 Q7.",
-              "Location": "https://manvideos.s3.amazonaws.com/files%2Fc796dd92-1202-4a3f-a138-200d933acaf3.pdf",
-              "filename": "BUSINESS LAW MAY 2016 Q7.pdf",
-              "downloads": 0,
-              "uploaddate": 1550840262212
-            }
-          ],
-          "PractiseQuestions": []
-        }
-      ]
+    "selfBaseDuration": 0.28629112243652344,
+    "sibling": {
+      "_debugHookTypes": null,
+      "_debugNeedsRemount": false,
+      "_debugOwner": "[FiberNode]",
+      "actualDuration": 0.0006246566772460938,
+      "actualStartTime": 5015695034.323166,
+      "alternate": "[FiberNode]",
+      "child": null,
+      "childLanes": 0,
+      "deletions": null,
+      "dependencies": null,
+      "elementType": "[Function PressabilityDebugView]",
+      "flags": 0,
+      "index": 1,
+      "key": null,
+      "lanes": 0,
+      "memoizedProps": "[Object]",
+      "memoizedState": null,
+      "mode": 2,
+      "pendingProps": "[Object]",
+      "ref": null,
+      "refCleanup": null,
+      "return": "[FiberNode]",
+      "selfBaseDuration": 0.004166603088378906,
+      "sibling": null,
+      "stateNode": null,
+      "subtreeFlags": 0,
+      "tag": 0,
+      "treeBaseDuration": 0.004166603088378906,
+      "type": "[Function PressabilityDebugView]",
+      "updateQueue": null
+    },
+    "stateNode": "[Circular]",
+    "subtreeFlags": 14682629,
+    "tag": 1,
+    "treeBaseDuration": 3.142197608947754,
+    "type": "[Function VideoPlayer]",
+    "updateQueue": {
+      "baseState": "[Object]",
+      "callbacks": null,
+      "firstBaseUpdate": null,
+      "lastBaseUpdate": null,
+      "shared": "[Object]"
     }
-  ],
-  "Instructors": [
-    {
-      "id": "5bb36a3be4d2f0659dd13ce1",
-      "_id": "instructor/5bb36a3be4d2f0659dd13ce1",
-      "_ref": "eschool_instructor/5bb36a3be4d2f0659dd13ce1",
-      "Email": "manifestedp@gmail.com",
-      "Phone": "0724173845",
-      "Institution": "",
-      "InstructorName": "Manifested Publishers"
-    }
-  ],
-  "StudyType": "REVISION",
-  "IntroductionVideo": {
-    "id": "5c6abf83dcc92c7b083e7c7c",
-    "Vid": "f10d3caa065ff0fd82c1d2a9ff284855",
-    "_id": "emasomo_video/5c6abf83dcc92c7b083e7c7c",
-    "_ref": "emasomo_video/5c6abf83dcc92c7b083e7c7c",
-    "isFree": true,
-    "VideoUrl": "/KASNEB/CPA/BLOCKREVISION/COMMLAW/NOV_2018/Q1/NOV18Q1.m3u8",
-    "VideoName": "NOV 2018 Q1 - BL",
-    "PublishDate": 1740319984718
   },
-  "Price": 3500,
-  "Pricing": [
-    {
-      "id": 120,
-      "Days": 120,
-      "Price": 3500,
-      "PeriodName": "4 Months"
-    }
-  ],
-  "DefaultPeriod": {
-    "id": 120,
-    "Days": 120,
-    "PeriodName": "4 Months"
+  "animations": {
+    "bottomControl": {
+      "marginBottom": "[AnimatedValue]",
+      "opacity": "[AnimatedValue]"
+    },
+    "loader": { "MAX_VALUE": 360, "rotate": "[AnimatedValue]" },
+    "topControl": {
+      "marginTop": "[AnimatedValue]",
+      "opacity": "[AnimatedValue]"
+    },
+    "video": { "opacity": "[AnimatedValue]" }
   },
-  "Syllabus": {
-    "fd": "/elearning-manifested/files/1jrx5avfgle5ciobn.pdf",
-    "Key": "elearning-manifested/files/1jrx5avfgle5ciobn.pdf",
-    "uid": "1jrx5avfgle5ciobn",
-    "url": "/cloud/elearning-manifested/files/1jrx5avfgle5ciobn.pdf",
-    "name": "INTRODUCTION_TO_LAW_AND_ETHICS.pdf",
-    "size": 127480,
-    "Bucket": "elearning",
-    "status": "done",
-    "Location": "https://elearning.fra1.digitaloceanspaces.com/elearning-manifested/files/1jrx5avfgle5ciobn.pdf",
-    "filename": "INTRODUCTION_TO_LAW_AND_ETHICS.pdf"
+  "componentDidUpdate": "[Function anonymous]",
+  "context": {},
+  "events": {
+    "onBack": "[Function bound _onBack]",
+    "onEnd": "[Function onEnd]",
+    "onEnterFullscreen": "[Function anonymous]",
+    "onError": "[Function onError]",
+    "onExitFullscreen": "[Function anonymous]",
+    "onHideControls": "undefined",
+    "onLoad": "[Function bound _onLoad]",
+    "onLoadStart": "[Function bound _onLoadStart]",
+    "onPause": "undefined",
+    "onPlay": "undefined",
+    "onProgress": "[Function bound _onProgress]",
+    "onScreenTouch": "[Function bound _onScreenTouch]",
+    "onSeek": "[Function bound _onSeek]",
+    "onShowControls": "undefined"
   },
-  "PastPapers": [
-    {
-      "fd": "/files/4f677a11-8f2c-482a-b126-bc0eabe56210.pdf",
-      "Key": "files/4f677a11-8f2c-482a-b126-bc0eabe56210.pdf",
-      "uid": "4f677a11-8f2c-482a-b126-bc0eabe56210.pdf",
-      "url": "/cloud/files/4f677a11-8f2c-482a-b126-bc0eabe56210.pdf",
-      "ETag": "5f020200eb75e6bf574d73b6b6ed829c-1",
-      "name": "Introduction to Law and Ethics - Pilot- Paper.pdf",
-      "size": 408995,
-      "Bucket": "manpubvideos",
-      "status": "done",
-      "Location": "https://fra1.digitaloceanspaces.com/manpubvideos/files/4f677a11-8f2c-482a-b126-bc0eabe56210.pdf",
-      "filename": "Introduction to Law and Ethics - Pilot- Paper.pdf",
-      "downloads": 0,
-      "uploaddate": 1639513825867
+  "methods": {
+    "toggleControls": "[Function bound _toggleControls]",
+    "togglePlayPause": "[Function bound _togglePlayPause]",
+    "toggleTimer": "[Function bound _toggleTimer]"
+  },
+  "mounted": true,
+  "opts": {
+    "playInBackground": false,
+    "playWhenInactive": false,
+    "repeat": false,
+    "title": ""
+  },
+  "player": {
+    "controlTimeout": 3104,
+    "controlTimeoutDelay": 15000,
+    "iconOffset": 0,
+    "ref": {
+      "dismissFullscreenPlayer": "[Function anonymous]",
+      "enterPictureInPicture": "[Function anonymous]",
+      "exitPictureInPicture": "[Function anonymous]",
+      "getCurrentPosition": "[Function anonymous]",
+      "pause": "[Function anonymous]",
+      "presentFullscreenPlayer": "[Function anonymous]",
+      "restoreUserInterfaceForPictureInPictureStopCompleted": "[Function anonymous]",
+      "resume": "[Function anonymous]",
+      "save": "[Function anonymous]",
+      "seek": "[Function anonymous]",
+      "setFullScreen": "[Function anonymous]",
+      "setSource": "[Function anonymous]",
+      "setVolume": "[Function anonymous]"
     },
-    {
-      "fd": "/files/7e71801d-b76a-4d0e-99bf-ecab52fb2e59.pdf",
-      "Key": "files/7e71801d-b76a-4d0e-99bf-ecab52fb2e59.pdf",
-      "uid": "7e71801d-b76a-4d0e-99bf-ecab52fb2e59.pdf",
-      "url": "/cloud/files/7e71801d-b76a-4d0e-99bf-ecab52fb2e59.pdf",
-      "ETag": "\"336af58a7eabac1afe04b4b538f8ed76-1\"",
-      "name": "2019 MAY I PBL.pdf",
-      "size": 181464,
-      "Bucket": "manvideos",
-      "status": "done",
-      "FileName": "2019 MAY I PBL.",
-      "Location": "https://manpubvideos.fra1.digitaloceanspaces.com/files%2F7e71801d-b76a-4d0e-99bf-ecab52fb2e59.pdf",
-      "filename": "2019 MAY I PBL.pdf",
-      "downloads": 0,
-      "uploaddate": 1572863224467
+    "scrubbingTimeStep": 0,
+    "seekPanResponder": {
+      "getInteractionHandle": "[Function getInteractionHandle]",
+      "panHandlers": "[Object]"
     },
-    {
-      "fd": "/files/3cf3f7fe-6c1e-4d72-9f2c-08d8516ab399.pdf",
-      "Key": "files/3cf3f7fe-6c1e-4d72-9f2c-08d8516ab399.pdf",
-      "uid": "3cf3f7fe-6c1e-4d72-9f2c-08d8516ab399.pdf",
-      "url": "/cloud/files/3cf3f7fe-6c1e-4d72-9f2c-08d8516ab399.pdf",
-      "ETag": "\"a57eb0e65f81526f4ffe63af8760cef1-1\"",
-      "name": "2018 NOV I PBL.pdf",
-      "size": 199492,
-      "Bucket": "manvideos",
-      "status": "done",
-      "FileName": "2018 NOV I PBL.",
-      "Location": "https://manpubvideos.fra1.digitaloceanspaces.com/files%2F3cf3f7fe-6c1e-4d72-9f2c-08d8516ab399.pdf",
-      "filename": "2018 NOV I PBL.pdf",
-      "downloads": 0,
-      "uploaddate": 1572863235638
+    "seekerWidth": 353,
+    "tapActionTimeout": 0,
+    "tapAnywhereToPause": "undefined",
+    "volumePanResponder": {
+      "getInteractionHandle": "[Function getInteractionHandle]",
+      "panHandlers": "[Object]"
     },
-    {
-      "fd": "/files/49a4d000-c6e0-4b9a-b290-488910bc536e.pdf",
-      "Key": "files/49a4d000-c6e0-4b9a-b290-488910bc536e.pdf",
-      "uid": "49a4d000-c6e0-4b9a-b290-488910bc536e.pdf",
-      "url": "/cloud/files/49a4d000-c6e0-4b9a-b290-488910bc536e.pdf",
-      "ETag": "\"a6fca2883f208983bb05c92e8db61cfe-1\"",
-      "name": "2018 MAY I COMM LAW.pdf",
-      "size": 185650,
-      "Bucket": "manvideos",
-      "status": "done",
-      "FileName": "2018 MAY I COMM LAW.",
-      "Location": "https://manpubvideos.fra1.digitaloceanspaces.com/files%2F49a4d000-c6e0-4b9a-b290-488910bc536e.pdf",
-      "filename": "2018 MAY I COMM LAW.pdf",
-      "downloads": 0,
-      "uploaddate": 1572863248480
+    "volumeWidth": 150
+  },
+  "props": {
+    "bufferingStrategy": "Default",
+    "controlAnimationTiming": 500,
+    "controls": true,
+    "controlsStyles": {
+      "hideNavigationBarOnFullScreenMode": true,
+      "hideNotificationBarOnFullScreenMode": true,
+      "liveLabel": "LIVE"
     },
-    {
-      "fd": "/files/d9bbd4c2-3dc9-4633-bef2-f9a56460d648.pdf",
-      "Key": "files/d9bbd4c2-3dc9-4633-bef2-f9a56460d648.pdf",
-      "uid": "d9bbd4c2-3dc9-4633-bef2-f9a56460d648.pdf",
-      "url": "/cloud/files/d9bbd4c2-3dc9-4633-bef2-f9a56460d648.pdf",
-      "ETag": "\"4ddca3d655b64982245c697c68679c0d-1\"",
-      "name": "2017 MAY I COMM LAW.pdf",
-      "size": 187926,
-      "Bucket": "manvideos",
-      "status": "done",
-      "FileName": "2017 MAY I COMM LAW.",
-      "Location": "https://manpubvideos.fra1.digitaloceanspaces.com/files%2Fd9bbd4c2-3dc9-4633-bef2-f9a56460d648.pdf",
-      "filename": "2017 MAY I COMM LAW.pdf",
-      "downloads": 0,
-      "uploaddate": 1572863270443
+    "doubleTapTime": 130,
+    "fullscreen": false,
+    "isFullscreen": true,
+    "muted": false,
+    "onAspectRatio": "[Function onAspectRatio]",
+    "onBuffer": "[Function onVideoBuffer]",
+    "onEnd": "[Function onEnd]",
+    "onEnterFullscreen": "[Function anonymous]",
+    "onError": "[Function onError]",
+    "onExitFullscreen": "[Function anonymous]",
+    "onLoad": "[Function onLoad]",
+    "onLoadStart": "[Function onVideoLoadStart]",
+    "onPlaybackStateChanged": "[Function onPlaybackStateChanged]",
+    "onProgress": "[Function onProgress]",
+    "onReadyForDisplay": "[Function onReadyForDisplay]",
+    "paused": false,
+    "playInBackground": false,
+    "playWhenInactive": false,
+    "preventsDisplaySleepDuringVideoPlayback": true,
+    "progressUpdateInterval": 1000,
+    "rate": 1,
+    "renderLoader": "undefined",
+    "repeat": false,
+    "resizeMode": "contain",
+    "showHours": false,
+    "showNotificationControls": false,
+    "showOnStart": true,
+    "showTimeRemaining": true,
+    "source": {
+      "bufferConfig": "[Object]",
+      "uri": "https://jbiz.fra1.digitaloceanspaces.com/MU38FILES/CRS_CPA/LVL_SECTION_1/SUB_BL/BIG_BUCK_BUNNY_3/src/BIG_BUCK_BUNNY_3.m3u8"
     },
-    {
-      "fd": "/files/0f00620d-7bd2-466a-bded-2e49a4d580c2.pdf",
-      "Key": "files/0f00620d-7bd2-466a-bded-2e49a4d580c2.pdf",
-      "uid": "0f00620d-7bd2-466a-bded-2e49a4d580c2.pdf",
-      "url": "/cloud/files/0f00620d-7bd2-466a-bded-2e49a4d580c2.pdf",
-      "ETag": "\"300d00924d66b0c45662d18479088b71-1\"",
-      "name": "2016 NOV I COMM LAW.pdf",
-      "size": 183690,
-      "Bucket": "manvideos",
-      "status": "done",
-      "FileName": "2016 NOV I COMM LAW.",
-      "Location": "https://manpubvideos.fra1.digitaloceanspaces.com/files%2F0f00620d-7bd2-466a-bded-2e49a4d580c2.pdf",
-      "filename": "2016 NOV I COMM LAW.pdf",
-      "downloads": 0,
-      "uploaddate": 1572863281700
+    "style": {
+      "bottom": 0,
+      "left": 0,
+      "position": "absolute",
+      "right": 0,
+      "top": 0
     },
-    {
-      "fd": "/files/d7eeb222-8aa4-4dbb-a665-eac7c14f20cd.pdf",
-      "Key": "files/d7eeb222-8aa4-4dbb-a665-eac7c14f20cd.pdf",
-      "uid": "d7eeb222-8aa4-4dbb-a665-eac7c14f20cd.pdf",
-      "url": "/cloud/files/d7eeb222-8aa4-4dbb-a665-eac7c14f20cd.pdf",
-      "ETag": "\"847938b34badff52d295c4b05195c413-1\"",
-      "name": "2016 MAY I COMM LAW.pdf",
-      "size": 181842,
-      "Bucket": "manvideos",
-      "status": "done",
-      "FileName": "2016 MAY I COMM LAW.",
-      "Location": "https://manpubvideos.fra1.digitaloceanspaces.com/files%2Fd7eeb222-8aa4-4dbb-a665-eac7c14f20cd.pdf",
-      "filename": "2016 MAY I COMM LAW.pdf",
-      "downloads": 0,
-      "uploaddate": 1572863291547
+    "title": "",
+    "toggleResizeModeOnFullscreen": false,
+    "volume": 1
+  },
+  "refs": {},
+  "state": {
+    "currentTime": 253.001159164,
+    "duration": 596.4580078125,
+    "error": false,
+    "isFullscreen": false,
+    "loading": false,
+    "muted": false,
+    "originallyPaused": false,
+    "paused": true,
+    "rate": 1,
+    "resizeMode": "contain",
+    "scrubbing": false,
+    "seekerFillWidth": 149.73293679538784,
+    "seekerOffset": 149.73293679538784,
+    "seekerPosition": 149.73293679538784,
+    "seeking": false,
+    "showControls": true,
+    "showHours": false,
+    "showTimeRemaining": true,
+    "volume": 1,
+    "volumeFillWidth": 150,
+    "volumeOffset": 150,
+    "volumePosition": 150,
+    "volumeTrackWidth": 0
+  },
+  "styles": {
+    "containerStyle": {
+      "bottom": 0,
+      "left": 0,
+      "position": "absolute",
+      "right": 0,
+      "top": 0
     },
-    {
-      "fd": "/files/5a777477-feab-4d87-b9b0-6ec95a25f7ba.pdf",
-      "Key": "files/5a777477-feab-4d87-b9b0-6ec95a25f7ba.pdf",
-      "uid": "5a777477-feab-4d87-b9b0-6ec95a25f7ba.pdf",
-      "url": "/cloud/files/5a777477-feab-4d87-b9b0-6ec95a25f7ba.pdf",
-      "ETag": "\"52f885d02f9e88814799ec63bb2367bc-1\"",
-      "name": "2015 NOV I COMM LAW.pdf",
-      "size": 179898,
-      "Bucket": "manvideos",
-      "status": "done",
-      "FileName": "2015 NOV I COMM LAW.",
-      "Location": "https://manpubvideos.fra1.digitaloceanspaces.com/files%2F5a777477-feab-4d87-b9b0-6ec95a25f7ba.pdf",
-      "filename": "2015 NOV I COMM LAW.pdf",
-      "downloads": 0,
-      "uploaddate": 1572863309749
-    },
-    {
-      "fd": "/files/1f82b325-2798-4152-b108-e8406e13e956.pdf",
-      "Key": "files/1f82b325-2798-4152-b108-e8406e13e956.pdf",
-      "uid": "1f82b325-2798-4152-b108-e8406e13e956.pdf",
-      "url": "/cloud/files/1f82b325-2798-4152-b108-e8406e13e956.pdf",
-      "ETag": "\"a07697a52a862c5824bea5df170d2e9e-1\"",
-      "name": "2015 PILOT I COMM LAW.pdf",
-      "size": 194562,
-      "Bucket": "manvideos",
-      "status": "done",
-      "FileName": "2015 PILOT I COMM LAW.",
-      "Location": "https://manpubvideos.fra1.digitaloceanspaces.com/files%2F1f82b325-2798-4152-b108-e8406e13e956.pdf",
-      "filename": "2015 PILOT I COMM LAW.pdf",
-      "downloads": 0,
-      "uploaddate": 1572863318652
-    }
-  ],
-  "Status": "PUBLISHED",
-  "PackageName": "ATD 1 - INTRODUCTION TO LAW AND ETHICS ",
-  "PackageCode": "ATD1_ILE_Revision",
-  "PackageImage": {
-    "fd": "/images/69e68aab-9e5b-4cec-9448-a01830c7dfe9.jpg",
-    "Key": "images/69e68aab-9e5b-4cec-9448-a01830c7dfe9.jpg",
-    "uid": "69e68aab-9e5b-4cec-9448-a01830c7dfe9.jpg",
-    "url": "/cloud/images/69e68aab-9e5b-4cec-9448-a01830c7dfe9.jpg",
-    "name": "Timothy intro to law and Ethics.jpg",
-    "size": 157908,
-    "Bucket": "manpubvideos",
-    "status": "done",
-    "Location": "https://fra1.digitaloceanspaces.com/manpubvideos/images/69e68aab-9e5b-4cec-9448-a01830c7dfe9.jpg",
-    "filename": "Timothy intro to law and Ethics.jpg",
-    "uploaded": true,
-    "downloads": 0,
-    "uploaddate": 1636719355116
+    "videoStyle": "undefined"
+  },
+  "updater": {
+    "enqueueForceUpdate": "[Function enqueueForceUpdate]",
+    "enqueueReplaceState": "[Function enqueueReplaceState]",
+    "enqueueSetState": "[Function enqueueSetState]",
+    "isMounted": "[Function isMounted]"
   }
 }

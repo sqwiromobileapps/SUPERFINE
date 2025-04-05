@@ -15,6 +15,8 @@ module.exports = function extractLinkedPackages(repoDir) {
   // Map containing linked packages and their real paths
   const linkedPackages = {
     '@expocraft/core': '/Users/bernardgaitho/@cloudhub/@expocraft/core',
+    '@expocraft/react-native-media-console':
+      '/Users/bernardgaitho/@cloudhub/@expocraft/react-native-media-console',
     '@cloudhub-ux/graphql':
       '/Users/bernardgaitho/@cloudhub/@cloudhub-ux/cloudhub-ux-graphql',
     '@sqwiro/app': PATH.resolve(__dirname, '../@sqwiro/app'),
@@ -23,7 +25,7 @@ module.exports = function extractLinkedPackages(repoDir) {
 
   const sdkRootPackage = linkedPackages['@expocraft/core'];
   const graphqlRootPackage = linkedPackages['@cloudhub-ux/graphql'];
-  const appcorePackage = linkedPackages['@sqwiromobile/appcore'];
+  const appcorePackage = linkedPackages['@sqwiro/appcore'];
 
   if (!sdkRootPackage) {
     throw new Error('@expocraft/core is not linked!');

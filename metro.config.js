@@ -6,8 +6,6 @@ const path = require('path');
 
 const defaultConfig = getDefaultConfig(__dirname);
 
-global.__DEV__ = false;
-
 /* eslint-env node */
 if (process.env.NODE_ENV === 'development') {
   const PATH = require('path');

@@ -1,18 +1,20 @@
 {
-  "name": "JOHNMARK",
-  "platforms": ["ios", "android"],
+  "name": "JBIZ",
+  "platforms": [
+    "ios",
+    "android"
+  ],
   "icon": "./@sqwiro/app/assets/images/logoicon.png",
   "splash": {
     "image": "./@sqwiro/app/assets/images/splash.png",
     "resizeMode": "cover",
     "backgroundColor": "#FDE3D7"
   },
-
   "expo": {
-    "name": "JOHNMARK",
-    "slug": "JOHNMARK",
+    "name": "JBIZ",
+    "slug": "JBIZ",
     "packagerOpts": {
-      "host": "admin.localjohnmark.com"
+      "host": "admin.localjbiz.com"
     },
     "plugins": [
       [
@@ -21,11 +23,37 @@
           "icon": "./@sqwiro/app/assets/images/logoicon.png",
           "color": "#ffffff"
         }
+      ],
+      [
+        "expo-screen-orientation",
+        {
+          "initialOrientation": "DEFAULT"
+        }
+      ],
+      [
+        "expo-av",
+        {
+          "microphonePermission": "Allow JBIZ to access your microphone."
+        }
+      ],
+      [
+        "react-native-video",
+        {
+          "enableNotificationControls": true,
+          "androidExtensions": {
+            "useExoplayerIMA": true,
+            "useExoplayerRtsp": true,
+            "useExoplayerSmoothStreaming": true,
+            "useExoplayerHls": true,
+            "useExoplayerDash": true,
+            "extensionRendererMode": "prefer"
+          }
+        }
       ]
     ],
     "android": {
       "icon": "./@sqwiro/app/assets/images/logoicon.png",
-      "package": "com.johnmark.cloud",
+      "package": "com.jbiz.cloud",
       "adaptiveIcon": {
         "backgroundColor": "#FDE3D7"
       },
@@ -33,11 +61,21 @@
         "image": "./@sqwiro/app/assets/images/splash.png",
         "resizeMode": "cover",
         "backgroundColor": "#FDE3D7"
-      }
+      },
+      "permissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.MODIFY_AUDIO_SETTINGS",
+        "android.permission.FOREGROUND_SERVICE",
+        "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.MODIFY_AUDIO_SETTINGS",
+        "android.permission.FOREGROUND_SERVICE",
+        "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK"
+      ]
     },
     "ios": {
       "icon": "./@sqwiro/app/assets/images/logoicon.png",
-      "bundleIdentifier": "com.johnmark.cloud",
+      "bundleIdentifier": "com.jbiz.cloud",
       "infoPlist": {
         "NSCameraUsageDescription": "This app uses the camera and image gallery to update profile images and upload documents/images.",
         "NSMicrophoneUsageDescription": "This app uses the audio device to record short vides that can be uploaded to profiles for describing certain questions",
@@ -60,13 +98,16 @@
     },
     "runtimeVersion": "1.0.0",
     "extra": {
-      "eas": {}
+      "eas": {
+        "projectId": "68842264-f287-4db3-bfab-c2b028efc478"
+      }
     },
     "updates": {
       "requestHeaders": {
         "expo-runtime-version": "1.0.0",
         "expo-channel-name": "sdk51"
-      }
+      },
+      "url": "https://u.expo.dev/68842264-f287-4db3-bfab-c2b028efc478"
     }
   }
 }

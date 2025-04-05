@@ -161,17 +161,17 @@ PODS:
   - hermes-engine (0.74.5):
     - hermes-engine/Pre-built (= 0.74.5)
   - hermes-engine/Pre-built (0.74.5)
-  - libwebp (1.3.2):
-    - libwebp/demux (= 1.3.2)
-    - libwebp/mux (= 1.3.2)
-    - libwebp/sharpyuv (= 1.3.2)
-    - libwebp/webp (= 1.3.2)
-  - libwebp/demux (1.3.2):
+  - libwebp (1.5.0):
+    - libwebp/demux (= 1.5.0)
+    - libwebp/mux (= 1.5.0)
+    - libwebp/sharpyuv (= 1.5.0)
+    - libwebp/webp (= 1.5.0)
+  - libwebp/demux (1.5.0):
     - libwebp/webp
-  - libwebp/mux (1.3.2):
+  - libwebp/mux (1.5.0):
     - libwebp/demux
-  - libwebp/sharpyuv (1.3.2)
-  - libwebp/webp (1.3.2):
+  - libwebp/sharpyuv (1.5.0)
+  - libwebp/webp (1.5.0):
     - libwebp/sharpyuv
   - RCT-Folly (2024.01.01.00):
     - boost
@@ -195,7 +195,7 @@ PODS:
     - FBLazyVector (= 0.74.5)
     - RCTRequired (= 0.74.5)
     - React-Core (= 0.74.5)
-  - ReachabilitySwift (5.2.3)
+  - ReachabilitySwift (5.2.4)
   - React (0.74.5):
     - React-Core (= 0.74.5)
     - React-Core/DevSupport (= 0.74.5)
@@ -1108,14 +1108,78 @@ PODS:
     - React-Core
   - react-native-encrypted-storage (4.0.3):
     - React-Core
-  - react-native-maps (1.20.1):
+  - react-native-maps (1.14.0):
     - React-Core
   - react-native-netinfo (11.3.1):
     - React-Core
-  - react-native-pdf (6.7.7):
+  - react-native-pdf (6.4.0):
     - React-Core
   - react-native-safe-area-context (4.10.5):
     - React-Core
+  - react-native-slider (4.5.6):
+    - DoubleConversion
+    - glog
+    - hermes-engine
+    - RCT-Folly (= 2024.01.01.00)
+    - RCTRequired
+    - RCTTypeSafety
+    - React-Codegen
+    - React-Core
+    - React-debug
+    - React-Fabric
+    - React-featureflags
+    - React-graphics
+    - React-ImageManager
+    - React-NativeModulesApple
+    - React-RCTFabric
+    - React-rendererdebug
+    - React-utils
+    - ReactCommon/turbomodule/bridging
+    - ReactCommon/turbomodule/core
+    - Yoga
+  - react-native-video (6.11.0):
+    - DoubleConversion
+    - glog
+    - hermes-engine
+    - RCT-Folly (= 2024.01.01.00)
+    - RCTRequired
+    - RCTTypeSafety
+    - React-Codegen
+    - React-Core
+    - React-debug
+    - React-Fabric
+    - React-featureflags
+    - React-graphics
+    - React-ImageManager
+    - react-native-video/Video (= 6.11.0)
+    - React-NativeModulesApple
+    - React-RCTFabric
+    - React-rendererdebug
+    - React-utils
+    - ReactCommon/turbomodule/bridging
+    - ReactCommon/turbomodule/core
+    - Yoga
+  - react-native-video/Video (6.11.0):
+    - DoubleConversion
+    - glog
+    - hermes-engine
+    - RCT-Folly (= 2024.01.01.00)
+    - RCTRequired
+    - RCTTypeSafety
+    - React-Codegen
+    - React-Core
+    - React-debug
+    - React-Fabric
+    - React-featureflags
+    - React-graphics
+    - React-ImageManager
+    - React-NativeModulesApple
+    - React-RCTFabric
+    - React-rendererdebug
+    - React-utils
+    - ReactCommon/turbomodule/bridging
+    - ReactCommon/turbomodule/core
+    - Yoga
   - React-nativeconfig (0.74.5)
   - React-NativeModulesApple (0.74.5):
     - glog
@@ -1512,6 +1576,8 @@ DEPENDENCIES:
   - "react-native-netinfo (from `../node_modules/@react-native-community/netinfo`)"
   - react-native-pdf (from `../node_modules/react-native-pdf`)
   - react-native-safe-area-context (from `../node_modules/react-native-safe-area-context`)
+  - "react-native-slider (from `../node_modules/@react-native-community/slider`)"
+  - react-native-video (from `../node_modules/react-native-video`)
   - React-nativeconfig (from `../node_modules/react-native/ReactCommon`)
   - React-NativeModulesApple (from `../node_modules/react-native/ReactCommon/react/nativemodule/core/platform/ios`)
   - React-perflogger (from `../node_modules/react-native/ReactCommon/reactperflogger`)
@@ -1692,6 +1758,10 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native-pdf"
   react-native-safe-area-context:
     :path: "../node_modules/react-native-safe-area-context"
+  react-native-slider:
+    :path: "../node_modules/@react-native-community/slider"
+  react-native-video:
+    :path: "../node_modules/react-native-video"
   React-nativeconfig:
     :path: "../node_modules/react-native/ReactCommon"
   React-NativeModulesApple:
@@ -1799,12 +1869,12 @@ SPEC CHECKSUMS:
   fmt: 4c2741a687cc09f0634a2e2c72a838b99f1ff120
   glog: fdfdfe5479092de0c4bdbebedd9056951f092c4f
   hermes-engine: 8c1577f3fdb849cbe7729c2e7b5abc4b845e88f8
-  libwebp: 1786c9f4ff8a279e4dac1e8f385004d5fc253009
+  libwebp: 02b23773aedb6ff1fd38cec7a77b81414c6842a8
   RCT-Folly: 5dc73daec3476616d19e8a53f0156176f7b55461
   RCTDeprecation: 3afceddffa65aee666dafd6f0116f1d975db1584
   RCTRequired: ec1239bc9d8bf63e10fb92bd8b26171a9258e0c1
   RCTTypeSafety: f5ecbc86c5c5fa163c05acb7a1c5012e15b5f994
-  ReachabilitySwift: 7f151ff156cea1481a8411701195ac6a984f4979
+  ReachabilitySwift: 32793e867593cfc1177f5d16491e3a197d2fccda
   React: fc9fa7258eff606f44d58c5b233a82dc9cf09018
   React-callinvoker: e3fab14d69607fb7e8e3a57e5a415aed863d3599
   React-Codegen: 3963186cb6a4ef21b5e67dcf7badf359867ff6df
@@ -1828,10 +1898,12 @@ SPEC CHECKSUMS:
   react-native-blob-util: 180114eb5861c28b79dab6c918b4849404bdf644
   react-native-cs50-fingerprints: 841f15fbacfa8cda7b7c1052c9409daf1a24fa0c
   react-native-encrypted-storage: 569d114e329b1c2c2d9f8c84bcdbe4478dda2258
-  react-native-maps: 9febd31278b35cd21e4fad2cf6fa708993be5dab
+  react-native-maps: deb2adbdf309b622f15055b72b8742054929c740
   react-native-netinfo: 2e3c27627db7d49ba412bfab25834e679db41e21
-  react-native-pdf: 6a51a22ccefb23eb93298771e4bf090913e86d70
+  react-native-pdf: a56341efc56a1c258f8f6f76e91b5271c74fb27d
   react-native-safe-area-context: df9763c5de6fa38883028e243a0b60123acb8858
+  react-native-slider: bcfc4f2683c072497b157a3c3f00e514a05feec5
+  react-native-video: ff548c5c6b8b47a098d69eccdc9663a319cd029a
   React-nativeconfig: ba9a2e54e2f0882cf7882698825052793ed4c851
   React-NativeModulesApple: 84aaad2b0e546d7b839837ca537f6e72804a4cad
   React-perflogger: ed4e0c65781521e0424f2e5e40b40cc7879d737e
@@ -1873,6 +1945,6 @@ SPEC CHECKSUMS:
   Yoga: 950bbfd7e6f04790fdb51149ed51df41f329fcc8
   ZXingObjC: 8898711ab495761b2dbbdec76d90164a6d7e14c5
 
-PODFILE CHECKSUM: ee8cfc94298a8d38070dda6b5283a34ab907d85c
+PODFILE CHECKSUM: 516d5e9de6ac2574ade81b9e9646ae7346530bfe
 
 COCOAPODS: 1.16.2

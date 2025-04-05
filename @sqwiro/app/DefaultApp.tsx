@@ -1,6 +1,7 @@
 import React from 'react';
-import EmasomoUserApp from '@sqwiro/userapps/emasomo/EmasomoUserApp';
+
 import useMerchantAppNavigation from '@sqwiro/appcore/context/useMerchantAppNavigation';
+import PhoneScreen from '@sqwiro/appcore/auth/PhoneScreen';
 
 function DefaultApp({ navigation }) {
   const { dispatch } = useMerchantAppNavigation();
@@ -14,7 +15,7 @@ function DefaultApp({ navigation }) {
     }));
   }, []);
 
-  return <EmasomoUserApp />;
+  return <PhoneScreen navigation={navigation} />;
 }
 
 export default DefaultApp;

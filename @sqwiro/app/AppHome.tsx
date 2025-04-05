@@ -4,7 +4,7 @@ import PreloadApp from '@sqwiro/appcore/context/PreloadApp';
 import RootDrawerNavigator from '@sqwiro/appcore/navigation/RootDrawerNavigator';
 import getConfig from './config/getConfig';
 
-const AppHome = ({ children }) => {
+const AppHome = () => {
   return (
     <PreloadApp
       MerchantCode={getConfig().MerchantCode}
