@@ -11,6 +11,10 @@ try {
   if (sqwiroConfig.postinstall) {
     await sqwiroConfig.postinstall();
 
-    await sqwiroConfig.updateAndroidFiles();
+    await sqwiroConfig.updateAndroidFiles({
+      appName: 'SUPERFINE',
+      VersionCode: 21,
+      PreviosVersions: [1, 21],
+    });
   }
 })();

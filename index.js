@@ -4,7 +4,7 @@ import { Text, TextInput } from 'react-native';
 import { registerRootComponent } from 'expo';
 import './globalFunctions';
 
-import App from './App';
+import App from '@sqwiro/appcore/App';
 
 Text.defaultProps = Text.defaultProps || {};
 Text.defaultProps.allowFontScaling = false;

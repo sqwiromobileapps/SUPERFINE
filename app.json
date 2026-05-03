@@ -1,26 +1,33 @@
 {
-  "name": "JBIZ",
-  "platforms": [
-    "ios",
-    "android"
-  ],
-  "icon": "./@sqwiro/app/assets/images/logoicon.png",
+  "name": "SUPERFINE",
+  "platforms": ["ios", "android"],
+  "icon": "./src/@sqwiro/app/assets/images/logoicon.png",
   "splash": {
-    "image": "./@sqwiro/app/assets/images/splash.png",
+    "image": "./src/@sqwiro/app/assets/images/splash.png",
     "resizeMode": "cover",
     "backgroundColor": "#FDE3D7"
   },
   "expo": {
-    "name": "JBIZ",
-    "slug": "JBIZ",
+    "name": "SUPERFINE",
+    "slug": "SUPERFINE",
     "packagerOpts": {
-      "host": "admin.localjbiz.com"
+      "host": "admin.localsuperfine.com"
     },
     "plugins": [
       [
+        "expo-build-properties",
+        {
+          "android": {
+            "compileSdkVersion": 35,
+            "targetSdkVersion": 35,
+            "buildToolsVersion": "35.0.0"
+          }
+        }
+      ],
+      [
         "expo-notifications",
         {
-          "icon": "./@sqwiro/app/assets/images/logoicon.png",
+          "icon": "./src/@sqwiro/app/assets/images/logoicon.png",
           "color": "#ffffff"
         }
       ],
@@ -33,7 +40,7 @@
       [
         "expo-av",
         {
-          "microphonePermission": "Allow JBIZ to access your microphone."
+          "microphonePermission": "Allow superfine to access your microphone."
         }
       ],
       [
@@ -52,13 +59,13 @@
       ]
     ],
     "android": {
-      "icon": "./@sqwiro/app/assets/images/logoicon.png",
-      "package": "com.jbiz.cloud",
+      "icon": "./src/@sqwiro/app/assets/images/logoicon.png",
+      "package": "com.superfineafrica.cloud",
       "adaptiveIcon": {
         "backgroundColor": "#FDE3D7"
       },
       "splash": {
-        "image": "./@sqwiro/app/assets/images/splash.png",
+        "image": "./src/@sqwiro/app/assets/images/splash.png",
         "resizeMode": "cover",
         "backgroundColor": "#FDE3D7"
       },
@@ -74,8 +81,8 @@
       ]
     },
     "ios": {
-      "icon": "./@sqwiro/app/assets/images/logoicon.png",
-      "bundleIdentifier": "com.jbiz.cloud",
+      "icon": "./src/@sqwiro/app/assets/images/logoicon.png",
+      "bundleIdentifier": "com.superfineafrica.cloud",
       "infoPlist": {
         "NSCameraUsageDescription": "This app uses the camera and image gallery to update profile images and upload documents/images.",
         "NSMicrophoneUsageDescription": "This app uses the audio device to record short vides that can be uploaded to profiles for describing certain questions",
@@ -88,7 +95,7 @@
         "NSPrivacyAccessedAPICategoryDiskSpace": "The app uses the file system to store user data and images. Disk information may be required to show user how much space is available"
       },
       "splash": {
-        "image": "./@sqwiro/app/assets/images/splash.png",
+        "image": "./src/@sqwiro/app/assets/images/splash.png",
         "resizeMode": "cover",
         "backgroundColor": "#FDE3D7"
       }
@@ -99,7 +106,7 @@
     "runtimeVersion": "1.0.0",
     "extra": {
       "eas": {
-        "projectId": "68842264-f287-4db3-bfab-c2b028efc478"
+        "projectId": "171184dd-6b7e-40b9-b32e-6542aa76a74d"
       }
     },
     "updates": {
@@ -107,7 +114,7 @@
         "expo-runtime-version": "1.0.0",
         "expo-channel-name": "sdk51"
       },
-      "url": "https://u.expo.dev/68842264-f287-4db3-bfab-c2b028efc478"
+      "url": "https://u.expo.dev/171184dd-6b7e-40b9-b32e-6542aa76a74d"
     }
   }
 }

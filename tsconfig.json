@@ -1,18 +1,18 @@
 {
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
-    "jsx": "react",
+    "jsx": "react-jsx",
     "importHelpers": true,
     "allowJs": true,
     "checkJs": false,
-    "module": "es2015",
+    "module": "ES2020",
     "moduleResolution": "node",
     "typeRoots": [
       "typings",
       "node_modules/@types",
       "node_modules/@expocraft-icons"
     ],
-    "baseUrl": "./",
+    "baseUrl": "./src",
     "lib": ["es2017"],
     "paths": {
       "react": ["./node_modules/@types/react"],
@@ -20,10 +20,33 @@
       "@expocraft/core": ["/Users/bernardgaitho/@cloudhub/@expocraft/core"],
       "@sqwiro/app": ["./@sqwiro/app"],
       "@sqwiro/appcore": ["./@sqwiro/appcore"],
+      "@sqwiro/customapps": ["./@sqwiro/customapps"],
+      "@sqwiro/businessapps": ["./@sqwiro/businessapps"],
       "@sqwiro/userapps": ["./@sqwiro/userapps"],
-      "@sqwiro/customapps": ["./@sqwiro/customapps"]
-    }
+      "@sqwiro/customuserapps": ["./@sqwiro/customuserapps"]
+    },
+    "skipLibCheck": true,
+    "strict": false,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "preserveSymlinks": false,
+    "isolatedModules": true,
+    "incremental": true
   },
-  "include": ["**/*", "nativewind-env.d.ts"],
-  "exclude": ["node_modules", "src/**/*.spec.ts"]
+  "include": ["./src/**/*", "nativewind-env.d.ts"],
+  "exclude": [
+    "node_modules",
+    "src/**/*.spec.ts",
+    "node_modules",
+    "dist",
+    "build",
+    ".next",
+    "**/*.spec.ts",
+    "**/*.test.ts",
+    "**/node_modules/**",
+    "**/dist/**",
+    "src/**/*.json",
+    "src/libraries/cloudhub-ux/mockdata/**/*.json"
+  ]
 }

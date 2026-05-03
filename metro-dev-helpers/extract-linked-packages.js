@@ -18,8 +18,8 @@ module.exports = function extractLinkedPackages(repoDir) {
     '@expocraft/react-native-media-console':
       '/Users/bernardgaitho/@cloudhub/@expocraft/react-native-media-console',
     '@cloudhub-ux/graphql':
-      '/Users/bernardgaitho/@cloudhub/@cloudhub-ux/cloudhub-ux-graphql',
-    '@sqwiro/app': PATH.resolve(__dirname, '../@sqwiro/app'),
+      '/Users/bernardgaitho/@cloudhub/@cloudhub-ux/graphql',
+    '@sqwiro/app': PATH.resolve(__dirname, '../src/@sqwiro/app'),
     ...appMapping,
   };
 

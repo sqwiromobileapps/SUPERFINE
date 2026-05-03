@@ -26,13 +26,13 @@ function writeToFile(filePath, content) {
 
 const sqwiroConfigFile = path.join(
   __dirname,
-  './@sqwiro/app/config/config.json'
+  './src/@sqwiro/app/config/config.json'
 );
 
 let config = {};
 
 try {
-  config = require('./@sqwiro/app/config/config.json');
+  config = require('./src/@sqwiro/app/config/config.json');
 } catch (error) {
   console.log('Error loading config.json', error);
 }
