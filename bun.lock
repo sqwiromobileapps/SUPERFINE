@@ -33,41 +33,41 @@
         "@sqwiromobileagribusinessapps/farmbridge": "latest",
         "@sqwiromobileagribusinessapps/macspro": "latest",
         "@sqwiromobileagribusinessapps/seedlink": "latest",
+        "@sqwiromobileagribusinessapps/smartfarmer": "^0.0.3",
         "@sqwiromobileapiapps/appsroot": "^0.0.2",
         "@sqwiromobileapiapps/mpesapro": "^0.0.3",
         "@sqwiromobilebusinessapps/appsroot": "^0.0.2",
-        "@sqwiromobilebusinessapps/cartify": "^0.0.2",
         "@sqwiromobilebusinessapps/finance": "^0.0.4",
-        "@sqwiromobilebusinessapps/fleetmanager": "^0.0.4",
-        "@sqwiromobilebusinessapps/hr": "^0.0.4",
         "@sqwiromobilebusinessapps/makerchecker": "^0.0.4",
         "@sqwiromobilebusinessapps/masterdata": "^0.0.4",
         "@sqwiromobilebusinessapps/mediamanager": "^0.0.2",
         "@sqwiromobilebusinessapps/procurement": "^0.0.4",
         "@sqwiromobilebusinessapps/retail": "^0.0.4",
         "@sqwiromobilebusinessapps/sales": "^0.0.4",
-        "@sqwiromobilebusinessapps/system": "^0.0.6",
+        "@sqwiromobilebusinessapps/smartapprover": "^0.0.3",
+        "@sqwiromobilebusinessapps/smartvendoraccount": "^0.0.3",
         "@sqwiromobilecmsapps/website": "^0.0.4",
         "@sqwiromobilecustomapps/appsroot": "^0.0.2",
         "@sqwiromobilecustomapps/cs50": "^0.0.2",
+        "@sqwiromobilecustomercareapps/smartcustomerhelp": "^0.0.3",
+        "@sqwiromobilecustomercareapps/smartsqwirosupport": "^0.0.2",
+        "@sqwiromobileecommerceapps/cartify": "^0.0.2",
+        "@sqwiromobileecommerceapps/smartshoppingcart": "^0.0.3",
+        "@sqwiromobileecommerceapps/smartsqwiropay": "^0.0.3",
         "@sqwiromobilefintechapps/agencypro": "^0.0.2",
         "@sqwiromobilefintechapps/ppcore": "^0.0.3",
         "@sqwiromobilefintechapps/ppwallet": "latest",
+        "@sqwiromobilefintechapps/smartpesapurse": "^0.0.5",
+        "@sqwiromobilehrapps/hr": "^0.0.2",
+        "@sqwiromobilehrapps/smartstaff": "^0.0.3",
         "@sqwiromobilesaccoapps/saccomis": "^0.0.4",
+        "@sqwiromobilesaccoapps/smartsaccowallet": "^0.0.2",
+        "@sqwiromobilesaccoapps/smartvumaenterprisewallet": "^0.0.3",
         "@sqwiromobilesuperadminapps/appsroot": "^0.0.2",
+        "@sqwiromobilesystemapps/system": "^0.0.3",
+        "@sqwiromobiletransportapps/fleetmanager": "^0.0.2",
+        "@sqwiromobiletransportapps/smartdriver": "^0.0.3",
         "@sqwiromobileuserapps/appsroot": "^0.0.2",
-        "@sqwiromobileuserapps/enterprisewallet": "^0.0.3",
-        "@sqwiromobileuserapps/saccowallet": "^0.0.2",
-        "@sqwiromobileuserapps/shoppingcart": "^0.0.3",
-        "@sqwiromobileuserapps/smartapprover": "^0.0.3",
-        "@sqwiromobileuserapps/smartdriver": "^0.0.3",
-        "@sqwiromobileuserapps/smartfarmer": "^0.0.3",
-        "@sqwiromobileuserapps/smartpesapurse": "^0.0.5",
-        "@sqwiromobileuserapps/smartsqwirosupport": "^0.0.2",
-        "@sqwiromobileuserapps/smartstaff": "^0.0.3",
-        "@sqwiromobileuserapps/smartsupport": "^0.0.3",
-        "@sqwiromobileuserapps/smartvendoraccount": "^0.0.3",
-        "@sqwiromobileuserapps/sqwiropay": "^0.0.3",
         "@sqwiroweb/appgroups": "^0.0.40",
         "axios": "^0.21.1",
         "babel-plugin-import": "^1.13.6",
@@ -667,19 +667,15 @@
 
     "@sqwiromobileagribusinessapps/seedlink": ["@sqwiromobileagribusinessapps/seedlink@0.0.4", "https://npm.pkg.github.com/download/@sqwiromobileagribusinessapps/seedlink/0.0.4/8adb96e07c13d06fb8bf53a182183ab467cc6272", {}, "sha512-P2I/QUq4SdToOKolB+8RoVPswnxRMIlmuGC8Oa8Rqhs3dHJIww5eizdY7Oeu2/IPvEdpl+EZeRTNTBvqlH+iGw=="],
 
+    "@sqwiromobileagribusinessapps/smartfarmer": ["@sqwiromobileagribusinessapps/smartfarmer@0.0.3", "https://npm.pkg.github.com/download/@sqwiromobileagribusinessapps/smartfarmer/0.0.3/9a43c267d13331ff84044f1fbfe25810652710d4", {}, "sha512-2BC3tUnygiIiO/npssGGaZkDOV5PRJ+PQtiDOlJIZ5Dag4Uqfs4oEYX3u4u6wJ9mvo5J2QERo39U8SwdT8LPGA=="],
+
     "@sqwiromobileapiapps/appsroot": ["@sqwiromobileapiapps/appsroot@0.0.2", "https://npm.pkg.github.com/download/@sqwiromobileapiapps/appsroot/0.0.2/6e61a5ea7ec1dea042cfc0d76cadda24c9be25cf", {}, "sha512-pt5qhf1ObyJMjDr79ywxSoHJ7CFNB10S6lH5378XMtGbnqJDUv8CIfnC2a8IFA4bvnbOQA4R4rDQfQoMHMWF6w=="],
 
     "@sqwiromobileapiapps/mpesapro": ["@sqwiromobileapiapps/mpesapro@0.0.3", "https://npm.pkg.github.com/download/@sqwiromobileapiapps/mpesapro/0.0.3/b2367fffa2e7066b9ab686bac20ddc4a01033b1b", {}, "sha512-DgtnezG2ec65wxusF1YlQzdNr1pPdYXFJehJFItmPVhUCPLJBbJiX5r1FutABxK649+sC6XNO/YAXcrPtBJ6Yw=="],
 
     "@sqwiromobilebusinessapps/appsroot": ["@sqwiromobilebusinessapps/appsroot@0.0.2", "https://npm.pkg.github.com/download/@sqwiromobilebusinessapps/appsroot/0.0.2/7012691d206008b1c8d3dc7e5bc49773a00487d5", {}, "sha512-VUxZmo6+Es30rUykqaMZ9EzjzV/6oxEjnBItNOjaa9j7FBZFW0/y9vNuDA/pI31EtmN01dS1PL8qhGJ9IhiziQ=="],
 
-    "@sqwiromobilebusinessapps/cartify": ["@sqwiromobilebusinessapps/cartify@0.0.2", "https://npm.pkg.github.com/download/@sqwiromobilebusinessapps/cartify/0.0.2/b2ab4f6f54f08d03297a1b689b29de309e849976", {}, "sha512-VUhLcT05ZZlF40I0ORdwT02UqYsNDtwuxZIh+cnGrfqvF/nimSPktbLs9FukfTLv6n4syXVehDAJlxVhO11v2Q=="],
-
     "@sqwiromobilebusinessapps/finance": ["@sqwiromobilebusinessapps/finance@0.0.4", "https://npm.pkg.github.com/download/@sqwiromobilebusinessapps/finance/0.0.4/efd6f3688496cdd8963d28fea57123e28c450076", {}, "sha512-y1Vqns/SCs8dZkB7ozxzPSq+3TgxvUmnpKaLdB9FPHiSnElER4s781zMPWipj3LCmTJKJ4rNbvs2qnLnBT6g0g=="],
-
-    "@sqwiromobilebusinessapps/fleetmanager": ["@sqwiromobilebusinessapps/fleetmanager@0.0.4", "https://npm.pkg.github.com/download/@sqwiromobilebusinessapps/fleetmanager/0.0.4/c281a4e691ce4556366aa64a46769763d8ce2f4e", {}, "sha512-ZC8iWW04UN6Fj4kkyz4qDNJ3M1qHN8byP7bkkfJsKJVmKBe67JibLu6jpQictrWgt/I2YaxKm5a/aZZavd0Qag=="],
-
-    "@sqwiromobilebusinessapps/hr": ["@sqwiromobilebusinessapps/hr@0.0.4", "https://npm.pkg.github.com/download/@sqwiromobilebusinessapps/hr/0.0.4/dd16b2ce1872c61db7ecfe8d98fc83bd290811c0", {}, "sha512-xqwzVgmQVQl4mVMpG+pyMBJ9uIsCK2eQbFYveWdiSvYpwGyvMb0cA2PzxaXsj2VQm/r0sz3SM+QxQIQwr2a0Kw=="],
 
     "@sqwiromobilebusinessapps/makerchecker": ["@sqwiromobilebusinessapps/makerchecker@0.0.4", "https://npm.pkg.github.com/download/@sqwiromobilebusinessapps/makerchecker/0.0.4/c17d2040d832789a7e559247acd19988876c10d0", {}, "sha512-Yjr/QbqDcoDSXQ1CraHhm7w2LSUDPjhRhGJFUWvgR6rrYZQwmOE10fPdjR47mWvH5igc8+/8tkgth0HIV+SJdQ=="],
 
@@ -693,7 +689,9 @@
 
     "@sqwiromobilebusinessapps/sales": ["@sqwiromobilebusinessapps/sales@0.0.4", "https://npm.pkg.github.com/download/@sqwiromobilebusinessapps/sales/0.0.4/5a0167eeda3e94fd72edb50a68e06e6f01816be5", {}, "sha512-FMbuwtQpQJdkxw5A1s37ekF2p9Kffji//M8qW/7FQbhmQe94O+NjTJP3/ZOHkxGvVBe4CkzygpnzYJosEDqQlA=="],
 
-    "@sqwiromobilebusinessapps/system": ["@sqwiromobilebusinessapps/system@0.0.6", "https://npm.pkg.github.com/download/@sqwiromobilebusinessapps/system/0.0.6/2353cce58d776774886d507fcd93cd547e362df0", {}, "sha512-KwD/0qUXehu8o7D7p8oAwQiweemZkWjjlUOoxCG+ghFtM94NsxLmUKqaMEhqxOwqpUUkhvNA90/5QvKE6Rv0HA=="],
+    "@sqwiromobilebusinessapps/smartapprover": ["@sqwiromobilebusinessapps/smartapprover@0.0.3", "https://npm.pkg.github.com/download/@sqwiromobilebusinessapps/smartapprover/0.0.3/8675ba427dc2b5d0070776c6d504621e28df8c58", {}, "sha512-uRetkoXErzXBP1c5OW1WH6i06VjwnqedsoyhvzcEAVORnYa/BUgFG3iyRnEzZH+RXdetmZnclCTeR3ks58uwNQ=="],
+
+    "@sqwiromobilebusinessapps/smartvendoraccount": ["@sqwiromobilebusinessapps/smartvendoraccount@0.0.3", "https://npm.pkg.github.com/download/@sqwiromobilebusinessapps/smartvendoraccount/0.0.3/009f4db1e5a77693c806de913c64ac27e744998f", {}, "sha512-yY1RhHnQRsnfyJSFTsYiPaTujrYk0k1DdNyjUqjyxpyQndBIN029YgIqnhDBqoS1osx4QKxoaGrCMelNtFwx4w=="],
 
     "@sqwiromobilecmsapps/website": ["@sqwiromobilecmsapps/website@0.0.4", "https://npm.pkg.github.com/download/@sqwiromobilecmsapps/website/0.0.4/d5821dd535512ad7429175541ec6bd8dfc77c451", {}, "sha512-NRffIFEO4huhKFuBQu+sAEVMi28BJdtBMbvKPg7JmIflwAuxdRMFoBoJOsgYu0rilCFmoUGaad2sI+lhgAlNxQ=="],
 
@@ -701,41 +699,43 @@
 
     "@sqwiromobilecustomapps/cs50": ["@sqwiromobilecustomapps/cs50@0.0.2", "https://npm.pkg.github.com/download/@sqwiromobilecustomapps/cs50/0.0.2/57274615ed4035a52098206b0c8e3d91be7bdf2e", {}, "sha512-zN0w5ra5+vRTtE8a1w2qUolKsu96/kpfqmOuxv2tdy1XiWaFzTduzJQ+Ua/Ww6DgWltOs4eUfxUf+UPoFI7NoA=="],
 
+    "@sqwiromobilecustomercareapps/smartcustomerhelp": ["@sqwiromobilecustomercareapps/smartcustomerhelp@0.0.3", "https://npm.pkg.github.com/download/@sqwiromobilecustomercareapps/smartcustomerhelp/0.0.3/885eff3457b8b1cbd20aee2fecdf126df74e5375", {}, "sha512-gOxyJPXxur9aI7rQz3+08eiDwhVNQPOkQmSOyLSeEftDJ7V6NFnWT8ifn95jeb8v2UKeZqO2Mm8eSenfzkXprQ=="],
+
+    "@sqwiromobilecustomercareapps/smartsqwirosupport": ["@sqwiromobilecustomercareapps/smartsqwirosupport@0.0.2", "https://npm.pkg.github.com/download/@sqwiromobilecustomercareapps/smartsqwirosupport/0.0.2/a2bee06d625c8290077103f9106d4a41cee140b4", {}, "sha512-0sUYlqtImT8SperATTjqVoKC6L4le4x9qmThUm/sscaoCUegPZWIGG/bM30atlLW/yzCtw6fWbOejHZnd9jrJw=="],
+
+    "@sqwiromobileecommerceapps/cartify": ["@sqwiromobileecommerceapps/cartify@0.0.2", "https://npm.pkg.github.com/download/@sqwiromobileecommerceapps/cartify/0.0.2/59e86b157ad5b371e90e5c5b2c2be62317d59f2d", {}, "sha512-2qQpZD4YQNGj/7+jf5qkP66mEuwD34yMtXsiqhZUKmCt+z2e5jx83CPPlj6/mcbA5lWPz93Jq0qtjsS3U4xMzw=="],
+
+    "@sqwiromobileecommerceapps/smartshoppingcart": ["@sqwiromobileecommerceapps/smartshoppingcart@0.0.3", "https://npm.pkg.github.com/download/@sqwiromobileecommerceapps/smartshoppingcart/0.0.3/ce546b6aee42c191b80794513f6b95a6db5a8850", {}, "sha512-owYZhveubfn5wnh+DBpvjz3gFZhOM3w6JutCRmPqwhBs62ltREHQTmpWJXCCZGViLrTZpifAJmZe0/g5zRPpBg=="],
+
+    "@sqwiromobileecommerceapps/smartsqwiropay": ["@sqwiromobileecommerceapps/smartsqwiropay@0.0.3", "https://npm.pkg.github.com/download/@sqwiromobileecommerceapps/smartsqwiropay/0.0.3/e772562d7093f37ea66b146fbae1909df472f487", {}, "sha512-7kiAFJs4pOe9G/jGOrbUH+TUVylxHmhbFv7iiHZC8kOIVCMj/1PBkgpFEDk2fMcufRhuJ6IFrbysjQ6ICIALwQ=="],
+
     "@sqwiromobilefintechapps/agencypro": ["@sqwiromobilefintechapps/agencypro@0.0.2", "https://npm.pkg.github.com/download/@sqwiromobilefintechapps/agencypro/0.0.2/ada0b00de7860413f01580c0dbe8bd95b38c6565", {}, "sha512-Dqcb5q0XE/nWcvCA/0KrX9S0zx1CDDwgruodelak6e7pDEoIAxyzBAbcYunCx0ooQq5j30b8wHxp835sLZqbEA=="],
 
     "@sqwiromobilefintechapps/ppcore": ["@sqwiromobilefintechapps/ppcore@0.0.3", "https://npm.pkg.github.com/download/@sqwiromobilefintechapps/ppcore/0.0.3/fccf799b06e7a45baa0a37be6347bab2c4eac9c4", {}, "sha512-RfFFiBbK/rGzc+CB62+2jqL0HvpPJAahPA1zUoKApRjyzRg0MA/kF8S8TYjUAfcpHW5kGoHdYxxP2PhtEkMxGQ=="],
 
     "@sqwiromobilefintechapps/ppwallet": ["@sqwiromobilefintechapps/ppwallet@0.0.3", "https://npm.pkg.github.com/download/@sqwiromobilefintechapps/ppwallet/0.0.3/3e8fcc749e4aa7d652e20928c272d06af11b9a05", {}, "sha512-qLT10zX3fVKQ2VrO+s8hTdkI5m0PuG/iF57bantqUBNDd0t/kJxDeGON9/1XevIbj91lOdYyLh1iBMVOE5SU2g=="],
 
+    "@sqwiromobilefintechapps/smartpesapurse": ["@sqwiromobilefintechapps/smartpesapurse@0.0.5", "https://npm.pkg.github.com/download/@sqwiromobilefintechapps/smartpesapurse/0.0.5/5f67fffa7c0f2ad8d403584c4a81a9675fd15ea9", {}, "sha512-o/EYksn23bcUj6ZsmqNK1DaUcQsBuqVIqvuTM7bzUyMK8R0fqrzonda8kVfUp+AC6Hrirtj06DsPyTxEnCxERQ=="],
+
+    "@sqwiromobilehrapps/hr": ["@sqwiromobilehrapps/hr@0.0.2", "https://npm.pkg.github.com/download/@sqwiromobilehrapps/hr/0.0.2/f78529a207b9fd3c79e3e8a4c8b565584eea7e9b", {}, "sha512-c/pBRVlhaGNIhxbQXV6HgxQJkQMl9seuva6w/MGsUhKmQJCpwA0XvJewIN0OTR8EJblKR0t2ODJ5+1QHE7C+gA=="],
+
+    "@sqwiromobilehrapps/smartstaff": ["@sqwiromobilehrapps/smartstaff@0.0.3", "https://npm.pkg.github.com/download/@sqwiromobilehrapps/smartstaff/0.0.3/d50afda9234607a07d509ca14b2ba81a120e4092", {}, "sha512-tM4IvFhTQgaCtN5a8BgHapVlZUU1rH84RKj6xJvevf4ABj5VfGwIlIalDU6aY6BZXiBn16BKB2UxJimp+1jszw=="],
+
     "@sqwiromobilesaccoapps/saccomis": ["@sqwiromobilesaccoapps/saccomis@0.0.4", "https://npm.pkg.github.com/download/@sqwiromobilesaccoapps/saccomis/0.0.4/696aa5e6cd1ea89fa5d3da7665aec232af50d5b1", {}, "sha512-jtsioF1KDPIMpVLFooTTLlAcaXf7PFKou6PuWmq9dy1Q5qSX1N+xaoaUUwtQMaqM2lQ4T+Kn6ChGUJzGXFN6jw=="],
+
+    "@sqwiromobilesaccoapps/smartsaccowallet": ["@sqwiromobilesaccoapps/smartsaccowallet@0.0.2", "https://npm.pkg.github.com/download/@sqwiromobilesaccoapps/smartsaccowallet/0.0.2/0d42dcee7656624032715a70a8c6b47296c64d23", {}, "sha512-whgVDOKvqqJvVLOw2F2fOmvbEdRz/AV55meYCbVuL7HDq4nRtZ7+UGdpFDm51DBU/x23jvZyVhRwdNxldpLYrQ=="],
+
+    "@sqwiromobilesaccoapps/smartvumaenterprisewallet": ["@sqwiromobilesaccoapps/smartvumaenterprisewallet@0.0.3", "https://npm.pkg.github.com/download/@sqwiromobilesaccoapps/smartvumaenterprisewallet/0.0.3/f41a293f4e935c345412f650444f7e8a086c9b6b", {}, "sha512-QE/14v2o9/n6CLKBg8FJMGzcqj8bYmp7bWzKkxWObcO2H7Q/kCsbXa8EBwdO1rnlYha5S876jjkwi7IwOgMk0Q=="],
 
     "@sqwiromobilesuperadminapps/appsroot": ["@sqwiromobilesuperadminapps/appsroot@0.0.2", "https://npm.pkg.github.com/download/@sqwiromobilesuperadminapps/appsroot/0.0.2/cc23833ce10e4f630a09cd7d898af14ce05228ad", {}, "sha512-E4xu7I38WR2RWw5iOE2tkllqSiLRlhZdGcT0W8kTOuBiB68ISR1ekMwoL1GEi90EoaZsv7fCejXeRQeJkav38A=="],
 
+    "@sqwiromobilesystemapps/system": ["@sqwiromobilesystemapps/system@0.0.3", "https://npm.pkg.github.com/download/@sqwiromobilesystemapps/system/0.0.3/7ac04ddbe56e5af96d8a37c185ba4586bea19f8c", {}, "sha512-jUigm5d4SxTfAMlc3Z66jnpYGOaQrPhh46Fsurue3MaER8DP+VgW+mBRDDd8Xwh/oK3O/TKW2GDrpA8DnOqLvw=="],
+
+    "@sqwiromobiletransportapps/fleetmanager": ["@sqwiromobiletransportapps/fleetmanager@0.0.2", "https://npm.pkg.github.com/download/@sqwiromobiletransportapps/fleetmanager/0.0.2/d13b61a031019c4443164995871c3a7ca0bcd384", {}, "sha512-btaQ2upeOgn0GO1CK19BVUmNil8D2vNblbyaemGC5bNbcATwASU9kq+C9+Wo+BjxMBqxoJTsMFmXY/L8QJRp2g=="],
+
+    "@sqwiromobiletransportapps/smartdriver": ["@sqwiromobiletransportapps/smartdriver@0.0.3", "https://npm.pkg.github.com/download/@sqwiromobiletransportapps/smartdriver/0.0.3/025c9c647668f88f0934a13e01311bb38f43b057", {}, "sha512-T1dn3hoggu3KGfjgD5j+7dovmEFdltCbhpRPisYyJOJBvKaOy+2r0HFpQrWQSYvNsjBcUIg+VhPfsaNutXuk9A=="],
+
     "@sqwiromobileuserapps/appsroot": ["@sqwiromobileuserapps/appsroot@0.0.2", "https://npm.pkg.github.com/download/@sqwiromobileuserapps/appsroot/0.0.2/a88e0f89dae91d04c539008cf39e8710ee2dc2aa", {}, "sha512-7DoffNPvPS0ESgt2LEcXgOCcwTM4skUbkiECZO3V8cFn2lThkqz/ptDHpkBHW/zqGbURO11W9TMEr7ks55P1rw=="],
-
-    "@sqwiromobileuserapps/enterprisewallet": ["@sqwiromobileuserapps/enterprisewallet@0.0.3", "https://npm.pkg.github.com/download/@sqwiromobileuserapps/enterprisewallet/0.0.3/9d6def05525fb808b272a61ec82c0fca2e9fb2eb", {}, "sha512-qekrfM3oXDiG5slK1lruZqecpuzetp3SD7Jk8ME19htIITjXbaSeaJWArcwHsw9fpAmkKY3UOVaQ0819n8B2Ug=="],
-
-    "@sqwiromobileuserapps/saccowallet": ["@sqwiromobileuserapps/saccowallet@0.0.2", "https://npm.pkg.github.com/download/@sqwiromobileuserapps/saccowallet/0.0.2/805de2801522a6ca9ea03a16a3dee8390541ee25", {}, "sha512-JQTd2Qv+2htZAhgIz9Q89rJUgNUPSP/GxgaN1rgOrtxnul/oOowUthwdxoVmKELnW2RKLepTxiEgZgnbibLHaQ=="],
-
-    "@sqwiromobileuserapps/shoppingcart": ["@sqwiromobileuserapps/shoppingcart@0.0.3", "https://npm.pkg.github.com/download/@sqwiromobileuserapps/shoppingcart/0.0.3/e49423cd2d0b08cf853e96d925cc473167deb4d8", {}, "sha512-UpepkEZK6yEG5xADda9VWmiQqV1UCSEZawJ1R5da7Q/MqKwXwTkZp1Juu1ABOEAknc66Bjwz9ZutnB6U4GmqAQ=="],
-
-    "@sqwiromobileuserapps/smartapprover": ["@sqwiromobileuserapps/smartapprover@0.0.3", "https://npm.pkg.github.com/download/@sqwiromobileuserapps/smartapprover/0.0.3/c3855acfbd9bcfc35081243ccba21368b1ceccf3", {}, "sha512-OPDj+3oSKXKZTsMvucGqlly6ugUZHtAz8//0VaBUMugUtt6yb4kdt8Wy51WIoceRSTstN/N7pSFEjU72KQ7RZw=="],
-
-    "@sqwiromobileuserapps/smartdriver": ["@sqwiromobileuserapps/smartdriver@0.0.3", "https://npm.pkg.github.com/download/@sqwiromobileuserapps/smartdriver/0.0.3/ebfa85626def35ae46637012a28206200ea3da56", {}, "sha512-MLIPaRAGFnfNfUAHneTIIl7RH/G7wcGRS6Oc2m3/TjCInJI4DxriywCnxFkCaRb6K0SObSynbI7FjdFjlMGytg=="],
-
-    "@sqwiromobileuserapps/smartfarmer": ["@sqwiromobileuserapps/smartfarmer@0.0.3", "https://npm.pkg.github.com/download/@sqwiromobileuserapps/smartfarmer/0.0.3/c6a773295c53128508b3c95a852bf2b0427c1d65", {}, "sha512-/wVcwzMZomP75j3klxdo+8KXCaatNN+uB+u4ZMnZ2ynL4iNHjBGV3/uoM6vTFlXDFklwX1QfzZUTKeAJS7IRhA=="],
-
-    "@sqwiromobileuserapps/smartpesapurse": ["@sqwiromobileuserapps/smartpesapurse@0.0.5", "https://npm.pkg.github.com/download/@sqwiromobileuserapps/smartpesapurse/0.0.5/8facd60c41f0c3c107458be8adafe1e2e31dcd7b", {}, "sha512-+AYhCImo4eY5VecV1NcPDFTlr1dhHweweYUEnQFdZ8zh8/PprP76W5exd48e8dnlLx6lZ5HP8Et8IF0S//J11w=="],
-
-    "@sqwiromobileuserapps/smartsqwirosupport": ["@sqwiromobileuserapps/smartsqwirosupport@0.0.2", "https://npm.pkg.github.com/download/@sqwiromobileuserapps/smartsqwirosupport/0.0.2/bce66069d9a5a3f51d34fd61480cdff6b6bc148a", {}, "sha512-rpFL2JZpMDXEA5V9DCo5IkQoWQeSyJaX4oWx0Po4ZkaN7p47PHdcDMNLarcnlqqG+P39VKLA1EK6EK9SJE2tPA=="],
-
-    "@sqwiromobileuserapps/smartstaff": ["@sqwiromobileuserapps/smartstaff@0.0.3", "https://npm.pkg.github.com/download/@sqwiromobileuserapps/smartstaff/0.0.3/5eb93b271f370404865a7df4eb595a83fc6527b6", {}, "sha512-eP2NCeCrPZAQ+Hl7YU9ThEin42NT1L8+0z4MO3KvLemlT0WyIzNK4dlouML7Kmpr6Sp2awWScpXC3cBeg8Nq3A=="],
-
-    "@sqwiromobileuserapps/smartsupport": ["@sqwiromobileuserapps/smartsupport@0.0.3", "https://npm.pkg.github.com/download/@sqwiromobileuserapps/smartsupport/0.0.3/0f4cec4b1064a459e5834be9578bc40dc69ce289", {}, "sha512-FDJMQxBPa3O4GpTrfstXXHtjuTFq28/zHyb5Cu9MDFjYRIFnUri9P8Y66t/9qb+wWiC0gK6SKT2RRowwHxpgGw=="],
-
-    "@sqwiromobileuserapps/smartvendoraccount": ["@sqwiromobileuserapps/smartvendoraccount@0.0.3", "https://npm.pkg.github.com/download/@sqwiromobileuserapps/smartvendoraccount/0.0.3/1b1c7ca5539abceac0a1ab389994491c95fd7e41", {}, "sha512-E3kbYoHEmnh9d+TRpbqelm9z6GriKpGF+G3UxlY8Z4bIaGDUIo3L+E1Nit7WHjq3VUsWlsSGwpEyBm5ClSFHVA=="],
-
-    "@sqwiromobileuserapps/sqwiropay": ["@sqwiromobileuserapps/sqwiropay@0.0.3", "https://npm.pkg.github.com/download/@sqwiromobileuserapps/sqwiropay/0.0.3/13153c609862f2100114b66b5e75bae703bb06d6", {}, "sha512-3s/F+D1uFL4Q54zjTyVnks1rTWIdNeGrXuSyesbC99cbwuWhobl/z4CMnejWcDoIiu0G+CZM/56R8/I2cMRqHQ=="],
 
     "@sqwiroweb/appgroups": ["@sqwiroweb/appgroups@0.0.40", "https://npm.pkg.github.com/download/@sqwiroweb/appgroups/0.0.40/0783d223d44640db149db5a5c5bd18acc2b99351", {}, "sha512-Bsmb9ckaFPpNoGkh4tdAZJkv74h+HtCUlWZvXHIyEKnko13H+pMVYQtX1s3zzckGJfWJ7aJkkgOD8zlDDO/vrg=="],
 

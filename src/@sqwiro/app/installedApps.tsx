@@ -9,42 +9,6 @@
 
 
       
-        import { EnterprisewalletMenuButton } from '@sqwiro/userapps/enterprisewallet/EnterprisewalletMenuButton';
-        import { EnterprisewalletApp } from '@sqwiro/userapps/enterprisewallet/EnterprisewalletApp';
-        
-        import { SaccowalletMenuButton } from '@sqwiro/userapps/saccowallet/SaccowalletMenuButton';
-        import { SaccowalletApp } from '@sqwiro/userapps/saccowallet/SaccowalletApp';
-        
-        import { ShoppingcartMenuButton } from '@sqwiro/userapps/shoppingcart/ShoppingcartMenuButton';
-        import { ShoppingcartApp } from '@sqwiro/userapps/shoppingcart/ShoppingcartApp';
-        
-        import { SmartapproverMenuButton } from '@sqwiro/userapps/smartapprover/SmartapproverMenuButton';
-        import { SmartapproverApp } from '@sqwiro/userapps/smartapprover/SmartapproverApp';
-        
-        import { SmartdriverMenuButton } from '@sqwiro/userapps/smartdriver/SmartdriverMenuButton';
-        import { SmartdriverApp } from '@sqwiro/userapps/smartdriver/SmartdriverApp';
-        
-        import { SmartfarmerMenuButton } from '@sqwiro/userapps/smartfarmer/SmartfarmerMenuButton';
-        import { SmartfarmerApp } from '@sqwiro/userapps/smartfarmer/SmartfarmerApp';
-        
-        import { SmartpesapurseMenuButton } from '@sqwiro/userapps/smartpesapurse/SmartpesapurseMenuButton';
-        import { SmartpesapurseApp } from '@sqwiro/userapps/smartpesapurse/SmartpesapurseApp';
-        
-        import { SmartsqwirosupportMenuButton } from '@sqwiro/userapps/smartsqwirosupport/SmartsqwirosupportMenuButton';
-        import { SmartsqwirosupportApp } from '@sqwiro/userapps/smartsqwirosupport/SmartsqwirosupportApp';
-        
-        import { SmartstaffMenuButton } from '@sqwiro/userapps/smartstaff/SmartstaffMenuButton';
-        import { SmartstaffApp } from '@sqwiro/userapps/smartstaff/SmartstaffApp';
-        
-        import { SmartsupportMenuButton } from '@sqwiro/userapps/smartsupport/SmartsupportMenuButton';
-        import { SmartsupportApp } from '@sqwiro/userapps/smartsupport/SmartsupportApp';
-        
-        import { SmartvendoraccountMenuButton } from '@sqwiro/userapps/smartvendoraccount/SmartvendoraccountMenuButton';
-        import { SmartvendoraccountApp } from '@sqwiro/userapps/smartvendoraccount/SmartvendoraccountApp';
-        
-        import { SqwiropayMenuButton } from '@sqwiro/userapps/sqwiropay/SqwiropayMenuButton';
-        import { SqwiropayApp } from '@sqwiro/userapps/sqwiropay/SqwiropayApp';
-        
         import { Cs50MenuButton } from '@sqwiro/customapps/cs50/Cs50MenuButton';
         import { Cs50App } from '@sqwiro/customapps/cs50/Cs50App';
         
@@ -69,8 +33,32 @@
         import { SeedlinkMenuButton } from '@sqwiro/agribusinessapps/seedlink/SeedlinkMenuButton';
         import { SeedlinkApp } from '@sqwiro/agribusinessapps/seedlink/SeedlinkApp';
         
+        import { SmartfarmerMenuButton } from '@sqwiro/agribusinessapps/smartfarmer/SmartfarmerMenuButton';
+        import { SmartfarmerApp } from '@sqwiro/agribusinessapps/smartfarmer/SmartfarmerApp';
+        
         import { SaccomisMenuButton } from '@sqwiro/saccoapps/saccomis/SaccomisMenuButton';
         import { SaccomisApp } from '@sqwiro/saccoapps/saccomis/SaccomisApp';
+        
+        import { SmartvumaenterprisewalletMenuButton } from '@sqwiro/saccoapps/smartvumaenterprisewallet/SmartvumaenterprisewalletMenuButton';
+        import { SmartvumaenterprisewalletApp } from '@sqwiro/saccoapps/smartvumaenterprisewallet/SmartvumaenterprisewalletApp';
+        
+        import { SmartsaccowalletMenuButton } from '@sqwiro/saccoapps/smartsaccowallet/SmartsaccowalletMenuButton';
+        import { SmartsaccowalletApp } from '@sqwiro/saccoapps/smartsaccowallet/SmartsaccowalletApp';
+        
+        import { CartifyMenuButton } from '@sqwiro/ecommerceapps/cartify/CartifyMenuButton';
+        import { CartifyApp } from '@sqwiro/ecommerceapps/cartify/CartifyApp';
+        
+        import { SmartshoppingcartMenuButton } from '@sqwiro/ecommerceapps/smartshoppingcart/SmartshoppingcartMenuButton';
+        import { SmartshoppingcartApp } from '@sqwiro/ecommerceapps/smartshoppingcart/SmartshoppingcartApp';
+        
+        import { SmartsqwiropayMenuButton } from '@sqwiro/ecommerceapps/smartsqwiropay/SmartsqwiropayMenuButton';
+        import { SmartsqwiropayApp } from '@sqwiro/ecommerceapps/smartsqwiropay/SmartsqwiropayApp';
+        
+        import { FleetmanagerMenuButton } from '@sqwiro/transportapps/fleetmanager/FleetmanagerMenuButton';
+        import { FleetmanagerApp } from '@sqwiro/transportapps/fleetmanager/FleetmanagerApp';
+        
+        import { SmartdriverMenuButton } from '@sqwiro/transportapps/smartdriver/SmartdriverMenuButton';
+        import { SmartdriverApp } from '@sqwiro/transportapps/smartdriver/SmartdriverApp';
         
         import { AgencyproMenuButton } from '@sqwiro/fintechapps/agencypro/AgencyproMenuButton';
         import { AgencyproApp } from '@sqwiro/fintechapps/agencypro/AgencyproApp';
@@ -81,17 +69,11 @@
         import { PpwalletMenuButton } from '@sqwiro/fintechapps/ppwallet/PpwalletMenuButton';
         import { PpwalletApp } from '@sqwiro/fintechapps/ppwallet/PpwalletApp';
         
-        import { CartifyMenuButton } from '@sqwiro/businessapps/cartify/CartifyMenuButton';
-        import { CartifyApp } from '@sqwiro/businessapps/cartify/CartifyApp';
+        import { SmartpesapurseMenuButton } from '@sqwiro/fintechapps/smartpesapurse/SmartpesapurseMenuButton';
+        import { SmartpesapurseApp } from '@sqwiro/fintechapps/smartpesapurse/SmartpesapurseApp';
         
         import { FinanceMenuButton } from '@sqwiro/businessapps/finance/FinanceMenuButton';
         import { FinanceApp } from '@sqwiro/businessapps/finance/FinanceApp';
-        
-        import { FleetmanagerMenuButton } from '@sqwiro/businessapps/fleetmanager/FleetmanagerMenuButton';
-        import { FleetmanagerApp } from '@sqwiro/businessapps/fleetmanager/FleetmanagerApp';
-        
-        import { HrMenuButton } from '@sqwiro/businessapps/hr/HrMenuButton';
-        import { HrApp } from '@sqwiro/businessapps/hr/HrApp';
         
         import { MakercheckerMenuButton } from '@sqwiro/businessapps/makerchecker/MakercheckerMenuButton';
         import { MakercheckerApp } from '@sqwiro/businessapps/makerchecker/MakercheckerApp';
@@ -111,8 +93,26 @@
         import { SalesMenuButton } from '@sqwiro/businessapps/sales/SalesMenuButton';
         import { SalesApp } from '@sqwiro/businessapps/sales/SalesApp';
         
-        import { SystemMenuButton } from '@sqwiro/businessapps/system/SystemMenuButton';
-        import { SystemApp } from '@sqwiro/businessapps/system/SystemApp';
+        import { SmartapproverMenuButton } from '@sqwiro/businessapps/smartapprover/SmartapproverMenuButton';
+        import { SmartapproverApp } from '@sqwiro/businessapps/smartapprover/SmartapproverApp';
+        
+        import { SmartvendoraccountMenuButton } from '@sqwiro/businessapps/smartvendoraccount/SmartvendoraccountMenuButton';
+        import { SmartvendoraccountApp } from '@sqwiro/businessapps/smartvendoraccount/SmartvendoraccountApp';
+        
+        import { SystemMenuButton } from '@sqwiro/systemapps/system/SystemMenuButton';
+        import { SystemApp } from '@sqwiro/systemapps/system/SystemApp';
+        
+        import { SmartsqwirosupportMenuButton } from '@sqwiro/customercareapps/smartsqwirosupport/SmartsqwirosupportMenuButton';
+        import { SmartsqwirosupportApp } from '@sqwiro/customercareapps/smartsqwirosupport/SmartsqwirosupportApp';
+        
+        import { SmartcustomerhelpMenuButton } from '@sqwiro/customercareapps/smartcustomerhelp/SmartcustomerhelpMenuButton';
+        import { SmartcustomerhelpApp } from '@sqwiro/customercareapps/smartcustomerhelp/SmartcustomerhelpApp';
+        
+        import { HrMenuButton } from '@sqwiro/hrapps/hr/HrMenuButton';
+        import { HrApp } from '@sqwiro/hrapps/hr/HrApp';
+        
+        import { SmartstaffMenuButton } from '@sqwiro/hrapps/smartstaff/SmartstaffMenuButton';
+        import { SmartstaffApp } from '@sqwiro/hrapps/smartstaff/SmartstaffApp';
         
 
 
@@ -144,391 +144,7 @@
           );
         }
 
-      export const installedApps ={ "magneta_userapplication/enterprisewallet": {
-          id: "enterprisewallet",
-          _ref: "magneta_userapplication/enterprisewallet",
-          AppId: "enterprisewallet",
-          packageName: "@sqwiromobileuserapps/enterprisewallet",
-          appRoot: "@sqwiro/userapps/enterprisewallet",
-          RootComponent: EnterprisewalletApp,
-          MenuButton: EnterprisewalletMenuButton,
-          groupId: "userapps",
-          loadComponent: () => {
-            return (
-              <SafeLazy
-                loader={() => {
-                  return import("@sqwiro/userapps/enterprisewallet/EnterprisewalletApp");
-                }}
-                fallback={<LoadingComponent />}
-                errorFallback={AppNotFound}
-              />
-            );
-          },
-          loadMenuButton: () => {
-            return (
-              <SafeLazy
-                loader={() => {
-                   return import("@sqwiro/userapps/enterprisewallet/EnterprisewalletMenuButton");
-                }}
-                fallback={<LoadingMenuButton />}
-                errorFallback={<LoadingMenuButton />}
-              />
-            );
-          },
-        },
-"magneta_userapplication/saccowallet": {
-          id: "saccowallet",
-          _ref: "magneta_userapplication/saccowallet",
-          AppId: "saccowallet",
-          packageName: "@sqwiromobileuserapps/saccowallet",
-          appRoot: "@sqwiro/userapps/saccowallet",
-          RootComponent: SaccowalletApp,
-          MenuButton: SaccowalletMenuButton,
-          groupId: "userapps",
-          loadComponent: () => {
-            return (
-              <SafeLazy
-                loader={() => {
-                  return import("@sqwiro/userapps/saccowallet/SaccowalletApp");
-                }}
-                fallback={<LoadingComponent />}
-                errorFallback={AppNotFound}
-              />
-            );
-          },
-          loadMenuButton: () => {
-            return (
-              <SafeLazy
-                loader={() => {
-                   return import("@sqwiro/userapps/saccowallet/SaccowalletMenuButton");
-                }}
-                fallback={<LoadingMenuButton />}
-                errorFallback={<LoadingMenuButton />}
-              />
-            );
-          },
-        },
-"magneta_userapplication/shoppingcart": {
-          id: "shoppingcart",
-          _ref: "magneta_userapplication/shoppingcart",
-          AppId: "shoppingcart",
-          packageName: "@sqwiromobileuserapps/shoppingcart",
-          appRoot: "@sqwiro/userapps/shoppingcart",
-          RootComponent: ShoppingcartApp,
-          MenuButton: ShoppingcartMenuButton,
-          groupId: "userapps",
-          loadComponent: () => {
-            return (
-              <SafeLazy
-                loader={() => {
-                  return import("@sqwiro/userapps/shoppingcart/ShoppingcartApp");
-                }}
-                fallback={<LoadingComponent />}
-                errorFallback={AppNotFound}
-              />
-            );
-          },
-          loadMenuButton: () => {
-            return (
-              <SafeLazy
-                loader={() => {
-                   return import("@sqwiro/userapps/shoppingcart/ShoppingcartMenuButton");
-                }}
-                fallback={<LoadingMenuButton />}
-                errorFallback={<LoadingMenuButton />}
-              />
-            );
-          },
-        },
-"magneta_userapplication/smartapprover": {
-          id: "smartapprover",
-          _ref: "magneta_userapplication/smartapprover",
-          AppId: "smartapprover",
-          packageName: "@sqwiromobileuserapps/smartapprover",
-          appRoot: "@sqwiro/userapps/smartapprover",
-          RootComponent: SmartapproverApp,
-          MenuButton: SmartapproverMenuButton,
-          groupId: "userapps",
-          loadComponent: () => {
-            return (
-              <SafeLazy
-                loader={() => {
-                  return import("@sqwiro/userapps/smartapprover/SmartapproverApp");
-                }}
-                fallback={<LoadingComponent />}
-                errorFallback={AppNotFound}
-              />
-            );
-          },
-          loadMenuButton: () => {
-            return (
-              <SafeLazy
-                loader={() => {
-                   return import("@sqwiro/userapps/smartapprover/SmartapproverMenuButton");
-                }}
-                fallback={<LoadingMenuButton />}
-                errorFallback={<LoadingMenuButton />}
-              />
-            );
-          },
-        },
-"magneta_userapplication/smartdriver": {
-          id: "smartdriver",
-          _ref: "magneta_userapplication/smartdriver",
-          AppId: "smartdriver",
-          packageName: "@sqwiromobileuserapps/smartdriver",
-          appRoot: "@sqwiro/userapps/smartdriver",
-          RootComponent: SmartdriverApp,
-          MenuButton: SmartdriverMenuButton,
-          groupId: "userapps",
-          loadComponent: () => {
-            return (
-              <SafeLazy
-                loader={() => {
-                  return import("@sqwiro/userapps/smartdriver/SmartdriverApp");
-                }}
-                fallback={<LoadingComponent />}
-                errorFallback={AppNotFound}
-              />
-            );
-          },
-          loadMenuButton: () => {
-            return (
-              <SafeLazy
-                loader={() => {
-                   return import("@sqwiro/userapps/smartdriver/SmartdriverMenuButton");
-                }}
-                fallback={<LoadingMenuButton />}
-                errorFallback={<LoadingMenuButton />}
-              />
-            );
-          },
-        },
-"magneta_userapplication/smartfarmer": {
-          id: "smartfarmer",
-          _ref: "magneta_userapplication/smartfarmer",
-          AppId: "smartfarmer",
-          packageName: "@sqwiromobileuserapps/smartfarmer",
-          appRoot: "@sqwiro/userapps/smartfarmer",
-          RootComponent: SmartfarmerApp,
-          MenuButton: SmartfarmerMenuButton,
-          groupId: "userapps",
-          loadComponent: () => {
-            return (
-              <SafeLazy
-                loader={() => {
-                  return import("@sqwiro/userapps/smartfarmer/SmartfarmerApp");
-                }}
-                fallback={<LoadingComponent />}
-                errorFallback={AppNotFound}
-              />
-            );
-          },
-          loadMenuButton: () => {
-            return (
-              <SafeLazy
-                loader={() => {
-                   return import("@sqwiro/userapps/smartfarmer/SmartfarmerMenuButton");
-                }}
-                fallback={<LoadingMenuButton />}
-                errorFallback={<LoadingMenuButton />}
-              />
-            );
-          },
-        },
-"magneta_userapplication/smartpesapurse": {
-          id: "smartpesapurse",
-          _ref: "magneta_userapplication/smartpesapurse",
-          AppId: "smartpesapurse",
-          packageName: "@sqwiromobileuserapps/smartpesapurse",
-          appRoot: "@sqwiro/userapps/smartpesapurse",
-          RootComponent: SmartpesapurseApp,
-          MenuButton: SmartpesapurseMenuButton,
-          groupId: "userapps",
-          loadComponent: () => {
-            return (
-              <SafeLazy
-                loader={() => {
-                  return import("@sqwiro/userapps/smartpesapurse/SmartpesapurseApp");
-                }}
-                fallback={<LoadingComponent />}
-                errorFallback={AppNotFound}
-              />
-            );
-          },
-          loadMenuButton: () => {
-            return (
-              <SafeLazy
-                loader={() => {
-                   return import("@sqwiro/userapps/smartpesapurse/SmartpesapurseMenuButton");
-                }}
-                fallback={<LoadingMenuButton />}
-                errorFallback={<LoadingMenuButton />}
-              />
-            );
-          },
-        },
-"magneta_userapplication/smartsqwirosupport": {
-          id: "smartsqwirosupport",
-          _ref: "magneta_userapplication/smartsqwirosupport",
-          AppId: "smartsqwirosupport",
-          packageName: "@sqwiromobileuserapps/smartsqwirosupport",
-          appRoot: "@sqwiro/userapps/smartsqwirosupport",
-          RootComponent: SmartsqwirosupportApp,
-          MenuButton: SmartsqwirosupportMenuButton,
-          groupId: "userapps",
-          loadComponent: () => {
-            return (
-              <SafeLazy
-                loader={() => {
-                  return import("@sqwiro/userapps/smartsqwirosupport/SmartsqwirosupportApp");
-                }}
-                fallback={<LoadingComponent />}
-                errorFallback={AppNotFound}
-              />
-            );
-          },
-          loadMenuButton: () => {
-            return (
-              <SafeLazy
-                loader={() => {
-                   return import("@sqwiro/userapps/smartsqwirosupport/SmartsqwirosupportMenuButton");
-                }}
-                fallback={<LoadingMenuButton />}
-                errorFallback={<LoadingMenuButton />}
-              />
-            );
-          },
-        },
-"magneta_userapplication/smartstaff": {
-          id: "smartstaff",
-          _ref: "magneta_userapplication/smartstaff",
-          AppId: "smartstaff",
-          packageName: "@sqwiromobileuserapps/smartstaff",
-          appRoot: "@sqwiro/userapps/smartstaff",
-          RootComponent: SmartstaffApp,
-          MenuButton: SmartstaffMenuButton,
-          groupId: "userapps",
-          loadComponent: () => {
-            return (
-              <SafeLazy
-                loader={() => {
-                  return import("@sqwiro/userapps/smartstaff/SmartstaffApp");
-                }}
-                fallback={<LoadingComponent />}
-                errorFallback={AppNotFound}
-              />
-            );
-          },
-          loadMenuButton: () => {
-            return (
-              <SafeLazy
-                loader={() => {
-                   return import("@sqwiro/userapps/smartstaff/SmartstaffMenuButton");
-                }}
-                fallback={<LoadingMenuButton />}
-                errorFallback={<LoadingMenuButton />}
-              />
-            );
-          },
-        },
-"magneta_userapplication/smartsupport": {
-          id: "smartsupport",
-          _ref: "magneta_userapplication/smartsupport",
-          AppId: "smartsupport",
-          packageName: "@sqwiromobileuserapps/smartsupport",
-          appRoot: "@sqwiro/userapps/smartsupport",
-          RootComponent: SmartsupportApp,
-          MenuButton: SmartsupportMenuButton,
-          groupId: "userapps",
-          loadComponent: () => {
-            return (
-              <SafeLazy
-                loader={() => {
-                  return import("@sqwiro/userapps/smartsupport/SmartsupportApp");
-                }}
-                fallback={<LoadingComponent />}
-                errorFallback={AppNotFound}
-              />
-            );
-          },
-          loadMenuButton: () => {
-            return (
-              <SafeLazy
-                loader={() => {
-                   return import("@sqwiro/userapps/smartsupport/SmartsupportMenuButton");
-                }}
-                fallback={<LoadingMenuButton />}
-                errorFallback={<LoadingMenuButton />}
-              />
-            );
-          },
-        },
-"magneta_userapplication/smartvendoraccount": {
-          id: "smartvendoraccount",
-          _ref: "magneta_userapplication/smartvendoraccount",
-          AppId: "smartvendoraccount",
-          packageName: "@sqwiromobileuserapps/smartvendoraccount",
-          appRoot: "@sqwiro/userapps/smartvendoraccount",
-          RootComponent: SmartvendoraccountApp,
-          MenuButton: SmartvendoraccountMenuButton,
-          groupId: "userapps",
-          loadComponent: () => {
-            return (
-              <SafeLazy
-                loader={() => {
-                  return import("@sqwiro/userapps/smartvendoraccount/SmartvendoraccountApp");
-                }}
-                fallback={<LoadingComponent />}
-                errorFallback={AppNotFound}
-              />
-            );
-          },
-          loadMenuButton: () => {
-            return (
-              <SafeLazy
-                loader={() => {
-                   return import("@sqwiro/userapps/smartvendoraccount/SmartvendoraccountMenuButton");
-                }}
-                fallback={<LoadingMenuButton />}
-                errorFallback={<LoadingMenuButton />}
-              />
-            );
-          },
-        },
-"magneta_userapplication/sqwiropay": {
-          id: "sqwiropay",
-          _ref: "magneta_userapplication/sqwiropay",
-          AppId: "sqwiropay",
-          packageName: "@sqwiromobileuserapps/sqwiropay",
-          appRoot: "@sqwiro/userapps/sqwiropay",
-          RootComponent: SqwiropayApp,
-          MenuButton: SqwiropayMenuButton,
-          groupId: "userapps",
-          loadComponent: () => {
-            return (
-              <SafeLazy
-                loader={() => {
-                  return import("@sqwiro/userapps/sqwiropay/SqwiropayApp");
-                }}
-                fallback={<LoadingComponent />}
-                errorFallback={AppNotFound}
-              />
-            );
-          },
-          loadMenuButton: () => {
-            return (
-              <SafeLazy
-                loader={() => {
-                   return import("@sqwiro/userapps/sqwiropay/SqwiropayMenuButton");
-                }}
-                fallback={<LoadingMenuButton />}
-                errorFallback={<LoadingMenuButton />}
-              />
-            );
-          },
-        },
-"magneta_application/cs50": {
+      export const installedApps ={ "magneta_application/cs50": {
           id: "cs50",
           _ref: "magneta_application/cs50",
           AppId: "cs50",
@@ -784,6 +400,38 @@
             );
           },
         },
+"magneta_application/smartfarmer": {
+          id: "smartfarmer",
+          _ref: "magneta_application/smartfarmer",
+          AppId: "smartfarmer",
+          packageName: "@sqwiromobileagribusinessapps/smartfarmer",
+          appRoot: "@sqwiro/agribusinessapps/smartfarmer",
+          RootComponent: SmartfarmerApp,
+          MenuButton: SmartfarmerMenuButton,
+          groupId: "agribusinessapps",
+          loadComponent: () => {
+            return (
+              <SafeLazy
+                loader={() => {
+                  return import("@sqwiro/agribusinessapps/smartfarmer/SmartfarmerApp");
+                }}
+                fallback={<LoadingComponent />}
+                errorFallback={AppNotFound}
+              />
+            );
+          },
+          loadMenuButton: () => {
+            return (
+              <SafeLazy
+                loader={() => {
+                   return import("@sqwiro/agribusinessapps/smartfarmer/SmartfarmerMenuButton");
+                }}
+                fallback={<LoadingMenuButton />}
+                errorFallback={<LoadingMenuButton />}
+              />
+            );
+          },
+        },
 "magneta_application/saccomis": {
           id: "saccomis",
           _ref: "magneta_application/saccomis",
@@ -809,6 +457,230 @@
               <SafeLazy
                 loader={() => {
                    return import("@sqwiro/saccoapps/saccomis/SaccomisMenuButton");
+                }}
+                fallback={<LoadingMenuButton />}
+                errorFallback={<LoadingMenuButton />}
+              />
+            );
+          },
+        },
+"magneta_application/smartvumaenterprisewallet": {
+          id: "smartvumaenterprisewallet",
+          _ref: "magneta_application/smartvumaenterprisewallet",
+          AppId: "smartvumaenterprisewallet",
+          packageName: "@sqwiromobilesaccoapps/smartvumaenterprisewallet",
+          appRoot: "@sqwiro/saccoapps/smartvumaenterprisewallet",
+          RootComponent: SmartvumaenterprisewalletApp,
+          MenuButton: SmartvumaenterprisewalletMenuButton,
+          groupId: "saccoapps",
+          loadComponent: () => {
+            return (
+              <SafeLazy
+                loader={() => {
+                  return import("@sqwiro/saccoapps/smartvumaenterprisewallet/SmartvumaenterprisewalletApp");
+                }}
+                fallback={<LoadingComponent />}
+                errorFallback={AppNotFound}
+              />
+            );
+          },
+          loadMenuButton: () => {
+            return (
+              <SafeLazy
+                loader={() => {
+                   return import("@sqwiro/saccoapps/smartvumaenterprisewallet/SmartvumaenterprisewalletMenuButton");
+                }}
+                fallback={<LoadingMenuButton />}
+                errorFallback={<LoadingMenuButton />}
+              />
+            );
+          },
+        },
+"magneta_application/smartsaccowallet": {
+          id: "smartsaccowallet",
+          _ref: "magneta_application/smartsaccowallet",
+          AppId: "smartsaccowallet",
+          packageName: "@sqwiromobilesaccoapps/smartsaccowallet",
+          appRoot: "@sqwiro/saccoapps/smartsaccowallet",
+          RootComponent: SmartsaccowalletApp,
+          MenuButton: SmartsaccowalletMenuButton,
+          groupId: "saccoapps",
+          loadComponent: () => {
+            return (
+              <SafeLazy
+                loader={() => {
+                  return import("@sqwiro/saccoapps/smartsaccowallet/SmartsaccowalletApp");
+                }}
+                fallback={<LoadingComponent />}
+                errorFallback={AppNotFound}
+              />
+            );
+          },
+          loadMenuButton: () => {
+            return (
+              <SafeLazy
+                loader={() => {
+                   return import("@sqwiro/saccoapps/smartsaccowallet/SmartsaccowalletMenuButton");
+                }}
+                fallback={<LoadingMenuButton />}
+                errorFallback={<LoadingMenuButton />}
+              />
+            );
+          },
+        },
+"magneta_application/cartify": {
+          id: "cartify",
+          _ref: "magneta_application/cartify",
+          AppId: "cartify",
+          packageName: "@sqwiromobileecommerceapps/cartify",
+          appRoot: "@sqwiro/ecommerceapps/cartify",
+          RootComponent: CartifyApp,
+          MenuButton: CartifyMenuButton,
+          groupId: "ecommerceapps",
+          loadComponent: () => {
+            return (
+              <SafeLazy
+                loader={() => {
+                  return import("@sqwiro/ecommerceapps/cartify/CartifyApp");
+                }}
+                fallback={<LoadingComponent />}
+                errorFallback={AppNotFound}
+              />
+            );
+          },
+          loadMenuButton: () => {
+            return (
+              <SafeLazy
+                loader={() => {
+                   return import("@sqwiro/ecommerceapps/cartify/CartifyMenuButton");
+                }}
+                fallback={<LoadingMenuButton />}
+                errorFallback={<LoadingMenuButton />}
+              />
+            );
+          },
+        },
+"magneta_application/smartshoppingcart": {
+          id: "smartshoppingcart",
+          _ref: "magneta_application/smartshoppingcart",
+          AppId: "smartshoppingcart",
+          packageName: "@sqwiromobileecommerceapps/smartshoppingcart",
+          appRoot: "@sqwiro/ecommerceapps/smartshoppingcart",
+          RootComponent: SmartshoppingcartApp,
+          MenuButton: SmartshoppingcartMenuButton,
+          groupId: "ecommerceapps",
+          loadComponent: () => {
+            return (
+              <SafeLazy
+                loader={() => {
+                  return import("@sqwiro/ecommerceapps/smartshoppingcart/SmartshoppingcartApp");
+                }}
+                fallback={<LoadingComponent />}
+                errorFallback={AppNotFound}
+              />
+            );
+          },
+          loadMenuButton: () => {
+            return (
+              <SafeLazy
+                loader={() => {
+                   return import("@sqwiro/ecommerceapps/smartshoppingcart/SmartshoppingcartMenuButton");
+                }}
+                fallback={<LoadingMenuButton />}
+                errorFallback={<LoadingMenuButton />}
+              />
+            );
+          },
+        },
+"magneta_application/smartsqwiropay": {
+          id: "smartsqwiropay",
+          _ref: "magneta_application/smartsqwiropay",
+          AppId: "smartsqwiropay",
+          packageName: "@sqwiromobileecommerceapps/smartsqwiropay",
+          appRoot: "@sqwiro/ecommerceapps/smartsqwiropay",
+          RootComponent: SmartsqwiropayApp,
+          MenuButton: SmartsqwiropayMenuButton,
+          groupId: "ecommerceapps",
+          loadComponent: () => {
+            return (
+              <SafeLazy
+                loader={() => {
+                  return import("@sqwiro/ecommerceapps/smartsqwiropay/SmartsqwiropayApp");
+                }}
+                fallback={<LoadingComponent />}
+                errorFallback={AppNotFound}
+              />
+            );
+          },
+          loadMenuButton: () => {
+            return (
+              <SafeLazy
+                loader={() => {
+                   return import("@sqwiro/ecommerceapps/smartsqwiropay/SmartsqwiropayMenuButton");
+                }}
+                fallback={<LoadingMenuButton />}
+                errorFallback={<LoadingMenuButton />}
+              />
+            );
+          },
+        },
+"magneta_application/fleetmanager": {
+          id: "fleetmanager",
+          _ref: "magneta_application/fleetmanager",
+          AppId: "fleetmanager",
+          packageName: "@sqwiromobiletransportapps/fleetmanager",
+          appRoot: "@sqwiro/transportapps/fleetmanager",
+          RootComponent: FleetmanagerApp,
+          MenuButton: FleetmanagerMenuButton,
+          groupId: "transportapps",
+          loadComponent: () => {
+            return (
+              <SafeLazy
+                loader={() => {
+                  return import("@sqwiro/transportapps/fleetmanager/FleetmanagerApp");
+                }}
+                fallback={<LoadingComponent />}
+                errorFallback={AppNotFound}
+              />
+            );
+          },
+          loadMenuButton: () => {
+            return (
+              <SafeLazy
+                loader={() => {
+                   return import("@sqwiro/transportapps/fleetmanager/FleetmanagerMenuButton");
+                }}
+                fallback={<LoadingMenuButton />}
+                errorFallback={<LoadingMenuButton />}
+              />
+            );
+          },
+        },
+"magneta_application/smartdriver": {
+          id: "smartdriver",
+          _ref: "magneta_application/smartdriver",
+          AppId: "smartdriver",
+          packageName: "@sqwiromobiletransportapps/smartdriver",
+          appRoot: "@sqwiro/transportapps/smartdriver",
+          RootComponent: SmartdriverApp,
+          MenuButton: SmartdriverMenuButton,
+          groupId: "transportapps",
+          loadComponent: () => {
+            return (
+              <SafeLazy
+                loader={() => {
+                  return import("@sqwiro/transportapps/smartdriver/SmartdriverApp");
+                }}
+                fallback={<LoadingComponent />}
+                errorFallback={AppNotFound}
+              />
+            );
+          },
+          loadMenuButton: () => {
+            return (
+              <SafeLazy
+                loader={() => {
+                   return import("@sqwiro/transportapps/smartdriver/SmartdriverMenuButton");
                 }}
                 fallback={<LoadingMenuButton />}
                 errorFallback={<LoadingMenuButton />}
@@ -912,20 +784,20 @@
             );
           },
         },
-"magneta_application/cartify": {
-          id: "cartify",
-          _ref: "magneta_application/cartify",
-          AppId: "cartify",
-          packageName: "@sqwiromobilebusinessapps/cartify",
-          appRoot: "@sqwiro/businessapps/cartify",
-          RootComponent: CartifyApp,
-          MenuButton: CartifyMenuButton,
-          groupId: "businessapps",
+"magneta_application/smartpesapurse": {
+          id: "smartpesapurse",
+          _ref: "magneta_application/smartpesapurse",
+          AppId: "smartpesapurse",
+          packageName: "@sqwiromobilefintechapps/smartpesapurse",
+          appRoot: "@sqwiro/fintechapps/smartpesapurse",
+          RootComponent: SmartpesapurseApp,
+          MenuButton: SmartpesapurseMenuButton,
+          groupId: "fintechapps",
           loadComponent: () => {
             return (
               <SafeLazy
                 loader={() => {
-                  return import("@sqwiro/businessapps/cartify/CartifyApp");
+                  return import("@sqwiro/fintechapps/smartpesapurse/SmartpesapurseApp");
                 }}
                 fallback={<LoadingComponent />}
                 errorFallback={AppNotFound}
@@ -936,7 +808,7 @@
             return (
               <SafeLazy
                 loader={() => {
-                   return import("@sqwiro/businessapps/cartify/CartifyMenuButton");
+                   return import("@sqwiro/fintechapps/smartpesapurse/SmartpesapurseMenuButton");
                 }}
                 fallback={<LoadingMenuButton />}
                 errorFallback={<LoadingMenuButton />}
@@ -969,70 +841,6 @@
               <SafeLazy
                 loader={() => {
                    return import("@sqwiro/businessapps/finance/FinanceMenuButton");
-                }}
-                fallback={<LoadingMenuButton />}
-                errorFallback={<LoadingMenuButton />}
-              />
-            );
-          },
-        },
-"magneta_application/fleetmanager": {
-          id: "fleetmanager",
-          _ref: "magneta_application/fleetmanager",
-          AppId: "fleetmanager",
-          packageName: "@sqwiromobilebusinessapps/fleetmanager",
-          appRoot: "@sqwiro/businessapps/fleetmanager",
-          RootComponent: FleetmanagerApp,
-          MenuButton: FleetmanagerMenuButton,
-          groupId: "businessapps",
-          loadComponent: () => {
-            return (
-              <SafeLazy
-                loader={() => {
-                  return import("@sqwiro/businessapps/fleetmanager/FleetmanagerApp");
-                }}
-                fallback={<LoadingComponent />}
-                errorFallback={AppNotFound}
-              />
-            );
-          },
-          loadMenuButton: () => {
-            return (
-              <SafeLazy
-                loader={() => {
-                   return import("@sqwiro/businessapps/fleetmanager/FleetmanagerMenuButton");
-                }}
-                fallback={<LoadingMenuButton />}
-                errorFallback={<LoadingMenuButton />}
-              />
-            );
-          },
-        },
-"magneta_application/hr": {
-          id: "hr",
-          _ref: "magneta_application/hr",
-          AppId: "hr",
-          packageName: "@sqwiromobilebusinessapps/hr",
-          appRoot: "@sqwiro/businessapps/hr",
-          RootComponent: HrApp,
-          MenuButton: HrMenuButton,
-          groupId: "businessapps",
-          loadComponent: () => {
-            return (
-              <SafeLazy
-                loader={() => {
-                  return import("@sqwiro/businessapps/hr/HrApp");
-                }}
-                fallback={<LoadingComponent />}
-                errorFallback={AppNotFound}
-              />
-            );
-          },
-          loadMenuButton: () => {
-            return (
-              <SafeLazy
-                loader={() => {
-                   return import("@sqwiro/businessapps/hr/HrMenuButton");
                 }}
                 fallback={<LoadingMenuButton />}
                 errorFallback={<LoadingMenuButton />}
@@ -1232,20 +1040,20 @@
             );
           },
         },
-"magneta_application/system": {
-          id: "system",
-          _ref: "magneta_application/system",
-          AppId: "system",
-          packageName: "@sqwiromobilebusinessapps/system",
-          appRoot: "@sqwiro/businessapps/system",
-          RootComponent: SystemApp,
-          MenuButton: SystemMenuButton,
+"magneta_application/smartapprover": {
+          id: "smartapprover",
+          _ref: "magneta_application/smartapprover",
+          AppId: "smartapprover",
+          packageName: "@sqwiromobilebusinessapps/smartapprover",
+          appRoot: "@sqwiro/businessapps/smartapprover",
+          RootComponent: SmartapproverApp,
+          MenuButton: SmartapproverMenuButton,
           groupId: "businessapps",
           loadComponent: () => {
             return (
               <SafeLazy
                 loader={() => {
-                  return import("@sqwiro/businessapps/system/SystemApp");
+                  return import("@sqwiro/businessapps/smartapprover/SmartapproverApp");
                 }}
                 fallback={<LoadingComponent />}
                 errorFallback={AppNotFound}
@@ -1256,7 +1064,199 @@
             return (
               <SafeLazy
                 loader={() => {
-                   return import("@sqwiro/businessapps/system/SystemMenuButton");
+                   return import("@sqwiro/businessapps/smartapprover/SmartapproverMenuButton");
+                }}
+                fallback={<LoadingMenuButton />}
+                errorFallback={<LoadingMenuButton />}
+              />
+            );
+          },
+        },
+"magneta_application/smartvendoraccount": {
+          id: "smartvendoraccount",
+          _ref: "magneta_application/smartvendoraccount",
+          AppId: "smartvendoraccount",
+          packageName: "@sqwiromobilebusinessapps/smartvendoraccount",
+          appRoot: "@sqwiro/businessapps/smartvendoraccount",
+          RootComponent: SmartvendoraccountApp,
+          MenuButton: SmartvendoraccountMenuButton,
+          groupId: "businessapps",
+          loadComponent: () => {
+            return (
+              <SafeLazy
+                loader={() => {
+                  return import("@sqwiro/businessapps/smartvendoraccount/SmartvendoraccountApp");
+                }}
+                fallback={<LoadingComponent />}
+                errorFallback={AppNotFound}
+              />
+            );
+          },
+          loadMenuButton: () => {
+            return (
+              <SafeLazy
+                loader={() => {
+                   return import("@sqwiro/businessapps/smartvendoraccount/SmartvendoraccountMenuButton");
+                }}
+                fallback={<LoadingMenuButton />}
+                errorFallback={<LoadingMenuButton />}
+              />
+            );
+          },
+        },
+"magneta_application/system": {
+          id: "system",
+          _ref: "magneta_application/system",
+          AppId: "system",
+          packageName: "@sqwiromobilesystemapps/system",
+          appRoot: "@sqwiro/systemapps/system",
+          RootComponent: SystemApp,
+          MenuButton: SystemMenuButton,
+          groupId: "systemapps",
+          loadComponent: () => {
+            return (
+              <SafeLazy
+                loader={() => {
+                  return import("@sqwiro/systemapps/system/SystemApp");
+                }}
+                fallback={<LoadingComponent />}
+                errorFallback={AppNotFound}
+              />
+            );
+          },
+          loadMenuButton: () => {
+            return (
+              <SafeLazy
+                loader={() => {
+                   return import("@sqwiro/systemapps/system/SystemMenuButton");
+                }}
+                fallback={<LoadingMenuButton />}
+                errorFallback={<LoadingMenuButton />}
+              />
+            );
+          },
+        },
+"magneta_application/smartsqwirosupport": {
+          id: "smartsqwirosupport",
+          _ref: "magneta_application/smartsqwirosupport",
+          AppId: "smartsqwirosupport",
+          packageName: "@sqwiromobilecustomercareapps/smartsqwirosupport",
+          appRoot: "@sqwiro/customercareapps/smartsqwirosupport",
+          RootComponent: SmartsqwirosupportApp,
+          MenuButton: SmartsqwirosupportMenuButton,
+          groupId: "customercareapps",
+          loadComponent: () => {
+            return (
+              <SafeLazy
+                loader={() => {
+                  return import("@sqwiro/customercareapps/smartsqwirosupport/SmartsqwirosupportApp");
+                }}
+                fallback={<LoadingComponent />}
+                errorFallback={AppNotFound}
+              />
+            );
+          },
+          loadMenuButton: () => {
+            return (
+              <SafeLazy
+                loader={() => {
+                   return import("@sqwiro/customercareapps/smartsqwirosupport/SmartsqwirosupportMenuButton");
+                }}
+                fallback={<LoadingMenuButton />}
+                errorFallback={<LoadingMenuButton />}
+              />
+            );
+          },
+        },
+"magneta_application/smartcustomerhelp": {
+          id: "smartcustomerhelp",
+          _ref: "magneta_application/smartcustomerhelp",
+          AppId: "smartcustomerhelp",
+          packageName: "@sqwiromobilecustomercareapps/smartcustomerhelp",
+          appRoot: "@sqwiro/customercareapps/smartcustomerhelp",
+          RootComponent: SmartcustomerhelpApp,
+          MenuButton: SmartcustomerhelpMenuButton,
+          groupId: "customercareapps",
+          loadComponent: () => {
+            return (
+              <SafeLazy
+                loader={() => {
+                  return import("@sqwiro/customercareapps/smartcustomerhelp/SmartcustomerhelpApp");
+                }}
+                fallback={<LoadingComponent />}
+                errorFallback={AppNotFound}
+              />
+            );
+          },
+          loadMenuButton: () => {
+            return (
+              <SafeLazy
+                loader={() => {
+                   return import("@sqwiro/customercareapps/smartcustomerhelp/SmartcustomerhelpMenuButton");
+                }}
+                fallback={<LoadingMenuButton />}
+                errorFallback={<LoadingMenuButton />}
+              />
+            );
+          },
+        },
+"magneta_application/hr": {
+          id: "hr",
+          _ref: "magneta_application/hr",
+          AppId: "hr",
+          packageName: "@sqwiromobilehrapps/hr",
+          appRoot: "@sqwiro/hrapps/hr",
+          RootComponent: HrApp,
+          MenuButton: HrMenuButton,
+          groupId: "hrapps",
+          loadComponent: () => {
+            return (
+              <SafeLazy
+                loader={() => {
+                  return import("@sqwiro/hrapps/hr/HrApp");
+                }}
+                fallback={<LoadingComponent />}
+                errorFallback={AppNotFound}
+              />
+            );
+          },
+          loadMenuButton: () => {
+            return (
+              <SafeLazy
+                loader={() => {
+                   return import("@sqwiro/hrapps/hr/HrMenuButton");
+                }}
+                fallback={<LoadingMenuButton />}
+                errorFallback={<LoadingMenuButton />}
+              />
+            );
+          },
+        },
+"magneta_application/smartstaff": {
+          id: "smartstaff",
+          _ref: "magneta_application/smartstaff",
+          AppId: "smartstaff",
+          packageName: "@sqwiromobilehrapps/smartstaff",
+          appRoot: "@sqwiro/hrapps/smartstaff",
+          RootComponent: SmartstaffApp,
+          MenuButton: SmartstaffMenuButton,
+          groupId: "hrapps",
+          loadComponent: () => {
+            return (
+              <SafeLazy
+                loader={() => {
+                  return import("@sqwiro/hrapps/smartstaff/SmartstaffApp");
+                }}
+                fallback={<LoadingComponent />}
+                errorFallback={AppNotFound}
+              />
+            );
+          },
+          loadMenuButton: () => {
+            return (
+              <SafeLazy
+                loader={() => {
+                   return import("@sqwiro/hrapps/smartstaff/SmartstaffMenuButton");
                 }}
                 fallback={<LoadingMenuButton />}
                 errorFallback={<LoadingMenuButton />}
