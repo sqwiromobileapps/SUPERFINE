@@ -13,17 +13,178 @@
       "node_modules/@expocraft-icons"
     ],
     "baseUrl": "./src",
-    "lib": ["es2017"],
+    "lib": [
+      "es2017"
+    ],
     "paths": {
-      "react": ["./node_modules/@types/react"],
-      "@cloudhub-ux/graphql": ["./node_modules/@cloudhub-ux/graphql"],
-      "@expocraft/core": ["/Users/bernardgaitho/@cloudhub/@expocraft/core"],
-      "@sqwiro/app": ["./@sqwiro/app"],
-      "@sqwiro/appcore": ["./@sqwiro/appcore"],
-      "@sqwiro/customapps": ["./@sqwiro/customapps"],
-      "@sqwiro/businessapps": ["./@sqwiro/businessapps"],
-      "@sqwiro/userapps": ["./@sqwiro/userapps"],
-      "@sqwiro/customuserapps": ["./@sqwiro/customuserapps"]
+      "react": [
+        "./node_modules/@types/react"
+      ],
+      "@cloudhub-ux/graphql": [
+        "./node_modules/@cloudhub-ux/graphql"
+      ],
+      "@expocraft/core": [
+        "/Users/bernardgaitho/@cloudhub/@expocraft/core"
+      ],
+      "@sqwiro/app": [
+        "./@sqwiro/app"
+      ],
+      "@sqwiro/appcore": [
+        "./@sqwiro/appcore"
+      ],
+      "@sqwiro/customapps": [
+        "./@sqwiro/customapps"
+      ],
+      "@sqwiro/businessapps": [
+        "./@sqwiro/businessapps"
+      ],
+      "@sqwiro/userapps": [
+        "./@sqwiro/userapps"
+      ],
+      "@sqwiro/customuserapps": [
+        "./@sqwiro/customuserapps"
+      ],
+      "@sqwiro/apiapps": [
+        "./@sqwiro/apiapps"
+      ],
+      "@sqwiro/superadminapps": [
+        "./@sqwiro/superadminapps"
+      ],
+      "@sqwiro/superschedulerapps": [
+        "./@sqwiro/superschedulerapps"
+      ],
+      "@sqwiro/cmsapps": [
+        "./@sqwiro/cmsapps"
+      ],
+      "@sqwiro/websiteapps": [
+        "./@sqwiro/websiteapps"
+      ],
+      "@sqwiro/agribusinessapps": [
+        "./@sqwiro/agribusinessapps"
+      ],
+      "@sqwiro/tradingapps": [
+        "./@sqwiro/tradingapps"
+      ],
+      "@sqwiro/saccoapps": [
+        "./@sqwiro/saccoapps"
+      ],
+      "@sqwiro/lawfirmapps": [
+        "./@sqwiro/lawfirmapps"
+      ],
+      "@sqwiro/schedulingapps": [
+        "./@sqwiro/schedulingapps"
+      ],
+      "@sqwiro/eschoolapps": [
+        "./@sqwiro/eschoolapps"
+      ],
+      "@sqwiro/ecommerceapps": [
+        "./@sqwiro/ecommerceapps"
+      ],
+      "@sqwiro/countyapps": [
+        "./@sqwiro/countyapps"
+      ],
+      "@sqwiro/hospitalapps": [
+        "./@sqwiro/hospitalapps"
+      ],
+      "@sqwiro/tourismapps": [
+        "./@sqwiro/tourismapps"
+      ],
+      "@sqwiro/transportapps": [
+        "./@sqwiro/transportapps"
+      ],
+      "@sqwiro/realestateapps": [
+        "./@sqwiro/realestateapps"
+      ],
+      "@sqwiro/insuranceapps": [
+        "./@sqwiro/insuranceapps"
+      ],
+      "@sqwiro/fintechapps": [
+        "./@sqwiro/fintechapps"
+      ],
+      "@sqwiro/manufacturingapps": [
+        "./@sqwiro/manufacturingapps"
+      ],
+      "@sqwiro/eventiveapps": [
+        "./@sqwiro/eventiveapps"
+      ],
+      "@sqwiro/mediaapps": [
+        "./@sqwiro/mediaapps"
+      ],
+      "@sqwiro/accountingapps": [
+        "./@sqwiro/accountingapps"
+      ],
+      "@sqwiro/socialmediaapps": [
+        "./@sqwiro/socialmediaapps"
+      ],
+      "@sqwiro/systemapps": [
+        "./@sqwiro/systemapps"
+      ],
+      "@sqwiro/uniqueapps": [
+        "./@sqwiro/uniqueapps"
+      ],
+      "@sqwiro/accountmanagementapps": [
+        "./@sqwiro/accountmanagementapps"
+      ],
+      "@sqwiro/customercareapps": [
+        "./@sqwiro/customercareapps"
+      ],
+      "@sqwiro/kenyapoliticalapps": [
+        "./@sqwiro/kenyapoliticalapps"
+      ],
+      "@sqwiro/ngoapps": [
+        "./@sqwiro/ngoapps"
+      ],
+      "@sqwiro/churchapps": [
+        "./@sqwiro/churchapps"
+      ],
+      "@sqwiro/fundraisingapps": [
+        "./@sqwiro/fundraisingapps"
+      ],
+      "@sqwiro/awardmanagementapps": [
+        "./@sqwiro/awardmanagementapps"
+      ],
+      "@sqwiro/billingapps": [
+        "./@sqwiro/billingapps"
+      ],
+      "@sqwiro/propertymanagementapps": [
+        "./@sqwiro/propertymanagementapps"
+      ],
+      "@sqwiro/professionalservicesapps": [
+        "./@sqwiro/professionalservicesapps"
+      ],
+      "@sqwiro/automotiveapps": [
+        "./@sqwiro/automotiveapps"
+      ],
+      "@sqwiro/beautyapps": [
+        "./@sqwiro/beautyapps"
+      ],
+      "@sqwiro/governmentapps": [
+        "./@sqwiro/governmentapps"
+      ],
+      "@sqwiro/charityapps": [
+        "./@sqwiro/charityapps"
+      ],
+      "@sqwiro/aiapps": [
+        "./@sqwiro/aiapps"
+      ],
+      "@sqwiro/cloudhubapps": [
+        "./@sqwiro/cloudhubapps"
+      ],
+      "@sqwiro/web3apps": [
+        "./@sqwiro/web3apps"
+      ],
+      "@sqwiro/blockchainapps": [
+        "./@sqwiro/blockchainapps"
+      ],
+      "@sqwiro/nativeapps": [
+        "./@sqwiro/nativeapps"
+      ],
+      "@sqwiro/hrapps": [
+        "./@sqwiro/hrapps"
+      ],
+      "@sqwiro/filehostingapps": [
+        "./@sqwiro/filehostingapps"
+      ]
     },
     "skipLibCheck": true,
     "strict": false,
@@ -34,7 +195,10 @@
     "isolatedModules": true,
     "incremental": true
   },
-  "include": ["./src/**/*", "nativewind-env.d.ts"],
+  "include": [
+    "./src/**/*",
+    "nativewind-env.d.ts"
+  ],
   "exclude": [
     "node_modules",
     "src/**/*.spec.ts",
