@@ -8,7 +8,7 @@ import { useGraphqlQuery } from '@cloudhub-ux/graphql';
 import useAuthentication from '@sqwiro/appcore/auth/context/useAuthentication';
 
 const Farmbridge_farminspectorMenuButton = (props) => {
-  const { userAppsDrawerNavigator } = useAppNavigationContext();
+  const { appsDrawerNavigator } = useAppNavigationContext();
   const { currentUser } = useAuthentication();
 
   const {
@@ -38,7 +38,7 @@ const Farmbridge_farminspectorMenuButton = (props) => {
         iconSize={75}
         IconComponent={<NotoFarmerDarkSkinTone />}
         onPress={() => {
-          userAppsDrawerNavigator.navigate('smartfarminspector');
+          appsDrawerNavigator.navigate('smartfarminspector');
         }}
         color={colors.blueGrey[500]}
         lightColor={colors.blueGrey[100]}

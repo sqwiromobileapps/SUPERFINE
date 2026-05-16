@@ -4,14 +4,14 @@ import useAppNavigationContext from '@sqwiro/appcore/context/useAppNavigationCon
 import DefaultApp from '@sqwiro/app/DefaultApp';
 
 const LandingPageEditorApp = ({ navigation }) => {
-  const { adminAppsDrawerNavigator } = useAppNavigationContext();
+  const { appsDrawerNavigator } = useAppNavigationContext();
 
   return (
     <Block>
       <Header
         hasHeight
         onBack={() => {
-          adminAppsDrawerNavigator.goBack();
+          appsDrawerNavigator.goBack();
         }}
       />
 

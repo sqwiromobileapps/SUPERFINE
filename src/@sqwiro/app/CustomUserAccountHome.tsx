@@ -15,7 +15,7 @@ import Farmbridge_farminspectorMenuButton from '@sqwiro/app/userbuttons/Farmbrid
 import { ChubPesaPurse } from '@expocraft-icons/chub';
 
 const CustomUserAccountHome = ({ navigation }) => {
-  const { userAppsDrawerNavigator } = useAppNavigationContext();
+  const { appsDrawerNavigator } = useAppNavigationContext();
   const { dispatch } = useAppNavigationContext();
   const { currentUser, isMerchantAdmin } = useAuthentication();
 
@@ -28,7 +28,7 @@ const CustomUserAccountHome = ({ navigation }) => {
       dispatch((state) => ({
         appNavigationContext: {
           ...state.appNavigationContext,
-          userAppsDrawerNavigator: navigation,
+          appsDrawerNavigator: navigation,
         },
       }));
     }
@@ -41,7 +41,7 @@ const CustomUserAccountHome = ({ navigation }) => {
         leftComponent={
           <IconButton
             onPress={() => {
-              userAppsDrawerNavigator.openDrawer();
+              appsDrawerNavigator.openDrawer();
             }}
             size={moderateScale(32)}
           >
@@ -71,7 +71,7 @@ const CustomUserAccountHome = ({ navigation }) => {
                   height: 130,
                 }}
                 onPress={() => {
-                  userAppsDrawerNavigator.navigate('smartfarmer');
+                  appsDrawerNavigator.navigate('smartfarmer');
                 }}
               />,
 
@@ -87,7 +87,7 @@ const CustomUserAccountHome = ({ navigation }) => {
                   height: 130,
                 }}
                 onPress={() => {
-                  userAppsDrawerNavigator.navigate('smartstaff');
+                  appsDrawerNavigator.navigate('smartstaff');
                 }}
               />,
 
@@ -95,7 +95,7 @@ const CustomUserAccountHome = ({ navigation }) => {
                 id="smartfarminspector"
                 title="Farm Inspector"
                 onPress={() => {
-                  userAppsDrawerNavigator.navigate('smartfarminspector');
+                  appsDrawerNavigator.navigate('smartfarminspector');
                 }}
               />,
 
@@ -105,7 +105,7 @@ const CustomUserAccountHome = ({ navigation }) => {
                 iconSize={65}
                 IconComponent={<MdiCashCheck color="brown" />}
                 onPress={() => {
-                  userAppsDrawerNavigator.navigate('smartvendoraccount');
+                  appsDrawerNavigator.navigate('smartvendoraccount');
                 }}
                 color={colors.brown[500]}
                 lightColor={colors.brown[100]}
@@ -122,7 +122,7 @@ const CustomUserAccountHome = ({ navigation }) => {
                 iconSize={65}
                 IconComponent={<MdiSteering />}
                 onPress={() => {
-                  userAppsDrawerNavigator.navigate('smartdriver');
+                  appsDrawerNavigator.navigate('smartdriver');
                 }}
                 color={colors.indigo[500]}
                 lightColor={colors.indigo[100]}
@@ -139,7 +139,7 @@ const CustomUserAccountHome = ({ navigation }) => {
                 iconSize={65}
                 IconComponent={<ChubPesaPurse color={colors.dark} />}
                 onPress={() => {
-                  userAppsDrawerNavigator.navigate('smartpesapurse');
+                  appsDrawerNavigator.navigate('smartpesapurse');
                 }}
                 color={colors.grey[700]}
                 lightColor={colors.grey[100]}
@@ -158,7 +158,7 @@ const CustomUserAccountHome = ({ navigation }) => {
                 color={colors.blueGrey[500]}
                 lightColor={colors.blueGrey[100]}
                 onPress={() => {
-                  userAppsDrawerNavigator.navigate('enterprisewallet');
+                  appsDrawerNavigator.navigate('enterprisewallet');
                 }}
                 buttonStyle={{
                   width: 150,
@@ -174,7 +174,7 @@ const CustomUserAccountHome = ({ navigation }) => {
                     iconSize={65}
                     IconComponent={<MdiCheckCircle />}
                     onPress={() => {
-                      userAppsDrawerNavigator.navigate('smartapprover');
+                      appsDrawerNavigator.navigate('smartapprover');
                     }}
                     color={colors.green[500]}
                     lightColor={colors.green[100]}
