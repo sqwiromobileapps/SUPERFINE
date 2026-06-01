@@ -6,6 +6,18 @@ export { default as Images } from './Images';
 export { default as Metrics } from './Metrics';
 export { default as Sounds } from './Sounds';
 
+// Merchant-customizable design system (parity with desktop).
+export { default as colorPalettes } from './colorPalettes';
+export { default as resolveColorTheme, DEFAULT_THEME } from './resolveTheme';
+export type { ThemeMode, ColorThemeName, AppColors } from './resolveTheme';
+export { default as hslToHex } from './hslToHex';
+export { default as DynamicThemeProvider } from './DynamicThemeProvider';
+export {
+  default as ThemeModeContext,
+  useThemeMode,
+} from './ThemeModeContext';
+export type { ThemeModePref, ThemeModeValue } from './ThemeModeContext';
+
 export { scale, verticalScale, moderateScale } from 'react-native-size-matters';
 
 export const hexToRgb = (hexcolor) => {

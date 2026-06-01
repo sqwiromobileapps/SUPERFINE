@@ -1,6 +1,7 @@
 import React from 'react';
 import PreloadApp from '@sqwiro/appcore/context/PreloadApp';
 import RootNavigator from '@sqwiro/appcore/navigation/RootNavigator';
+import DynamicThemeProvider from './theme/DynamicThemeProvider';
 import getConfig from './config/getConfig';
 
 const AppHome = () => {
@@ -9,7 +10,9 @@ const AppHome = () => {
       MerchantCode={getConfig().MerchantCode}
       GooglePlayId={`${getConfig().GooglePlayId}`}
     >
-      <RootNavigator />
+      <DynamicThemeProvider>
+        <RootNavigator />
+      </DynamicThemeProvider>
     </PreloadApp>
   );
 };

@@ -10,6 +10,7 @@
   "expo": {
     "name": "SUPERFINE",
     "slug": "SUPERFINE",
+    "userInterfaceStyle": "automatic",
     "packagerOpts": {
       "host": "admin.localsuperfine.com"
     },
