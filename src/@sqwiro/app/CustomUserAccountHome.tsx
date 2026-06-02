@@ -62,7 +62,7 @@ const CustomUserAccountHome = ({ navigation }) => {
               <MenuButton
                 id="farmerapp"
                 title="Farmer App"
-                iconSize={65}
+                iconSize={45}
                 imageIcon={Images.logo}
                 color={colors.blueGrey[500]}
                 lightColor={colors.blueGrey[100]}
@@ -78,7 +78,7 @@ const CustomUserAccountHome = ({ navigation }) => {
               <MenuButton
                 id="staffapp"
                 title="Staff App"
-                iconSize={65}
+                iconSize={45}
                 IconComponent={<MdiAccountGroupOutline />}
                 color={colors.blueGrey[500]}
                 lightColor={colors.blueGrey[100]}
@@ -102,7 +102,7 @@ const CustomUserAccountHome = ({ navigation }) => {
               <MenuButton
                 id="smartvendoraccount"
                 title="Vendor Account"
-                iconSize={65}
+                iconSize={45}
                 IconComponent={<MdiCashCheck color="brown" />}
                 onPress={() => {
                   appsDrawerNavigator.navigate('smartvendoraccount');
@@ -119,7 +119,7 @@ const CustomUserAccountHome = ({ navigation }) => {
               <MenuButton
                 id="smartdriver"
                 title="Smart Driver"
-                iconSize={65}
+                iconSize={45}
                 IconComponent={<MdiSteering />}
                 onPress={() => {
                   appsDrawerNavigator.navigate('smartdriver');
@@ -136,7 +136,7 @@ const CustomUserAccountHome = ({ navigation }) => {
               <MenuButton
                 id="smartpesapurse"
                 title="PesaPurse"
-                iconSize={65}
+                iconSize={45}
                 IconComponent={<ChubPesaPurse color={colors.dark} />}
                 onPress={() => {
                   appsDrawerNavigator.navigate('smartpesapurse');
@@ -153,7 +153,6 @@ const CustomUserAccountHome = ({ navigation }) => {
               <MenuButton
                 id="enterprisewallet"
                 title="Enterprise Wallet"
-                iconSize={75}
                 IconComponent={<ChubPesaPurse color={colors.dark} />}
                 color={colors.blueGrey[500]}
                 lightColor={colors.blueGrey[100]}
@@ -161,9 +160,10 @@ const CustomUserAccountHome = ({ navigation }) => {
                   appsDrawerNavigator.navigate('enterprisewallet');
                 }}
                 buttonStyle={{
-                  width: 150,
-                  height: 150,
+                  width: 130,
+                  height: 130,
                 }}
+                iconSize={45}
               />,
 
               <>
@@ -171,7 +171,7 @@ const CustomUserAccountHome = ({ navigation }) => {
                   <MenuButton
                     id="smartapprover"
                     title="Smart Approver"
-                    iconSize={65}
+                    iconSize={45}
                     IconComponent={<MdiCheckCircle />}
                     onPress={() => {
                       appsDrawerNavigator.navigate('smartapprover');
