@@ -3,7 +3,7 @@ import { Block } from '@expocraft/core';
 import { MenuButton } from '@expocraft/core/lib/widgets';
 import { NotoFarmerDarkSkinTone } from '@expocraft-icons/noto';
 import useAppNavigationContext from '@sqwiro/appcore/context/useAppNavigationContext';
-import { colors } from '@sqwiro/app/theme';
+import { colors } from '@sqwiro/appcore/theme';
 import { useGraphqlQuery } from '@cloudhub-ux/graphql';
 import useAuthentication from '@sqwiro/appcore/auth/context/useAuthentication';
 

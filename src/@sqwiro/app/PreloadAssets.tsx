@@ -6,8 +6,8 @@ import { Asset } from 'expo-asset';
 import MaterialIcons from '@expo/vector-icons/MaterialIcons';
 import each from 'lodash/each';
 
-import AppImages from '@sqwiro/app/theme/Images';
-import AppSounds from '@sqwiro/app/theme/Sounds';
+import AppImages from '@sqwiro/appcore/theme/Images';
+import AppSounds from '@sqwiro/appcore/theme/Sounds';
 
 function cacheImages(images) {
   return images.map((image) => {

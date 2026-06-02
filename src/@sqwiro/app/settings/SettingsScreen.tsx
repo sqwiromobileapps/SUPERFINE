@@ -8,8 +8,8 @@ import {
   MdiCheckCircle,
   MdiPalette,
 } from '@expocraft-icons/mdi';
-import useAppTheme from '@sqwiro/app/theme/useAppTheme';
-import { useThemeMode, ThemeModePref } from '@sqwiro/app/theme';
+import useAppTheme from '@sqwiro/appcore/theme/useAppTheme';
+import { useThemeMode, ThemeModePref } from '@sqwiro/appcore/theme';
 
 const APPEARANCE_OPTIONS: {
   value: ThemeModePref;

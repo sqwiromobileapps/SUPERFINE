@@ -1,7 +1,7 @@
 import React from 'react';
 import { Block, Header, IconButton, Text } from '@expocraft/core';
 import useAppNavigationContext from '@sqwiro/appcore/context/useAppNavigationContext';
-import { Images, colors, moderateScale } from '@sqwiro/app/theme';
+import { Images, colors, moderateScale } from '@sqwiro/appcore/theme';
 import {
   MdiAccountGroupOutline,
   MdiCashCheck,
