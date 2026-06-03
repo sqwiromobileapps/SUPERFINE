@@ -42,7 +42,7 @@ module.exports = function (api) {
               './node_modules/react-native'
             ),
             '@sqwiro/app': path.resolve(__dirname, './src/@sqwiro/app'),
-            '@expocraft/core': '/Users/bernardgaitho/@cloudhub/@expocraft/core',
+            '@expocraft/core': '/Users/bernardgaitho/@cloudhub/@expocraft/core56',
             '@expocraft/react-native-media-console':
               '/Users/bernardgaitho/@cloudhub/@expocraft/react-native-media-console',
             '@cloudhub-ux/graphql':

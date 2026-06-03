@@ -1,0 +1,89 @@
+diff --git a/node_modules/@react-navigation/drawer/src/views/DrawerView.tsx b/node_modules/@react-navigation/drawer/src/views/DrawerView.tsx
+index 94770c4..ac016fc 100644
+--- a/node_modules/@react-navigation/drawer/src/views/DrawerView.tsx
++++ b/node_modules/@react-navigation/drawer/src/views/DrawerView.tsx
+@@ -77,7 +77,7 @@ function DrawerViewBase({
+     Platform.OS === 'ios',
+   // Reanimated 2 is not configured
+   // @ts-expect-error: the type definitions are incomplete
+-  useLegacyImplementation = !Reanimated.isConfigured?.(),
++  useLegacyImplementation = false,
+ }: Props) {
+   // Reanimated v3 dropped legacy v1 syntax
+   const legacyImplemenationNotAvailable =
+diff --git a/node_modules/@react-navigation/drawer/src/views/modern/Drawer.tsx b/node_modules/@react-navigation/drawer/src/views/modern/Drawer.tsx
+index 57af20c..223799c 100644
+--- a/node_modules/@react-navigation/drawer/src/views/modern/Drawer.tsx
++++ b/node_modules/@react-navigation/drawer/src/views/modern/Drawer.tsx
+@@ -11,12 +11,12 @@ import {
+ import Animated, {
+   interpolate,
+   runOnJS,
+-  useAnimatedGestureHandler,
+   useAnimatedStyle,
+   useDerivedValue,
+   useSharedValue,
+   withSpring,
+ } from 'react-native-reanimated';
++import { useAnimatedGestureHandler } from './useAnimatedGestureHandlerCompat';
+ 
+ import type { DrawerProps } from '../../types';
+ import DrawerProgressContext from '../../utils/DrawerProgressContext';
+@@ -197,12 +197,14 @@ export default function Drawer({
+     { startX: number; hasCalledOnStart: boolean }
+   >({
+     onStart: (event, ctx) => {
++      'worklet';
+       ctx.hasCalledOnStart = false;
+       ctx.startX = translationX.value;
+       gestureState.value = event.state;
+       touchStartX.value = event.x;
+     },
+     onActive: (event, ctx) => {
++      'worklet';
+       touchX.value = event.x;
+       translationX.value = ctx.startX + event.translationX;
+       gestureState.value = event.state;
+@@ -216,6 +218,7 @@ export default function Drawer({
+       }
+     },
+     onEnd: (event) => {
++      'worklet';
+       gestureState.value = event.state;
+ 
+       const nextOpen =
+@@ -236,6 +239,7 @@ export default function Drawer({
+       });
+     },
+     onFinish: () => {
++      'worklet';
+       runOnJS(onGestureFinish)();
+     },
+   });
+diff --git a/node_modules/@react-navigation/drawer/src/views/modern/useAnimatedGestureHandlerCompat.js b/node_modules/@react-navigation/drawer/src/views/modern/useAnimatedGestureHandlerCompat.js
+new file mode 100644
+index 0000000..61cfa46
+--- /dev/null
++++ b/node_modules/@react-navigation/drawer/src/views/modern/useAnimatedGestureHandlerCompat.js
+@@ -0,0 +1,21 @@
++import { useEvent, useHandler } from 'react-native-reanimated';
++const S = { UNDETERMINED: 0, FAILED: 1, BEGAN: 2, CANCELLED: 3, ACTIVE: 4, END: 5 };
++export function useAnimatedGestureHandler(handlers, dependencies) {
++  const { context, doDependenciesDiffer } = useHandler(handlers, dependencies);
++  return useEvent(
++    (event) => {
++      'worklet';
++      const { onStart, onActive, onEnd, onFail, onCancel, onFinish } = handlers;
++      if (event.state === S.BEGAN && onStart) onStart(event, context);
++      if (event.state === S.ACTIVE && onActive) onActive(event, context);
++      if (event.oldState === S.ACTIVE && event.state === S.END && onEnd) onEnd(event, context);
++      if (event.oldState === S.ACTIVE && event.state === S.FAILED && onFail) onFail(event, context);
++      if (event.oldState === S.ACTIVE && event.state === S.CANCELLED && onCancel) onCancel(event, context);
++      if (event.oldState === S.ACTIVE && (event.state === S.END || event.state === S.FAILED || event.state === S.CANCELLED) && onFinish) {
++        onFinish(event, context, event.state === S.CANCELLED || event.state === S.FAILED);
++      }
++    },
++    ['onGestureHandlerStateChange', 'onGestureHandlerEvent'],
++    doDependenciesDiffer
++  );
++}

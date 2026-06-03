@@ -14,7 +14,7 @@ const sdkBlacklistedPaths = [
 module.exports = function extractLinkedPackages(repoDir) {
   // Map containing linked packages and their real paths
   const linkedPackages = {
-    '@expocraft/core': '/Users/bernardgaitho/@cloudhub/@expocraft/core',
+    '@expocraft/core': '/Users/bernardgaitho/@cloudhub/@expocraft/core56',
     '@expocraft/react-native-media-console':
       '/Users/bernardgaitho/@cloudhub/@expocraft/react-native-media-console',
     '@cloudhub-ux/graphql':

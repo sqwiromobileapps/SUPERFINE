@@ -1,6 +1,9 @@
 {
   "name": "SUPERFINE",
-  "platforms": ["ios", "android"],
+  "platforms": [
+    "ios",
+    "android"
+  ],
   "icon": "./src/@sqwiro/app/assets/images/logoicon.png",
   "splash": {
     "image": "./src/@sqwiro/app/assets/images/splash.png",
@@ -19,9 +22,12 @@
         "expo-build-properties",
         {
           "android": {
-            "compileSdkVersion": 35,
-            "targetSdkVersion": 35,
-            "buildToolsVersion": "35.0.0"
+            "compileSdkVersion": 36,
+            "targetSdkVersion": 36,
+            "buildToolsVersion": "36.0.0"
+          },
+          "ios": {
+            "deploymentTarget": "16.4"
           }
         }
       ],
@@ -57,7 +63,13 @@
             "extensionRendererMode": "prefer"
           }
         }
-      ]
+      ],
+      "@react-native-community/datetimepicker",
+      "expo-sharing",
+      "expo-splash-screen",
+      "expo-status-bar",
+      "expo-video",
+      "expo-audio"
     ],
     "android": {
       "icon": "./src/@sqwiro/app/assets/images/logoicon.png",
@@ -79,6 +91,10 @@
         "android.permission.MODIFY_AUDIO_SETTINGS",
         "android.permission.FOREGROUND_SERVICE",
         "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK"
+      ],
+      "blockedPermissions": [
+        "android.permission.READ_MEDIA_IMAGES",
+        "android.permission.READ_MEDIA_VIDEO"
       ]
     },
     "ios": {
@@ -113,9 +129,10 @@
     "updates": {
       "requestHeaders": {
         "expo-runtime-version": "1.0.0",
-        "expo-channel-name": "sdk51"
+        "expo-channel-name": "sdk56"
       },
       "url": "https://u.expo.dev/171184dd-6b7e-40b9-b32e-6542aa76a74d"
-    }
+    },
+    "newArchEnabled": true
   }
 }
