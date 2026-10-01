@@ -12,13 +12,11 @@
     <integer>0</integer>
     <key>EXUpdatesRequestHeaders</key>
     <dict>
-      <key>expo-runtime-version</key>
-      <string>1.0.0</string>
       <key>expo-channel-name</key>
       <string>sdk56</string>
     </dict>
     <key>EXUpdatesRuntimeVersion</key>
-    <string>1.0.0</string>
+    <string>file:fingerprint</string>
     <key>EXUpdatesURL</key>
     <string>https://u.expo.dev/171184dd-6b7e-40b9-b32e-6542aa76a74d</string>
   </dict>

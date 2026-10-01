@@ -132,7 +132,9 @@
       "bundler": "metro"
     },
     "version": "56.11",
-    "runtimeVersion": "1.0.0",
+    "runtimeVersion": {
+      "policy": "fingerprint"
+    },
     "extra": {
       "eas": {
         "projectId": "171184dd-6b7e-40b9-b32e-6542aa76a74d"
@@ -140,7 +142,6 @@
     },
     "updates": {
       "requestHeaders": {
-        "expo-runtime-version": "1.0.0",
         "expo-channel-name": "sdk56"
       },
       "url": "https://u.expo.dev/171184dd-6b7e-40b9-b32e-6542aa76a74d"

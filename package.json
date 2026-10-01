@@ -13,7 +13,10 @@
     "postinstall": "node postinstall.js && npx patch-package",
     "bump": "node ../SQWIRO_SCRIPTS/sync-versions.js --bump",
     "version:sync": "node ../SQWIRO_SCRIPTS/sync-versions.js",
-    "version:check": "node ../SQWIRO_SCRIPTS/sync-versions.js --check"
+    "version:check": "node ../SQWIRO_SCRIPTS/sync-versions.js --check",
+    "fingerprint:check": "node ../SQWIRO_SCRIPTS/check-fingerprint.js",
+    "fingerprint:record": "node ../SQWIRO_SCRIPTS/check-fingerprint.js --record",
+    "ota:publish": "node ../SQWIRO_SCRIPTS/check-fingerprint.js && npx eas-cli update --channel sdk56"
   },
   "dependencies": {
     "@cloudhub-ux/graphql": "latest",
