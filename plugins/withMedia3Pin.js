@@ -1,22 +1,23 @@
-// Pins androidx.media3 to 1.8.0 across all modules so video playback works.
-// react-native-video@6.19.2 compiles against media3 1.8.0 (subclasses DefaultLoadControl
-// with a constructor removed in 1.9.0); expo-video pulls 1.9.0, so the unified runtime
-// classpath (1.9.0) crashes with NoSuchMethodError on any playback. Forcing 1.8.0 makes
-// both compile and run against the same API. This config plugin re-applies the pin on
-// every `expo prebuild`, so it can never be silently reverted.
+// Pins androidx.media3 to 1.9.0 across all modules so both video players run on one version (M0.3, D-113).
+// expo-video 56.1.2 is built against media3 1.9.0 (its LoadControl implements getAllocator(PlayerId); under a
+// 1.8.0 pin it throws AbstractMethodError). react-native-video >= 6.19.3 wraps DefaultLoadControl instead of
+// subclassing it and runs on media3 1.8-1.10 (6.19.2 crashed on 1.9.0 with NoSuchMethodError
+// DefaultLoadControl.<init>). This config plugin re-applies the pin on every `expo prebuild`, and rewrites an
+// older pinned version, so it can never be silently reverted.
 const { withProjectBuildGradle, createRunOncePlugin } = require('expo/config-plugins');
 
 const MARKER = "details.requested.group == 'androidx.media3'";
+const MEDIA3_VERSION = '1.9.0';
 
 // Indented to sit one level inside `allprojects { … }`; no leading/trailing newline.
 const MEDIA3_BLOCK = [
-  '  // Pin androidx.media3 to a single version across all modules. (react-native-video',
-  '  // 6.19.2 needs 1.8.0; expo-video pulls 1.9.0 -> DefaultLoadControl NoSuchMethodError.)',
+  '  // Pin androidx.media3 to a single version across all modules: expo-video 56.1.2 is built',
+  '  // for 1.9.0 (AbstractMethodError getAllocator under 1.8.0); react-native-video >= 6.19.3 runs on it.',
   '  configurations.all {',
   '    resolutionStrategy {',
   '      eachDependency { details ->',
   "        if (details.requested.group == 'androidx.media3') {",
-  "          details.useVersion '1.8.0'",
+  `          details.useVersion '${MEDIA3_VERSION}'`,
   '        }',
   '      }',
   '    }',
@@ -43,7 +44,14 @@ const withMedia3Pin = (config) =>
       return cfg;
     }
     const contents = cfg.modResults.contents;
-    if (contents.includes(MARKER)) return cfg; // idempotent
+    if (contents.includes(MARKER)) {
+      // idempotent; an older pin (1.8.0) is moved to MEDIA3_VERSION
+      cfg.modResults.contents = contents.replace(
+        /(details\.requested\.group == 'androidx\.media3'\)\s*\{\s*details\.useVersion ')[^']*(')/,
+        `$1${MEDIA3_VERSION}$2`
+      );
+      return cfg;
+    }
 
     const apMatch = contents.search(/allprojects\s*\{/);
     if (apMatch === -1) {
@@ -75,4 +83,4 @@ const withMedia3Pin = (config) =>
     return cfg;
   });
 
-module.exports = createRunOncePlugin(withMedia3Pin, 'withMedia3Pin', '1.0.0');
+module.exports = createRunOncePlugin(withMedia3Pin, 'withMedia3Pin', '1.1.0');
