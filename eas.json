@@ -1,0 +1,37 @@
+{
+  "cli": {
+    "version": ">= 0.38.3",
+    "appVersionSource": "local"
+  },
+  "build": {
+    "development": {
+      "distribution": "internal",
+      "android": {
+        "gradleCommand": ":app:assembleDebug"
+      },
+      "ios": {
+        "buildConfiguration": "Debug"
+      },
+      "channel": "sdk56"
+    },
+    "preview": {
+      "distribution": "internal",
+      "channel": "sdk56",
+      "android": {
+        "buildType": "apk"
+      }
+    },
+    "production": {
+      "channel": "sdk56"
+    }
+  },
+  "submit": {
+    "production": {
+      "android": {
+        "serviceAccountKeyPath": "../SQWIRO_SCRIPTS/googleplay/sqwiro-7b92d2d67135.json",
+        "track": "internal",
+        "releaseStatus": "draft"
+      }
+    }
+  }
+}

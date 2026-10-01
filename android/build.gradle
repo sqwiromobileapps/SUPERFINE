@@ -18,6 +18,17 @@ allprojects {
     mavenCentral()
     maven { url 'https://www.jitpack.io' }
   }
+  // Pin androidx.media3 to a single version across all modules. (react-native-video
+  // 6.19.2 needs 1.8.0; expo-video pulls 1.9.0 -> DefaultLoadControl NoSuchMethodError.)
+  configurations.all {
+    resolutionStrategy {
+      eachDependency { details ->
+        if (details.requested.group == 'androidx.media3') {
+          details.useVersion '1.8.0'
+        }
+      }
+    }
+  }
 }
 
 apply plugin: "expo-root-project"

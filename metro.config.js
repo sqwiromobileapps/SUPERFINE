@@ -35,6 +35,14 @@ if (true) { // SDK56: babel always rewrites @sqwiro/* + @expocraft/core to exter
 defaultConfig.transformer = {
   ...defaultConfig.transformer,
   babelTransformerPath: require.resolve('react-native-svg-transformer/expo'),
+  // SDK56: getDefaultConfig leaves transformer.assetPlugins empty here, which makes eas-cli's
+  // managed-workflow check warn ("custom metro.config.js that does not extend @expo/metro-config")
+  // and interactively prompt to abort. Add the standard expo-asset hashAssetFiles plugin so the
+  // check passes AND assets are content-hashed in the production bundle.
+  assetPlugins: [
+    ...((defaultConfig.transformer && defaultConfig.transformer.assetPlugins) || []),
+    'expo-asset/tools/hashAssetFiles',
+  ],
 };
 
 defaultConfig.resolver = {

@@ -1,18 +1,8 @@
 {
-  "name": "SUPERFINE",
-  "platforms": [
-    "ios",
-    "android"
-  ],
-  "icon": "./src/@sqwiro/app/assets/images/logoicon.png",
-  "splash": {
-    "image": "./src/@sqwiro/app/assets/images/splash.png",
-    "resizeMode": "cover",
-    "backgroundColor": "#FDE3D7"
-  },
   "expo": {
     "name": "SUPERFINE",
     "slug": "SUPERFINE",
+    "scheme": "com.superfineafrica.cloud",
     "userInterfaceStyle": "automatic",
     "packagerOpts": {
       "host": "admin.localsuperfine.com"
@@ -53,7 +43,7 @@
       [
         "react-native-video",
         {
-          "enableNotificationControls": true,
+          "enableNotificationControls": false,
           "androidExtensions": {
             "useExoplayerIMA": true,
             "useExoplayerRtsp": true,
@@ -66,10 +56,44 @@
       ],
       "@react-native-community/datetimepicker",
       "expo-sharing",
-      "expo-splash-screen",
       "expo-status-bar",
       "expo-video",
-      "expo-audio"
+      [
+        "expo-audio",
+        {
+          "enableBackgroundPlayback": false
+        }
+      ],
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#FDE3D7",
+          "image": "./src/@sqwiro/app/assets/images/splash.png",
+          "resizeMode": "cover",
+          "enableFullScreenImage_legacy": true,
+          "android": {
+            "image": "./src/@sqwiro/app/assets/images/logoicon.png",
+            "imageWidth": 200,
+            "backgroundColor": "#FDE3D7"
+          }
+        }
+      ],
+      [
+        "./plugins/withMedia3Pin",
+        {}
+      ],
+      [
+        "./plugins/withAppThemeDayNight",
+        {}
+      ],
+      [
+        "./plugins/withCleanLauncherIcons",
+        {}
+      ],
+      [
+        "./plugins/withMediaPermissionsGuard",
+        {}
+      ]
     ],
     "android": {
       "icon": "./src/@sqwiro/app/assets/images/logoicon.png",
@@ -77,21 +101,12 @@
       "adaptiveIcon": {
         "backgroundColor": "#FDE3D7"
       },
-      "splash": {
-        "image": "./src/@sqwiro/app/assets/images/splash.png",
-        "resizeMode": "cover",
-        "backgroundColor": "#FDE3D7"
-      },
       "permissions": [
+        "android.permission.CAMERA",
         "android.permission.RECORD_AUDIO",
-        "android.permission.MODIFY_AUDIO_SETTINGS",
-        "android.permission.FOREGROUND_SERVICE",
-        "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK",
-        "android.permission.RECORD_AUDIO",
-        "android.permission.MODIFY_AUDIO_SETTINGS",
-        "android.permission.FOREGROUND_SERVICE",
-        "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK"
+        "android.permission.MODIFY_AUDIO_SETTINGS"
       ],
+      "versionCode": 5611,
       "blockedPermissions": [
         "android.permission.READ_MEDIA_IMAGES",
         "android.permission.READ_MEDIA_VIDEO"
@@ -111,15 +126,12 @@
         "NSPrivacyAccessedAPICategorySystemBootTime": "The app may use the system boot time to determine the time the app was last used",
         "NSPrivacyAccessedAPICategoryDiskSpace": "The app uses the file system to store user data and images. Disk information may be required to show user how much space is available"
       },
-      "splash": {
-        "image": "./src/@sqwiro/app/assets/images/splash.png",
-        "resizeMode": "cover",
-        "backgroundColor": "#FDE3D7"
-      }
+      "buildNumber": "5611"
     },
     "web": {
       "bundler": "metro"
     },
+    "version": "56.11",
     "runtimeVersion": "1.0.0",
     "extra": {
       "eas": {
@@ -133,6 +145,9 @@
       },
       "url": "https://u.expo.dev/171184dd-6b7e-40b9-b32e-6542aa76a74d"
     },
-    "newArchEnabled": true
+    "newArchEnabled": true,
+    "experiments": {
+      "onDemandFilesystem": false
+    }
   }
 }
