@@ -1,0 +1,8 @@
+# Build leftovers that @expo/fingerprint's default ignore list misses (M0.4). Without these
+# the fingerprint changes during and after every local Gradle build, so the hash embedded in
+# a binary would never equal what `eas update` resolves from the same tree.
+# Kotlin 2 compiler session files (android/.kotlin/sessions/*) in the app and in gradle plugins
+**/android/.kotlin/**/*
+**/*-gradle-plugin/.kotlin/**/*
+# react-native-video sets its buildDir to android/buildOutput_<hash>
+**/node_modules/react-native-video/android/buildOutput_*/**/*
