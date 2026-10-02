@@ -1,0 +1,30 @@
+diff --git a/node_modules/expo-navigation-bar/android/src/main/java/expo/modules/navigationbar/NavigationBarModule.kt b/node_modules/expo-navigation-bar/android/src/main/java/expo/modules/navigationbar/NavigationBarModule.kt
+--- a/node_modules/expo-navigation-bar/android/src/main/java/expo/modules/navigationbar/NavigationBarModule.kt
++++ b/node_modules/expo-navigation-bar/android/src/main/java/expo/modules/navigationbar/NavigationBarModule.kt
+@@ -5,6 +5,7 @@ import android.os.Build
+ import android.os.Bundle
+ import android.view.View
+ import android.view.WindowInsets
++import android.view.WindowInsetsController
+ import androidx.core.view.WindowInsetsCompat
+ import androidx.core.view.WindowInsetsControllerCompat
+ import expo.modules.kotlin.functions.Queues
+@@ -75,6 +76,18 @@ class NavigationBarModule : Module() {
+         isAppearanceLightNavigationBars = hasLightBackground
+       }
+ 
++      // SQWIRO (M0): on API 30-34, androidx.core 1.17+'s WindowInsetsControllerCompat(window, view) sets only the
++      // legacy SYSTEM_UI_FLAG_LIGHT_NAVIGATION_BAR, which the platform ignores once the window's appearance is
++      // controlled; React Native's StatusBarModule.setStyle controls it (window.insetsController), so after the first
++      // status-bar style the call above did nothing and the bar kept its startup appearance (light under dark screens).
++      // Set the appearance on the platform controller too, as StatusBarModule does for the status bar.
++      if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
++        window.insetsController?.setSystemBarsAppearance(
++          if (hasLightBackground) WindowInsetsController.APPEARANCE_LIGHT_NAVIGATION_BARS else 0,
++          WindowInsetsController.APPEARANCE_LIGHT_NAVIGATION_BARS
++        )
++      }
++
+       return@AsyncFunction
+     }.runOnQueue(Queues.MAIN)
+ 

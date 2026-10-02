@@ -213,7 +213,12 @@
         "@expocraft/cs50-fingerprints",
         "expo-av",
         "@react-native-community/masked-view"
-      ]
+      ],
+      "android": {
+        "buildFromSource": [
+          "expo-navigation-bar"
+        ]
+      }
     }
   }
 }
