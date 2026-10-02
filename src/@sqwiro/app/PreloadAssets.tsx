@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Image, ImageBackground, View } from 'react-native';
-import * as SplashScreen from 'expo-splash-screen';
 import * as Font from 'expo-font';
 import { Asset } from 'expo-asset';
 import MaterialIcons from '@expo/vector-icons/MaterialIcons';
@@ -30,8 +29,6 @@ function PreloadAssets({ Images, Fonts, Sounds, children }) {
   useEffect(() => {
     async function loadResourcesAndDataAsync() {
       try {
-        await SplashScreen.preventAutoHideAsync();
-
         const images: any[] = [];
         each({ ...AppImages, ...Images }, (value, key) => {
           images.push(value);
@@ -61,7 +58,6 @@ function PreloadAssets({ Images, Fonts, Sounds, children }) {
         console.warn(e);
       } finally {
         setAppIsReady(true);
-        void SplashScreen.hideAsync();
       }
     }
 
