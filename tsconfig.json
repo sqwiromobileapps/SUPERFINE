@@ -14,7 +14,7 @@
     ],
     "baseUrl": "./src",
     "lib": [
-      "es2017"
+      "es2020"
     ],
     "paths": {
       "react": [
@@ -24,10 +24,22 @@
         "./node_modules/@cloudhub-ux/graphql"
       ],
       "@expocraft/core": [
-        "/Users/bernardgaitho/@cloudhub/@expocraft/core56"
+        "../node_modules/@expocraft/baseui/src/legacy/core"
       ],
       "@expocraft/core/*": [
-        "/Users/bernardgaitho/@cloudhub/@expocraft/core56/*"
+        "../node_modules/@expocraft/baseui/src/legacy/core/*"
+      ],
+      "@expocraft/rnuilib": [
+        "../node_modules/@expocraft/baseui/src/legacy/rnuilib"
+      ],
+      "@expocraft/rnuilib/*": [
+        "../node_modules/@expocraft/baseui/src/legacy/rnuilib/*"
+      ],
+      "react-native-paper": [
+        "../node_modules/@expocraft/baseui/src/legacy/paper"
+      ],
+      "react-native-paper/*": [
+        "../node_modules/@expocraft/baseui/src/legacy/paper/*"
       ],
       "@sqwiro/app": [
         "./@sqwiro/app"
