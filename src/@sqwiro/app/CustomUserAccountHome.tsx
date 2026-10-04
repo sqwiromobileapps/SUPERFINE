@@ -1,5 +1,5 @@
 import React from 'react';
-import { Block, Text } from '@expocraft/core';
+import { Image } from 'react-native';
 import useAppNavigationContext from '@sqwiro/appcore/context/useAppNavigationContext';
 import { Images, colors } from '@sqwiro/appcore/theme';
 import {
@@ -9,9 +9,10 @@ import {
   MdiSteering,
 } from '@expocraft-icons/mdi';
 import useAuthentication from '@sqwiro/appcore/auth/context/useAuthentication';
-import { MenuButton } from '@expocraft/core/lib/widgets';
 import Farmbridge_farminspectorMenuButton from '@sqwiro/app/userbuttons/Farmbridge_farminspectorMenuButton';
 import { ChubPesaPurse } from '@expocraft-icons/chub';
+
+import { AppTile, Box, Row, ScrollArea, Stack, Text } from '@expocraft/baseui';
 
 const CustomUserAccountHome = ({ navigation }) => {
   const { appsDrawerNavigator } = useAppNavigationContext();
@@ -34,45 +35,37 @@ const CustomUserAccountHome = ({ navigation }) => {
   }, [navigation]);
 
   return (
-    <Block>
-      <Block flex={false} padding>
-        <Text bold>{`Welcome, ${name || 'Guest'}`}</Text>
-      </Block>
+    <Stack grow>
+      <Box className="p-3">
+        <Text variant="small" weight="bold">{`Welcome, ${name || 'Guest'}`}</Text>
+      </Box>
 
-      <Block scrollView>
-        <Block flex={false} padding row wrap center space="around">
+      <ScrollArea className="flex-1">
+        <Row justify="around" wrap className="p-3">
           {[
-            <MenuButton
+            <AppTile
               id="farmerapp"
               title="Farmer App"
-              iconSize={45}
-              imageIcon={Images.logo}
-              color={colors.blueGrey[500]}
-              lightColor={colors.blueGrey[100]}
-              buttonStyle={{
+              icon={<Image source={Images.logo as any} resizeMode="contain" style={{ width: 24, height: 24 }} />}
+              style={{
                 width: 130,
                 height: 130,
               }}
               onPress={() => {
                 appsDrawerNavigator.navigate('smartfarmer');
-              }}
-            />,
+              }} />,
 
-            <MenuButton
+            <AppTile
               id="staffapp"
               title="Staff App"
-              iconSize={45}
-              IconComponent={<MdiAccountGroupOutline />}
-              color={colors.blueGrey[500]}
-              lightColor={colors.blueGrey[100]}
-              buttonStyle={{
+              icon={<MdiAccountGroupOutline />}
+              style={{
                 width: 130,
                 height: 130,
               }}
               onPress={() => {
                 appsDrawerNavigator.navigate('smartstaff');
-              }}
-            />,
+              }} />,
 
             <Farmbridge_farminspectorMenuButton
               id="smartfarminspector"
@@ -82,97 +75,73 @@ const CustomUserAccountHome = ({ navigation }) => {
               }}
             />,
 
-            <MenuButton
+            <AppTile
               id="smartvendoraccount"
               title="Vendor Account"
-              iconSize={45}
-              IconComponent={<MdiCashCheck color="brown" />}
+              icon={<MdiCashCheck color="brown" />}
               onPress={() => {
                 appsDrawerNavigator.navigate('smartvendoraccount');
               }}
-              color={colors.brown[500]}
-              lightColor={colors.brown[100]}
-              buttonColor={colors.brown[100]}
-              buttonStyle={{
+              style={{
                 width: 130,
                 height: 130,
-              }}
-            />,
+              }} />,
 
-            <MenuButton
+            <AppTile
               id="smartdriver"
               title="Smart Driver"
-              iconSize={45}
-              IconComponent={<MdiSteering />}
+              icon={<MdiSteering />}
               onPress={() => {
                 appsDrawerNavigator.navigate('smartdriver');
               }}
-              color={colors.indigo[500]}
-              lightColor={colors.indigo[100]}
-              buttonColor={colors.indigo[100]}
-              buttonStyle={{
+              style={{
                 width: 130,
                 height: 130,
-              }}
-            />,
+              }} />,
 
-            <MenuButton
+            <AppTile
               id="smartpesapurse"
               title="PesaPurse"
-              iconSize={45}
-              IconComponent={<ChubPesaPurse color={colors.dark} />}
+              icon={<ChubPesaPurse color={colors.dark} />}
               onPress={() => {
                 appsDrawerNavigator.navigate('smartpesapurse');
               }}
-              color={colors.grey[700]}
-              lightColor={colors.grey[100]}
-              buttonColor={colors.yellow[200]}
-              buttonStyle={{
+              style={{
                 width: 130,
                 height: 130,
-              }}
-            />,
+              }} />,
 
-            <MenuButton
+            <AppTile
               id="enterprisewallet"
               title="Enterprise Wallet"
-              IconComponent={<ChubPesaPurse color={colors.dark} />}
-              color={colors.blueGrey[500]}
-              lightColor={colors.blueGrey[100]}
+              icon={<ChubPesaPurse color={colors.dark} />}
               onPress={() => {
                 appsDrawerNavigator.navigate('enterprisewallet');
               }}
-              buttonStyle={{
+              style={{
                 width: 130,
                 height: 130,
-              }}
-              iconSize={45}
-            />,
+              }} />,
 
             <>
               {isMerchantAdmin && (
-                <MenuButton
+                <AppTile
                   id="smartapprover"
                   title="Smart Approver"
-                  iconSize={45}
-                  IconComponent={<MdiCheckCircle />}
+                  icon={<MdiCheckCircle />}
                   onPress={() => {
                     appsDrawerNavigator.navigate('smartapprover');
                   }}
-                  color={colors.green[500]}
-                  lightColor={colors.green[100]}
-                  buttonColor={colors.green[100]}
-                  buttonStyle={{
+                  style={{
                     width: 130,
                     height: 130,
-                  }}
-                />
+                  }} />
               )}
             </>,
           ].map((app) => app)}
-        </Block>
-      </Block>
-    </Block>
+        </Row>
+      </ScrollArea>
+    </Stack>
   );
 };
 

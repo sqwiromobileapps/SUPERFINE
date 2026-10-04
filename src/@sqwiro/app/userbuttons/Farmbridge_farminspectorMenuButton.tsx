@@ -1,11 +1,10 @@
 import React from 'react';
-import { Block } from '@expocraft/core';
-import { MenuButton } from '@expocraft/core/lib/widgets';
 import { NotoFarmerDarkSkinTone } from '@expocraft-icons/noto';
 import useAppNavigationContext from '@sqwiro/appcore/context/useAppNavigationContext';
-import { colors } from '@sqwiro/appcore/theme';
 import { useGraphqlQuery } from '@cloudhub-ux/graphql';
 import useAuthentication from '@sqwiro/appcore/auth/context/useAuthentication';
+
+import { AppTile, Box } from '@expocraft/baseui';
 
 const Farmbridge_farminspectorMenuButton = (props) => {
   const { appsDrawerNavigator } = useAppNavigationContext();
@@ -31,25 +30,20 @@ const Farmbridge_farminspectorMenuButton = (props) => {
   }
 
   return (
-    <Block flex={false}>
-      <MenuButton
+    <Box>
+      <AppTile
         id="smartfarminspector"
         title="Farm Inspector"
-        iconSize={75}
-        IconComponent={<NotoFarmerDarkSkinTone />}
+        icon={<NotoFarmerDarkSkinTone />}
         onPress={() => {
           appsDrawerNavigator.navigate('smartfarminspector');
         }}
-        color={colors.blueGrey[500]}
-        lightColor={colors.blueGrey[100]}
-        buttonColor={colors.blueGrey[100]}
-        buttonStyle={{
+        style={{
           width: 150,
           height: 150,
         }}
-        {...props}
-      />
-    </Block>
+        {...props} />
+    </Box>
   );
 };
 

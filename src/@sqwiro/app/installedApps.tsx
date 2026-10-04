@@ -1,11 +1,12 @@
 
       import React from 'react';
-      import { SafeLazy, Block } from '@expocraft/core';
+      // LEGACY-ALLOWED: installed-app loader, no clean twin (allow-list plumbing)
+      import { SafeLazy } from '@expocraft/baseui/legacy';
+      import { AppTile, Stack } from '@expocraft/baseui';
       import AppNotFound from '@sqwiro/appcore/utils/AppNotFound';
       import { ScreenLoading } from '@sqwiro/appcore/utils';
       import useAppNavigationContext from '@sqwiro/appcore/context/useAppNavigationContext';
-      import { MenuButton } from '@expocraft/core/lib/widgets';
-      import { Images, colors } from '@sqwiro/appcore/theme';
+      import { Images } from '@sqwiro/appcore/theme';
 
 
       
@@ -131,23 +132,18 @@
 
       function LoadingComponent() {
         return (
-          <Block center middle>
+          <Stack grow align="center" justify="center">
             <ScreenLoading label="Loading..." />
-          </Block>
+          </Stack>
         );
       }
 
       function LoadingMenuButton() {
           return (
-            <MenuButton
+            <AppTile
               id={'smartapp'}
               title={''}
-              iconSize={75}
-              IconComponent={null}
-              buttonColor={colors.blueGrey[100]}
-              color={colors.blueGrey[500]}
-              lightColor={colors.blueGrey[100]}
-              buttonStyle={{
+              style={{
                 width: 150,
                 height: 150,
               }}

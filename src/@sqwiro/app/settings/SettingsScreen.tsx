@@ -1,6 +1,5 @@
 import React from 'react';
 import { TouchableOpacity, ScrollView } from 'react-native';
-import { Block, Text, Header } from '@expocraft/core';
 import {
   MdiWhiteBalanceSunny,
   MdiWeatherNight,
@@ -10,6 +9,8 @@ import {
 } from '@expocraft-icons/mdi';
 import useAppTheme from '@sqwiro/appcore/theme/useAppTheme';
 import { useThemeMode, ThemeModePref } from '@sqwiro/appcore/theme';
+
+import { Box, Row, Screen, ScreenHeader, Stack, Text } from '@expocraft/baseui';
 
 const APPEARANCE_OPTIONS: {
   value: ThemeModePref;
@@ -45,41 +46,33 @@ const SettingsScreen = ({ navigation }: { navigation: any }) => {
   const { mode, setMode } = useThemeMode();
 
   return (
-    <Block color={colors.background}>
-      <Header
-        hasHeight
-        color={colors.background}
-        onBack={() => navigation.goBack()}
-      >
-        <Block row middle>
-          <Text h4 bold color={colors.foreground}>
-            Settings
-          </Text>
-        </Block>
-      </Header>
-
+    <Screen
+      edges={['top']}
+      header={<ScreenHeader title="Settings" onBack={() => navigation.goBack()} />}
+    >
       <ScrollView
         contentContainerStyle={{ padding: sizes.padding, paddingBottom: 40 }}
       >
         {/* Appearance */}
         <Text
-          bold
-          color={colors.mutedForeground}
-          style={{ marginBottom: 8, textTransform: 'uppercase', fontSize: 12 }}
-        >
+          variant="caption"
+          tone="muted"
+          weight="bold"
+          style={{
+            marginBottom: 8,
+            textTransform: 'uppercase'
+          }}>
           Appearance
         </Text>
 
-        <Block
-          flex={false}
-          color={colors.card}
+        <Box
+          className="bg-card"
           style={{
             borderRadius: 14,
             borderWidth: 1,
             borderColor: colors.border,
             overflow: 'hidden',
-          }}
-        >
+          }}>
           {APPEARANCE_OPTIONS.map((opt, index) => {
             const selected = mode === opt.value;
             return (
@@ -88,22 +81,17 @@ const SettingsScreen = ({ navigation }: { navigation: any }) => {
                 activeOpacity={0.7}
                 onPress={() => setMode(opt.value)}
               >
-                <Block
-                  flex={false}
-                  row
-                  middle
-                  padding={[14, sizes.padding]}
+                <Row
+                  align="center"
+                  className={`py-3.5 px-3 ${selected ? 'bg-muted' : 'bg-transparent'}`}
                   style={
                     index > 0
                       ? { borderTopWidth: 1, borderTopColor: colors.border }
                       : undefined
-                  }
-                  color={selected ? colors.muted : 'transparent'}
-                >
-                  <Block
-                    flex={false}
-                    middle
-                    center
+                  }>
+                  <Stack
+                    align="center"
+                    justify="center"
                     style={{
                       width: 38,
                       height: 38,
@@ -112,37 +100,36 @@ const SettingsScreen = ({ navigation }: { navigation: any }) => {
                         ? colors.primary
                         : colors.primaryColors?.lighter,
                       marginRight: 14,
-                    }}
-                  >
+                    }}>
                     <opt.Icon
                       size={20}
                       color={selected ? colors.primaryForeground : colors.primary}
                     />
-                  </Block>
+                  </Stack>
 
-                  <Block>
-                    <Text bold color={colors.foreground}>
+                  <Stack grow>
+                    <Text variant="small" weight="bold">
                       {opt.label}
                     </Text>
-                    <Text size={12} color={colors.mutedForeground}>
+                    <Text variant="caption" tone="muted">
                       {opt.description}
                     </Text>
-                  </Block>
+                  </Stack>
 
                   {selected && (
-                    <Block flex={false}>
+                    <Box>
                       <MdiCheckCircle size={22} color={colors.primary} />
-                    </Block>
+                    </Box>
                   )}
-                </Block>
+                </Row>
               </TouchableOpacity>
             );
           })}
-        </Block>
+        </Box>
 
         <Text
-          size={12}
-          color={colors.mutedForeground}
+          variant="caption"
+          tone="muted"
           style={{ marginTop: 8, marginLeft: 4 }}
         >
           Light and Dark apply instantly. System follows your device settings.
@@ -150,59 +137,52 @@ const SettingsScreen = ({ navigation }: { navigation: any }) => {
 
         {/* Theme (read-only, set by your organization) */}
         <Text
-          bold
-          color={colors.mutedForeground}
+          variant="caption"
+          tone="muted"
+          weight="bold"
           style={{
             marginTop: 28,
             marginBottom: 8,
-            textTransform: 'uppercase',
-            fontSize: 12,
-          }}
-        >
+            textTransform: 'uppercase'
+          }}>
           Theme
         </Text>
-        <Block
-          flex={false}
-          row
-          middle
-          color={colors.card}
-          padding={[14, sizes.padding]}
+        <Row
+          align="center"
+          className="py-3.5 px-3 bg-card"
           style={{
             borderRadius: 14,
             borderWidth: 1,
             borderColor: colors.border,
-          }}
-        >
-          <Block
-            flex={false}
-            middle
-            center
+          }}>
+          <Stack
+            align="center"
+            justify="center"
             style={{
               width: 38,
               height: 38,
               borderRadius: 19,
               backgroundColor: colors.primaryColors?.lighter,
               marginRight: 14,
-            }}
-          >
+            }}>
             <MdiPalette size={20} color={colors.primary} />
-          </Block>
-          <Block>
-            <Text bold color={colors.foreground}>
+          </Stack>
+          <Stack grow>
+            <Text variant="small" weight="bold">
               Color theme
             </Text>
-            <Text size={12} color={colors.mutedForeground}>
+            <Text variant="caption" tone="muted">
               Set by your organization
             </Text>
-          </Block>
-          <Block flex={false}>
-            <Text bold color={colors.primary}>
+          </Stack>
+          <Box>
+            <Text variant="small" tone="primary" weight="bold">
               {prettyTheme((colors as any)?.themeName) || 'Brand'}
             </Text>
-          </Block>
-        </Block>
+          </Box>
+        </Row>
       </ScrollView>
-    </Block>
+    </Screen>
   );
 };
 

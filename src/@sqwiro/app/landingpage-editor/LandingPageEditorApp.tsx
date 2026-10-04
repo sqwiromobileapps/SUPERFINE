@@ -1,24 +1,22 @@
 import React from 'react';
-import { Block, Header } from '@expocraft/core';
 import useAppNavigationContext from '@sqwiro/appcore/context/useAppNavigationContext';
 import DefaultApp from '@sqwiro/app/DefaultApp';
+import { Screen, ScreenHeader, Stack } from '@expocraft/baseui';
 
 const LandingPageEditorApp = ({ navigation }) => {
   const { appsDrawerNavigator } = useAppNavigationContext();
 
   return (
-    <Block>
-      <Header
-        hasHeight
+    <Screen
+      edges={['top']}
+      header={<ScreenHeader
         onBack={() => {
           appsDrawerNavigator.goBack();
-        }}
-      />
-
-      <Block>
+        }} />}>
+      <Stack grow>
         <DefaultApp />
-      </Block>
-    </Block>
+      </Stack>
+    </Screen>
   );
 };
 
