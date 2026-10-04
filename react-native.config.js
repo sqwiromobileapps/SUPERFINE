@@ -1,11 +1,4 @@
-const path = require('path');
+// M4: the @expocraft/rnuilib entry left with the package (its root pointed at a folder that never existed).
 module.exports = {
-  dependencies: {
-    '@expocraft/rnuilib': {
-      root: path.join(
-        __dirname,
-        './node_modules/@loudhub-ux/react-native-ui-lib/lib'
-      ),
-    },
-  },
+  dependencies: {},
 };

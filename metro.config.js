@@ -55,12 +55,6 @@ defaultConfig.resolver = {
 
 
 
-// SDK56: babel routes @expocraft/core -> core56 (absolute); metro must watch core56 to resolve it.
-defaultConfig.watchFolders = [
-  ...(defaultConfig.watchFolders || [__dirname]),
-  '/Users/bernardgaitho/@cloudhub/@expocraft/core56',
-];
-
 // --- SDK56: redirect excluded-native modules to JS no-op stubs so the app boots/runs ---
 const __sdk56Stubs = {
   'expo-av': path.resolve(__dirname, 'expo-av-stub.js'),
