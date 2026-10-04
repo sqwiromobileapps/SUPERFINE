@@ -23,24 +23,6 @@
       "@cloudhub-ux/graphql": [
         "./node_modules/@cloudhub-ux/graphql"
       ],
-      "@expocraft/core": [
-        "../node_modules/@expocraft/baseui/src/legacy/core"
-      ],
-      "@expocraft/core/*": [
-        "../node_modules/@expocraft/baseui/src/legacy/core/*"
-      ],
-      "@expocraft/rnuilib": [
-        "../node_modules/@expocraft/baseui/src/legacy/rnuilib"
-      ],
-      "@expocraft/rnuilib/*": [
-        "../node_modules/@expocraft/baseui/src/legacy/rnuilib/*"
-      ],
-      "react-native-paper": [
-        "../node_modules/@expocraft/baseui/src/legacy/paper"
-      ],
-      "react-native-paper/*": [
-        "../node_modules/@expocraft/baseui/src/legacy/paper/*"
-      ],
       "@sqwiro/app": [
         "./@sqwiro/app"
       ],
