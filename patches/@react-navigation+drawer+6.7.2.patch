@@ -1,3 +1,55 @@
+diff --git a/node_modules/@react-navigation/drawer/lib/commonjs/views/legacy/Overlay.js b/node_modules/@react-navigation/drawer/lib/commonjs/views/legacy/Overlay.js
+index 92e4887..2eb6eb9 100644
+--- a/node_modules/@react-navigation/drawer/lib/commonjs/views/legacy/Overlay.js
++++ b/node_modules/@react-navigation/drawer/lib/commonjs/views/legacy/Overlay.js
+@@ -62,7 +62,7 @@ const overlayStyle = _reactNative.Platform.select({
+ });
+ const styles = _reactNative.StyleSheet.create({
+   overlay: {
+-    ..._reactNative.StyleSheet.absoluteFillObject,
++    ..._reactNative.StyleSheet.absoluteFill, // RN 0.85 removed absoluteFillObject: spreading undefined dropped position absolute
+     backgroundColor: 'rgba(0, 0, 0, 0.5)'
+   },
+   pressable: {
+diff --git a/node_modules/@react-navigation/drawer/lib/commonjs/views/modern/Overlay.js b/node_modules/@react-navigation/drawer/lib/commonjs/views/modern/Overlay.js
+index 662cc77..21a89ce 100644
+--- a/node_modules/@react-navigation/drawer/lib/commonjs/views/modern/Overlay.js
++++ b/node_modules/@react-navigation/drawer/lib/commonjs/views/modern/Overlay.js
+@@ -56,7 +56,7 @@ const overlayStyle = _reactNative.Platform.select({
+ });
+ const styles = _reactNative.StyleSheet.create({
+   overlay: {
+-    ..._reactNative.StyleSheet.absoluteFillObject,
++    ..._reactNative.StyleSheet.absoluteFill, // RN 0.85 removed absoluteFillObject: spreading undefined dropped position absolute
+     backgroundColor: 'rgba(0, 0, 0, 0.5)'
+   },
+   pressable: {
+diff --git a/node_modules/@react-navigation/drawer/lib/module/views/legacy/Overlay.js b/node_modules/@react-navigation/drawer/lib/module/views/legacy/Overlay.js
+index 27c9adc..f3c5341 100644
+--- a/node_modules/@react-navigation/drawer/lib/module/views/legacy/Overlay.js
++++ b/node_modules/@react-navigation/drawer/lib/module/views/legacy/Overlay.js
+@@ -53,7 +53,7 @@ const overlayStyle = Platform.select({
+ });
+ const styles = StyleSheet.create({
+   overlay: {
+-    ...StyleSheet.absoluteFillObject,
++    ...StyleSheet.absoluteFill, // RN 0.85 removed absoluteFillObject: spreading undefined dropped position absolute
+     backgroundColor: 'rgba(0, 0, 0, 0.5)'
+   },
+   pressable: {
+diff --git a/node_modules/@react-navigation/drawer/lib/module/views/modern/Overlay.js b/node_modules/@react-navigation/drawer/lib/module/views/modern/Overlay.js
+index c297df9..fda5f55 100644
+--- a/node_modules/@react-navigation/drawer/lib/module/views/modern/Overlay.js
++++ b/node_modules/@react-navigation/drawer/lib/module/views/modern/Overlay.js
+@@ -48,7 +48,7 @@ const overlayStyle = Platform.select({
+ });
+ const styles = StyleSheet.create({
+   overlay: {
+-    ...StyleSheet.absoluteFillObject,
++    ...StyleSheet.absoluteFill, // RN 0.85 removed absoluteFillObject: spreading undefined dropped position absolute
+     backgroundColor: 'rgba(0, 0, 0, 0.5)'
+   },
+   pressable: {
 diff --git a/node_modules/@react-navigation/drawer/src/views/DrawerView.tsx b/node_modules/@react-navigation/drawer/src/views/DrawerView.tsx
 index 94770c4..ac016fc 100644
 --- a/node_modules/@react-navigation/drawer/src/views/DrawerView.tsx
@@ -11,6 +63,19 @@ index 94770c4..ac016fc 100644
  }: Props) {
    // Reanimated v3 dropped legacy v1 syntax
    const legacyImplemenationNotAvailable =
+diff --git a/node_modules/@react-navigation/drawer/src/views/legacy/Overlay.tsx b/node_modules/@react-navigation/drawer/src/views/legacy/Overlay.tsx
+index a4dec47..fb2637a 100644
+--- a/node_modules/@react-navigation/drawer/src/views/legacy/Overlay.tsx
++++ b/node_modules/@react-navigation/drawer/src/views/legacy/Overlay.tsx
+@@ -76,7 +76,7 @@ const overlayStyle = Platform.select<Record<string, string>>({
+ 
+ const styles = StyleSheet.create({
+   overlay: {
+-    ...StyleSheet.absoluteFillObject,
++    ...StyleSheet.absoluteFill, // RN 0.85 removed absoluteFillObject: spreading undefined dropped position absolute
+     backgroundColor: 'rgba(0, 0, 0, 0.5)',
+   },
+   pressable: {
 diff --git a/node_modules/@react-navigation/drawer/src/views/modern/Drawer.tsx b/node_modules/@react-navigation/drawer/src/views/modern/Drawer.tsx
 index 57af20c..223799c 100644
 --- a/node_modules/@react-navigation/drawer/src/views/modern/Drawer.tsx
@@ -60,6 +125,19 @@ index 57af20c..223799c 100644
        runOnJS(onGestureFinish)();
      },
    });
+diff --git a/node_modules/@react-navigation/drawer/src/views/modern/Overlay.tsx b/node_modules/@react-navigation/drawer/src/views/modern/Overlay.tsx
+index a77a7fb..76f9cb3 100644
+--- a/node_modules/@react-navigation/drawer/src/views/modern/Overlay.tsx
++++ b/node_modules/@react-navigation/drawer/src/views/modern/Overlay.tsx
+@@ -70,7 +70,7 @@ const overlayStyle = Platform.select<Record<string, string>>({
+ 
+ const styles = StyleSheet.create({
+   overlay: {
+-    ...StyleSheet.absoluteFillObject,
++    ...StyleSheet.absoluteFill, // RN 0.85 removed absoluteFillObject: spreading undefined dropped position absolute
+     backgroundColor: 'rgba(0, 0, 0, 0.5)',
+   },
+   pressable: {
 diff --git a/node_modules/@react-navigation/drawer/src/views/modern/useAnimatedGestureHandlerCompat.js b/node_modules/@react-navigation/drawer/src/views/modern/useAnimatedGestureHandlerCompat.js
 new file mode 100644
 index 0000000..61cfa46
