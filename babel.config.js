@@ -1,11 +1,13 @@
 const iconPlugins = require('@expocraft-icons/chub/babel-plugins');
 const path = require('path');
 const appMapping = require('./app-mapping.js');
+// @expocraft/baseui (M1): babel-preset-expo with jsxImportSource 'nativewind', plus nativewind/babel.
+const { baseuiBabelPresets } = require('@expocraft/baseui/config/babel');
 
 module.exports = function (api) {
   api.cache(true);
   return {
-    presets: [['babel-preset-expo']],
+    presets: baseuiBabelPresets(),
     plugins: [
       [
         'babel-plugin-transform-imports',

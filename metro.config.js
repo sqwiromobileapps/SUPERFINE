@@ -51,7 +51,6 @@ defaultConfig.resolver = {
   sourceExts: [...defaultConfig.resolver.sourceExts, 'svg'],
 };
 
-defaultConfig.resolver.assetExts.push('cjs');
 
 
 
@@ -75,4 +74,7 @@ defaultConfig.resolver.resolveRequest = (context, moduleName, platform) => {
   return r(context, moduleName, platform);
 };
 
-module.exports = defaultConfig;
+// @expocraft/baseui (M1): NativeWind wraps the FINISHED config, so this stays the last line (it chains
+// resolveRequest and the SVG transformer). inlineRem 16 is the helper's default (D-25).
+const { withBaseui } = require('@expocraft/baseui/config/metro');
+module.exports = withBaseui(defaultConfig, { input: './global.css' });

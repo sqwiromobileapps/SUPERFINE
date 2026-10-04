@@ -24,7 +24,10 @@
         "./node_modules/@cloudhub-ux/graphql"
       ],
       "@expocraft/core": [
-        "/Users/bernardgaitho/@cloudhub/@expocraft/core"
+        "/Users/bernardgaitho/@cloudhub/@expocraft/core56"
+      ],
+      "@expocraft/core/*": [
+        "/Users/bernardgaitho/@cloudhub/@expocraft/core56/*"
       ],
       "@sqwiro/app": [
         "./@sqwiro/app"
