@@ -88,6 +88,9 @@ defaultConfig.resolver.resolveRequest = (context, moduleName, platform) => {
     const baseuiRoot = fs.realpathSync(link);
     const esc = (s) => s.replace(/[/\\^$*+?.()|[\]{}]/g, '\\$&');
     defaultConfig.watchFolders.push(baseuiRoot);
+    // Files outside this host (appcore, the apps) resolve baseui through extraNodeModules, whose module map skips
+    // symlinked entries, so name the link's real folder there.
+    defaultConfig.resolver.extraNodeModules = { ...defaultConfig.resolver.extraNodeModules, '@expocraft/baseui': baseuiRoot };
     defaultConfig.resolver.blockList = [].concat(
       defaultConfig.resolver.blockList || [],
       new RegExp(esc(path.join(baseuiRoot, 'node_modules')) + '/(?!@gorhom(?:$|/bottom-sheet(?:$|/))).*')
