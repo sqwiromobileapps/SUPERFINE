@@ -1,10 +1,7 @@
 module.exports = {
   "@sqwiro/userapps/appsroot": "/Users/bernardgaitho/@cloudhub/@sqwiroapps/mobileapps/@sqwiromobileuserapps/appsroot/src",
-  "@sqwiro/customapps/appsroot": "/Users/bernardgaitho/@cloudhub/@sqwiroapps/mobileapps/@sqwiromobilecustomapps/appsroot/src",
   "@sqwiro/customapps/cs50": "/Users/bernardgaitho/@cloudhub/@sqwiroapps/mobileapps/@sqwiromobilecustomapps/cs50/src",
-  "@sqwiro/apiapps/appsroot": "/Users/bernardgaitho/@cloudhub/@sqwiroapps/mobileapps/@sqwiromobileapiapps/appsroot/src",
   "@sqwiro/apiapps/mpesapro": "/Users/bernardgaitho/@cloudhub/@sqwiroapps/mobileapps/@sqwiromobileapiapps/mpesapro/src",
-  "@sqwiro/superadminapps/appsroot": "/Users/bernardgaitho/@cloudhub/@sqwiroapps/mobileapps/@sqwiromobilesuperadminapps/appsroot/src",
   "@sqwiro/cmsapps/website": "/Users/bernardgaitho/@cloudhub/@sqwiroapps/mobileapps/@sqwiromobilecmsapps/website/src",
   "@sqwiro/agribusinessapps/avopro": "/Users/bernardgaitho/@cloudhub/@sqwiroapps/mobileapps/@sqwiromobileagribusinessapps/avopro/src",
   "@sqwiro/agribusinessapps/cstore": "/Users/bernardgaitho/@cloudhub/@sqwiroapps/mobileapps/@sqwiromobileagribusinessapps/cstore/src",
@@ -27,7 +24,6 @@ module.exports = {
   "@sqwiro/fintechapps/ppcore": "/Users/bernardgaitho/@cloudhub/@sqwiroapps/mobileapps/@sqwiromobilefintechapps/ppcore/src",
   "@sqwiro/fintechapps/ppwallet": "/Users/bernardgaitho/@cloudhub/@sqwiroapps/mobileapps/@sqwiromobilefintechapps/ppwallet/src",
   "@sqwiro/fintechapps/smartpesapurse": "/Users/bernardgaitho/@cloudhub/@sqwiroapps/mobileapps/@sqwiromobilefintechapps/smartpesapurse/src",
-  "@sqwiro/businessapps/appsroot": "/Users/bernardgaitho/@cloudhub/@sqwiroapps/mobileapps/@sqwiromobilebusinessapps/appsroot/src",
   "@sqwiro/businessapps/finance": "/Users/bernardgaitho/@cloudhub/@sqwiroapps/mobileapps/@sqwiromobilebusinessapps/finance/src",
   "@sqwiro/businessapps/makerchecker": "/Users/bernardgaitho/@cloudhub/@sqwiroapps/mobileapps/@sqwiromobilebusinessapps/makerchecker/src",
   "@sqwiro/businessapps/masterdata": "/Users/bernardgaitho/@cloudhub/@sqwiroapps/mobileapps/@sqwiromobilebusinessapps/masterdata/src",
