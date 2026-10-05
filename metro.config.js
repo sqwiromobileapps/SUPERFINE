@@ -70,28 +70,6 @@ defaultConfig.resolver.resolveRequest = (context, moduleName, platform) => {
 
 // @expocraft/baseui (M1): NativeWind wraps the FINISHED config, so this stays the last line (it chains
 // resolveRequest and the SVG transformer). inlineRem 16 is the helper's default (D-25).
-// ---- LINKED @expocraft/baseui (landing, link mode; delete when the host installs baseui from the registry) ----------
-// node_modules/@expocraft/baseui links ~/@cloudhub/@expocraft/baseui until the package is published (D-128, D-148).
-// Metro only resolves files under watchFolders, so watch the link's real folder, and block baseui's own node_modules
-// so react-native, reanimated and css-interop resolve from this host only, except @gorhom/bottom-sheet (5.2.14), which
-// a published baseui nests (D-153). This is the baseui half of the old worktree-only Metro block, kept on purpose.
-{
-  const fs = require('fs');
-  const link = path.join(__dirname, 'node_modules/@expocraft/baseui');
-  if (fs.existsSync(link) && fs.lstatSync(link).isSymbolicLink()) {
-    const baseuiRoot = fs.realpathSync(link);
-    const esc = (s) => s.replace(/[/\\^$*+?.()|[\]{}]/g, '\\$&');
-    defaultConfig.watchFolders.push(baseuiRoot);
-    // Files outside this host (appcore, the apps) resolve baseui through extraNodeModules, whose module map skips
-    // symlinked entries, so name the link's real folder there.
-    defaultConfig.resolver.extraNodeModules = { ...defaultConfig.resolver.extraNodeModules, '@expocraft/baseui': baseuiRoot };
-    defaultConfig.resolver.blockList = [].concat(
-      defaultConfig.resolver.blockList || [],
-      new RegExp(esc(path.join(baseuiRoot, 'node_modules')) + '/(?!@gorhom(?:$|/bottom-sheet(?:$|/))).*')
-    );
-  }
-}
-// ---- end LINKED @expocraft/baseui -----------------------------------------------------------------------------------
 
 const { withBaseui } = require('@expocraft/baseui/config/metro');
 module.exports = withBaseui(defaultConfig, { input: './global.css' });
