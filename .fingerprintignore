@@ -6,3 +6,8 @@
 **/*-gradle-plugin/.kotlin/**/*
 # react-native-video sets its buildDir to android/buildOutput_<hash>
 **/node_modules/react-native-video/android/buildOutput_*/**/*
+# Gradle output inside node_modules packages (left by local release/debug builds), e.g. react-native-maps/android/build
+**/node_modules/*/android/build/**/*
+**/node_modules/@*/*/android/build/**/*
+# react-native-maps: pod install rewrites this header (HAVE_GOOGLE_MAPS) in place
+**/node_modules/react-native-maps/ios/AirMaps/RNMapsDefines.h
