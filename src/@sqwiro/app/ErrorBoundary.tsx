@@ -1,5 +1,6 @@
 import React from 'react';
 import { ScrollView, Text } from 'react-native';
+import { reportClientError } from '@sqwiro/appcore/backgroundtasks/clientErrorReporter';
 
 class ErrorBoundary extends React.Component {
   constructor(props) {
@@ -8,6 +9,8 @@ class ErrorBoundary extends React.Component {
   }
 
   componentDidCatch(error, errorInfo) {
+    // JS-error telemetry (M1.5): the boundary that wraps the installed apps reports what it catches.
+    reportClientError(error, { source: 'boundary', componentStack: errorInfo?.componentStack ?? undefined });
     // `name`/`message`/`stack` are non-enumerable, so JSON.stringify(error) drops
     // them and yields "{}" — read them off explicitly instead. The same reason an
     // `Object.keys(error).length` guard never fires for a real Error.
