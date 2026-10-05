@@ -26,7 +26,7 @@
     "@expocraft-icons/flat-color-icons": "^0.4.10",
     "@expocraft-icons/mdi": "^0.4.14",
     "@expocraft-icons/noto": "^0.4.8",
-    "@expocraft/baseui": "0.2.30",
+    "@expocraft/baseui": "0.2.31",
     "@expocraft/cs50-fingerprints": "^0.4.36",
     "@expocraft/react-native-media-console": "^2.2.4",
     "@gorhom/portal": "1.0.14",
