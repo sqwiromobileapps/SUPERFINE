@@ -1,6 +1,6 @@
 {
   "name": "superfine",
-  "version": "5611",
+  "version": "5612",
   "main": "index.js",
   "scripts": {
     "android": "react-native run-android --reset-cache",
