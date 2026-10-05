@@ -88,7 +88,7 @@ The application uses a modular architecture where individual apps are dynamicall
 **Read the `sqwiro-mobile-baseui` skill before any UI work.** Versions, store builds, OTA and Play uploads:
 the `sqwiro-mobile-version-and-release` skill.
 
-- **UI comes from `@expocraft/baseui`** (published 0.2.29, an exact pin in `package.json`). appcore mounts
+- **UI comes from `@expocraft/baseui`** (published to GitHub Packages; an exact pin in `package.json`, changes in its CHANGELOG). appcore mounts
   `BaseuiProvider` (`appcore/src/theme/ThemedRoot.tsx`), so screens style with NativeWind `className` and semantic
   tokens (`bg-background`, `bg-card`, `text-foreground`, `text-muted-foreground`, `bg-primary`, `border-border`…),
   `<Text variant tone>` and `Box` / `Stack` / `Row` with `gap`. No hex colours, raw `fontSize` or `dark:` variants:
