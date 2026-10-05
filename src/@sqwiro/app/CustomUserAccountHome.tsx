@@ -55,9 +55,9 @@ const CustomUserAccountHome = ({ navigation }) => {
       </Box>
 
       <ScrollArea className="flex-1">
-        {/* App cards (D-184): one a row on phones, two from 600 pt; a tile that renders nothing leaves no hole. */}
+        {/* App tiles (Bernard, 5 Oct 2026): 3 a row on phones, 4 from 600 pt, 6 from 900 pt; a tile that renders nothing leaves no hole. */}
         <Box className="px-4 pt-3 pb-6">
-          <AppTileGrid variant="appcards">
+          <AppTileGrid>
             <AppTile
               id="farmerapp"
               title="Farmer App"
