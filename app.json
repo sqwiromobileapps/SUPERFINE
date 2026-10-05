@@ -106,7 +106,7 @@
         "android.permission.RECORD_AUDIO",
         "android.permission.MODIFY_AUDIO_SETTINGS"
       ],
-      "versionCode": 5612,
+      "versionCode": 5613,
       "blockedPermissions": [
         "android.permission.READ_MEDIA_IMAGES",
         "android.permission.READ_MEDIA_VIDEO"
@@ -126,12 +126,12 @@
         "NSPrivacyAccessedAPICategorySystemBootTime": "The app may use the system boot time to determine the time the app was last used",
         "NSPrivacyAccessedAPICategoryDiskSpace": "The app uses the file system to store user data and images. Disk information may be required to show user how much space is available"
       },
-      "buildNumber": "5612"
+      "buildNumber": "5613"
     },
     "web": {
       "bundler": "metro"
     },
-    "version": "56.12",
+    "version": "56.13",
     "runtimeVersion": {
       "policy": "fingerprint"
     },

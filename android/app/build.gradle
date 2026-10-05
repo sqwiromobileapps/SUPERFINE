@@ -92,8 +92,8 @@ android {
         applicationId 'com.superfineafrica.cloud'
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 5612
-        versionName "56.12"
+        versionCode 5613
+        versionName "56.13"
 
         buildConfigField "String", "REACT_NATIVE_RELEASE_LEVEL", "\"${findProperty('reactNativeReleaseLevel') ?: 'stable'}\""
     }
