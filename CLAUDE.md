@@ -16,9 +16,8 @@ This is a React Native/Expo mobile application named "SUPERFINE" built with the 
 - **[Component Patterns](../SQWIRO/src/@sqwiro/documentation/COMPONENT_PATTERNS.md)** - Reusable architectural patterns
 - **[Sections System](../SQWIRO/src/@sqwiro/documentation/sections.md)** - Dynamic content management
 
-> The central documentation (`@sqwiromobile/documentation`) predates `@expocraft/baseui` and still describes the
-> retired `@expocraft/core` / `@expocraft/rnuilib` libraries in places. For UI, the `sqwiro-mobile-baseui` skill
-> wins.
+> The central documentation (`@sqwiromobile/documentation`) was updated for `@expocraft/baseui` on 5 Oct 2026. For UI
+> rules, the `sqwiro-mobile-baseui` skill is the reference.
 
 ### SUPERFINE's Position in SQWIRO Ecosystem
 
