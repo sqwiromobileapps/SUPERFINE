@@ -16,6 +16,10 @@ This is a React Native/Expo mobile application named "SUPERFINE" built with the 
 - **[Component Patterns](../SQWIRO/src/@sqwiro/documentation/COMPONENT_PATTERNS.md)** - Reusable architectural patterns
 - **[Sections System](../SQWIRO/src/@sqwiro/documentation/sections.md)** - Dynamic content management
 
+> The central documentation (`@sqwiromobile/documentation`) predates `@expocraft/baseui` and still describes the
+> retired `@expocraft/core` / `@expocraft/rnuilib` libraries in places. For UI, the `sqwiro-mobile-baseui` skill
+> wins.
+
 ### SUPERFINE's Position in SQWIRO Ecosystem
 
 **SUPERFINE** operates as a merchant tenant within the SQWIRO platform:
@@ -80,15 +84,37 @@ The application uses a modular architecture where individual apps are dynamicall
 - `beforeStart.js` - Preprocessing script that updates IP addresses and cleans project
 - `postinstall.js` - Post-installation setup for Android files and versions
 
-### Theme System
-Located at `src/@sqwiro/app/theme/`, includes:
-- Colors, Fonts, Images, Metrics, Sizes, Sounds
-- Custom theme provider integration with `@expocraft/core`
-- Africa-focused color schemes and cultural considerations
+### UI library: `@expocraft/baseui`
+
+**Read the `sqwiro-mobile-baseui` skill before any UI work.** Versions, store builds, OTA and Play uploads:
+the `sqwiro-mobile-version-and-release` skill.
+
+- **UI comes from `@expocraft/baseui`** (published 0.2.29, an exact pin in `package.json`). appcore mounts
+  `BaseuiProvider` (`appcore/src/theme/ThemedRoot.tsx`), so screens style with NativeWind `className` and semantic
+  tokens (`bg-background`, `bg-card`, `text-foreground`, `text-muted-foreground`, `bg-primary`, `border-border`…),
+  `<Text variant tone>` and `Box` / `Stack` / `Row` with `gap`. No hex colours, raw `fontSize` or `dark:` variants:
+  mode and palette switch by swapping token values. `babel.config.js` and `tailwind.config.js` take their presets
+  from `@expocraft/baseui/config/*`.
+- **Icons** come from `@expocraft-icons/{mdi,chub,flat-color-icons,noto}` as named imports
+  (`import { MdiClose } from '@expocraft-icons/mdi'`).
+- **Retired on 5 Oct 2026:** `@expocraft/core`, `@expocraft/rnuilib` and `react-native-paper` are no longer installed
+  and their aliases are gone, so importing them breaks the bundle. Old name → clean name: the skill's
+  `references/component-map.md`.
+- **Clean-only pre-commit guard** (`.git/hooks/pre-commit`): a commit that adds an `@expocraft/baseui/legacy…` import
+  is refused. Existing allow-listed imports may stay; a necessary new one needs `// LEGACY-ALLOWED: <reason>` on or
+  above the import. Never `--no-verify`. Check the repo with
+  `bun ~/@cloudhub/webapps/sqwiro/sqwiroproject/expocraft-baseui/tools/guard/bin/done-check.ts .`
+- **Installed apps:** the SQWIRO_SCRIPTS postinstall generates `src/@sqwiro/app/installedApps.tsx` (with
+  `app-mapping.js` and the `src/@sqwiro/<category>/<app>` links). For each app it imports `<App>MenuButton` (the file
+  name is kept; it renders an `AppTile` launcher) and lazy-loads `<App>App` through `SafeLazy`, allow-listed legacy
+  plumbing from `@expocraft/baseui/legacy` that the template emits. Don't edit the generated file by hand.
+- **OTA:** `app.json` sets `runtimeVersion: { "policy": "fingerprint" }`. An OTA only reaches binaries with the
+  same fingerprint; publish only through `yarn ota:publish`, which runs `../SQWIRO_SCRIPTS/check-fingerprint.js`
+  first. Native or dependency changes need a store build. Store releases and OTA publishes need Bernard's explicit
+  yes.
 
 ### Configuration
 - `src/@sqwiro/app/config/config.json` - App configuration (dynamically updated by beforeStart.js)
-- App uses ThemeProvider from `@expocraft/core` with centralized theming
 
 ## Media & Permissions
 
@@ -119,8 +145,8 @@ Located at `src/@sqwiro/app/theme/`, includes:
 - Uses custom ESLint configuration from `@cloudhub-ux/eslint`
 
 ### App Structure
-- Each app module exports both `AppComponent` and `MenuButton`
-- Apps are lazy-loaded using `SafeLazy` from `@expocraft/core`
+- Each app module exports `<App>App` (its root) and `<App>MenuButton` (its `AppTile` launcher); the generated
+  `installedApps.tsx` wires them (see **UI library** above)
 - Navigation handled by `@sqwiro/appcore/navigation/RootNavigator`
 
 ## SQWIRO Platform Integration
