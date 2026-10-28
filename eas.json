@@ -22,7 +22,10 @@
       }
     },
     "production": {
-      "channel": "sdk56"
+      "channel": "sdk56",
+      "android": {
+        "buildType": "apk"
+      }
     }
   },
   "submit": {
