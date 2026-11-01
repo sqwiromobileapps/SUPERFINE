@@ -7,6 +7,8 @@ module.exports = {
   "@sqwiro/agribusinessapps/cstore": "/Users/bernardgaitho/@cloudhub/@sqwiroapps/mobileapps/@sqwiromobileagribusinessapps/cstore/src",
   "@sqwiro/agribusinessapps/farmbridge": "/Users/bernardgaitho/@cloudhub/@sqwiroapps/mobileapps/@sqwiromobileagribusinessapps/farmbridge/src",
   "@sqwiro/agribusinessapps/macspro": "/Users/bernardgaitho/@cloudhub/@sqwiroapps/mobileapps/@sqwiromobileagribusinessapps/macspro/src",
+  "@sqwiro/agribusinessapps/outsourcedavopro": "/Users/bernardgaitho/@cloudhub/@sqwiroapps/mobileapps/@sqwiromobileagribusinessapps/outsourcedavopro/src",
+  "@sqwiro/agribusinessapps/outsourcedmacspro": "/Users/bernardgaitho/@cloudhub/@sqwiroapps/mobileapps/@sqwiromobileagribusinessapps/outsourcedmacspro/src",
   "@sqwiro/agribusinessapps/seedlink": "/Users/bernardgaitho/@cloudhub/@sqwiroapps/mobileapps/@sqwiromobileagribusinessapps/seedlink/src",
   "@sqwiro/agribusinessapps/smartfarmagent": "/Users/bernardgaitho/@cloudhub/@sqwiroapps/mobileapps/@sqwiromobileagribusinessapps/smartfarmagent/src",
   "@sqwiro/agribusinessapps/smartfarmer": "/Users/bernardgaitho/@cloudhub/@sqwiroapps/mobileapps/@sqwiromobileagribusinessapps/smartfarmer/src",

@@ -31,6 +31,12 @@
         import { MacsproMenuButton } from '@sqwiro/agribusinessapps/macspro/MacsproMenuButton';
         import { MacsproApp } from '@sqwiro/agribusinessapps/macspro/MacsproApp';
         
+        import { OutsourcedavoproMenuButton } from '@sqwiro/agribusinessapps/outsourcedavopro/OutsourcedavoproMenuButton';
+        import { OutsourcedavoproApp } from '@sqwiro/agribusinessapps/outsourcedavopro/OutsourcedavoproApp';
+        
+        import { OutsourcedmacsproMenuButton } from '@sqwiro/agribusinessapps/outsourcedmacspro/OutsourcedmacsproMenuButton';
+        import { OutsourcedmacsproApp } from '@sqwiro/agribusinessapps/outsourcedmacspro/OutsourcedmacsproApp';
+        
         import { SeedlinkMenuButton } from '@sqwiro/agribusinessapps/seedlink/SeedlinkMenuButton';
         import { SeedlinkApp } from '@sqwiro/agribusinessapps/seedlink/SeedlinkApp';
         
@@ -369,6 +375,70 @@
               <SafeLazy
                 loader={() => {
                    return import("@sqwiro/agribusinessapps/macspro/MacsproMenuButton");
+                }}
+                fallback={<LoadingMenuButton />}
+                errorFallback={<LoadingMenuButton />}
+              />
+            );
+          },
+        },
+"magneta_application/outsourcedavopro": {
+          id: "outsourcedavopro",
+          _ref: "magneta_application/outsourcedavopro",
+          AppId: "outsourcedavopro",
+          packageName: "@sqwiromobileagribusinessapps/outsourcedavopro",
+          appRoot: "@sqwiro/agribusinessapps/outsourcedavopro",
+          RootComponent: OutsourcedavoproApp,
+          MenuButton: OutsourcedavoproMenuButton,
+          groupId: "agribusinessapps",
+          loadComponent: () => {
+            return (
+              <SafeLazy
+                loader={() => {
+                  return import("@sqwiro/agribusinessapps/outsourcedavopro/OutsourcedavoproApp");
+                }}
+                fallback={<LoadingComponent />}
+                errorFallback={AppNotFound}
+              />
+            );
+          },
+          loadMenuButton: () => {
+            return (
+              <SafeLazy
+                loader={() => {
+                   return import("@sqwiro/agribusinessapps/outsourcedavopro/OutsourcedavoproMenuButton");
+                }}
+                fallback={<LoadingMenuButton />}
+                errorFallback={<LoadingMenuButton />}
+              />
+            );
+          },
+        },
+"magneta_application/outsourcedmacspro": {
+          id: "outsourcedmacspro",
+          _ref: "magneta_application/outsourcedmacspro",
+          AppId: "outsourcedmacspro",
+          packageName: "@sqwiromobileagribusinessapps/outsourcedmacspro",
+          appRoot: "@sqwiro/agribusinessapps/outsourcedmacspro",
+          RootComponent: OutsourcedmacsproApp,
+          MenuButton: OutsourcedmacsproMenuButton,
+          groupId: "agribusinessapps",
+          loadComponent: () => {
+            return (
+              <SafeLazy
+                loader={() => {
+                  return import("@sqwiro/agribusinessapps/outsourcedmacspro/OutsourcedmacsproApp");
+                }}
+                fallback={<LoadingComponent />}
+                errorFallback={AppNotFound}
+              />
+            );
+          },
+          loadMenuButton: () => {
+            return (
+              <SafeLazy
+                loader={() => {
+                   return import("@sqwiro/agribusinessapps/outsourcedmacspro/OutsourcedmacsproMenuButton");
                 }}
                 fallback={<LoadingMenuButton />}
                 errorFallback={<LoadingMenuButton />}
