@@ -41,10 +41,12 @@
         "@rn-primitives/toggle-group": "1.5.2",
         "@sqwiromobile/appcore": "^1.4.0",
         "@sqwiromobile/documentation": "^1.4.0",
-        "@sqwiromobileagribusinessapps/avopro": "latest",
+        "@sqwiromobileagribusinessapps/avopro": "^0.0.19",
         "@sqwiromobileagribusinessapps/cstore": "latest",
         "@sqwiromobileagribusinessapps/farmbridge": "latest",
         "@sqwiromobileagribusinessapps/macspro": "latest",
+        "@sqwiromobileagribusinessapps/outsourcedavopro": "^0.0.2",
+        "@sqwiromobileagribusinessapps/outsourcedmacspro": "^0.0.2",
         "@sqwiromobileagribusinessapps/seedlink": "latest",
         "@sqwiromobileagribusinessapps/smartfarmagent": "^0.0.5",
         "@sqwiromobileagribusinessapps/smartfarmer": "^0.0.6",
@@ -77,7 +79,7 @@
         "@sqwiromobilesaccoapps/saccomis": "^0.0.4",
         "@sqwiromobilesaccoapps/smartsaccowallet": "^0.0.8",
         "@sqwiromobilesaccoapps/smartvumaenterprisewallet": "^0.0.3",
-        "@sqwiromobilesystemapps/system": "^0.0.3",
+        "@sqwiromobilesystemapps/system": "^0.0.25",
         "@sqwiromobiletransportapps/fleetmanager": "^0.0.4",
         "@sqwiromobiletransportapps/smartdriver": "^0.0.5",
         "@sqwiromobileuserapps/appsroot": "^0.0.2",
@@ -708,13 +710,17 @@
 
     "@sqwiromobile/documentation": ["@sqwiromobile/documentation@1.4.0", "https://npm.pkg.github.com/download/@sqwiromobile/documentation/1.4.0/1bf045a3a3d52b84669dadc3522304c475aad552", {}, "sha512-81NSZtjJSOtDsk5kNnYRWLho2qDzF1wbvjY8EAyZ2wcX/2J123ttu6iKLBw5CMMGD0H+KPWgnDq/+u7JrN0IVA=="],
 
-    "@sqwiromobileagribusinessapps/avopro": ["@sqwiromobileagribusinessapps/avopro@0.0.13", "https://npm.pkg.github.com/download/@sqwiromobileagribusinessapps/avopro/0.0.13/2cee0b6bbd52a92ec0de0cc714634dd2d50e9eab", {}, "sha512-BYlZQeWuZJqm05Z6BTX3HCf+rCHE948OUqQb6o0ohszi7TJ8wq3BMSq8KxIH9k93igoU84sVBKoWx0OdosNs1Q=="],
+    "@sqwiromobileagribusinessapps/avopro": ["@sqwiromobileagribusinessapps/avopro@0.0.19", "https://npm.pkg.github.com/download/@sqwiromobileagribusinessapps/avopro/0.0.19/a40db24fcfee901260d717d6e747a68735d4f20d", {}, "sha512-HAaK5Bc9jRxBgZT0bfTtTR05+5aan9LmnWHKIf5CGUTobW9zJVP1CCQAaapIU3dypPmytoueLzoevLQnQWNndA=="],
 
     "@sqwiromobileagribusinessapps/cstore": ["@sqwiromobileagribusinessapps/cstore@0.0.15", "https://npm.pkg.github.com/download/@sqwiromobileagribusinessapps/cstore/0.0.15/8309e5e6212ed9ca783c2f07d52550cfba445e0d", {}, "sha512-HIOB7Z41NlG3bOd2gRpR0wZYhzi8X3SIc4knrWgcTEIvPBVdRXt4OKQZjMiauje3dp+ygD+blm/aZg+xRrK32A=="],
 
     "@sqwiromobileagribusinessapps/farmbridge": ["@sqwiromobileagribusinessapps/farmbridge@0.0.21", "https://npm.pkg.github.com/download/@sqwiromobileagribusinessapps/farmbridge/0.0.21/835a33ef853051da73534d1d32d799e0e6664ce3", {}, "sha512-slIOI7s1UFyQpwJLkPb2ufEg83imz2pG6TUHRaHwgqTy4EUSpxmYW4/OUv53mZuf8SmsSMJFIyvcxh0yA3iHcA=="],
 
     "@sqwiromobileagribusinessapps/macspro": ["@sqwiromobileagribusinessapps/macspro@0.0.16", "https://npm.pkg.github.com/download/@sqwiromobileagribusinessapps/macspro/0.0.16/ffccba99f7dbaaad81cc4f84e7afbbe2a9a3cdc9", {}, "sha512-2isJr7v3JErqoASBrQsCRwiUHt4+uYBrEs6GywRnouJL0vk56jsZE/xNfMWYI2Qd280O10jk5p4z/b32VqT37A=="],
+
+    "@sqwiromobileagribusinessapps/outsourcedavopro": ["@sqwiromobileagribusinessapps/outsourcedavopro@0.0.2", "https://npm.pkg.github.com/download/@sqwiromobileagribusinessapps/outsourcedavopro/0.0.2/12d40ff73d76b12b14b537e1af273b3ab7f45177", {}, "sha512-1c9t9389uoBMF1mcxSlCl4DT50xwI4NfNjd8i9KECjxvtAOg3BCDoHSN+RBgIZWh7uZDIqvkSMeweI/Qi1Blzw=="],
+
+    "@sqwiromobileagribusinessapps/outsourcedmacspro": ["@sqwiromobileagribusinessapps/outsourcedmacspro@0.0.2", "https://npm.pkg.github.com/download/@sqwiromobileagribusinessapps/outsourcedmacspro/0.0.2/8a314d048a9d4c7df36de726cbe5b27cee920df5", {}, "sha512-R/HzTdKO1Y2SGlakzGAA5bYodueSXycPmVTFi3FZZd/4tlkyOLKEjaMmzFoE/ROLWRG8SgPeB4btflxt6ZmP4Q=="],
 
     "@sqwiromobileagribusinessapps/seedlink": ["@sqwiromobileagribusinessapps/seedlink@0.0.10", "https://npm.pkg.github.com/download/@sqwiromobileagribusinessapps/seedlink/0.0.10/8f2755c9fdbe639db243b42cad700a85ada22594", {}, "sha512-OML1p1YIlf/f6Y2Nf8i50f4ddudSvQUxDEqaQ0QyZY4UcKsj6w8xtbbIjd9FCj26lwVYrKJtW+XOAKWS7SeaaQ=="],
 
@@ -780,7 +786,7 @@
 
     "@sqwiromobilesaccoapps/smartvumaenterprisewallet": ["@sqwiromobilesaccoapps/smartvumaenterprisewallet@0.0.3", "https://npm.pkg.github.com/download/@sqwiromobilesaccoapps/smartvumaenterprisewallet/0.0.3/f41a293f4e935c345412f650444f7e8a086c9b6b", {}, "sha512-QE/14v2o9/n6CLKBg8FJMGzcqj8bYmp7bWzKkxWObcO2H7Q/kCsbXa8EBwdO1rnlYha5S876jjkwi7IwOgMk0Q=="],
 
-    "@sqwiromobilesystemapps/system": ["@sqwiromobilesystemapps/system@0.0.3", "https://npm.pkg.github.com/download/@sqwiromobilesystemapps/system/0.0.3/7ac04ddbe56e5af96d8a37c185ba4586bea19f8c", {}, "sha512-jUigm5d4SxTfAMlc3Z66jnpYGOaQrPhh46Fsurue3MaER8DP+VgW+mBRDDd8Xwh/oK3O/TKW2GDrpA8DnOqLvw=="],
+    "@sqwiromobilesystemapps/system": ["@sqwiromobilesystemapps/system@0.0.25", "https://npm.pkg.github.com/download/@sqwiromobilesystemapps/system/0.0.25/de5ba1510d5b0ae5f8935025deca599c63f3a6d1", {}, "sha512-0F7ER7kyXKdO4vUAUfctqvILTEXusjEZ66lqzS+33R8euxNDkKHTvF3ZLgYNZ/3OxmAcn3IqzHBeF79hB7K18g=="],
 
     "@sqwiromobiletransportapps/fleetmanager": ["@sqwiromobiletransportapps/fleetmanager@0.0.4", "https://npm.pkg.github.com/download/@sqwiromobiletransportapps/fleetmanager/0.0.4/a1ad9e0134afad4ee5f00e402e658ca6e3473c4f", {}, "sha512-fn2/6eIZnpvPvqBMQP23isV6moLe0rblmdcANM6Adm9PoswSv+5TshqNJFq+LCiPm8SlcE95t6kBR0budQQJRQ=="],
 
