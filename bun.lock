@@ -58,7 +58,7 @@
         "@sqwiromobilebusinessapps/mediamanager": "^0.0.2",
         "@sqwiromobilebusinessapps/procurement": "^0.0.4",
         "@sqwiromobilebusinessapps/retail": "^0.0.4",
-        "@sqwiromobilebusinessapps/sales": "^0.0.4",
+        "@sqwiromobilebusinessapps/sales": "^0.0.18",
         "@sqwiromobilebusinessapps/smartapprover": "^0.0.7",
         "@sqwiromobilebusinessapps/smartvendoraccount": "^0.0.5",
         "@sqwiromobilecloudhubapps/sqwiropay": "^0.0.3",
@@ -744,7 +744,7 @@
 
     "@sqwiromobilebusinessapps/retail": ["@sqwiromobilebusinessapps/retail@0.0.4", "https://npm.pkg.github.com/download/@sqwiromobilebusinessapps/retail/0.0.4/7d553dc308de980bfe1d14f5d0056aa14cb50ac2", {}, "sha512-I924xB+lR0jR6Yz7I2bJemA7PPf5rAC1R/T32YYIy11nUz5UlSLKWMywX+ghPAUumezeqgzXgQ8n+C+6c3L1xg=="],
 
-    "@sqwiromobilebusinessapps/sales": ["@sqwiromobilebusinessapps/sales@0.0.4", "https://npm.pkg.github.com/download/@sqwiromobilebusinessapps/sales/0.0.4/5a0167eeda3e94fd72edb50a68e06e6f01816be5", {}, "sha512-FMbuwtQpQJdkxw5A1s37ekF2p9Kffji//M8qW/7FQbhmQe94O+NjTJP3/ZOHkxGvVBe4CkzygpnzYJosEDqQlA=="],
+    "@sqwiromobilebusinessapps/sales": ["@sqwiromobilebusinessapps/sales@0.0.18", "https://npm.pkg.github.com/download/@sqwiromobilebusinessapps/sales/0.0.18/a7e1882009bf1397784ad877ae65570109299a29", {}, "sha512-rCn++yqdug0pS+dhoem36gxWLUF10xa1REbCl6jJAxLu04BWNJ6v0xxaK6tyYYBuZGkDdG77wIqyENduwYL26A=="],
 
     "@sqwiromobilebusinessapps/smartapprover": ["@sqwiromobilebusinessapps/smartapprover@0.0.7", "https://npm.pkg.github.com/download/@sqwiromobilebusinessapps/smartapprover/0.0.7/b11852670a02f20d0f845c38457fe47f56f5347d", {}, "sha512-H3HSJmMZB24HLHDTsWTebi1a1wuTDmCuOK2ULPqWscT+UV3WOpZwzhgtdGWgr6DAyWN1fXOrRNfe8UBRUdEeQw=="],
 
