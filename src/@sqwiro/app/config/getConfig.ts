@@ -42,6 +42,9 @@ const getConfig = () => {
     ServerIp,
     AppType: 'CUSTOM',
     GooglePlayId: 'com.superfineafrica.cloud', // this is important because it determines if the app has Organization select screen
+    // MOB-222: the platform country. A phone number with no country code reads in it (baseui PhoneInput), never a
+    // country written in code.
+    CountryCode: 'KE',
     AppStoreId: 'superfine/id1564813296',
     MerchantCode,
     merchant_code: `sqwiro-${MerchantCode}`,
