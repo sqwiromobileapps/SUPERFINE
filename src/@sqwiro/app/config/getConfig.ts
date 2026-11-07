@@ -45,6 +45,7 @@ const getConfig = () => {
     // MOB-257 (F-2121): this app is an APK on the SQWIRO App Store, not on Google Play: the store prompts name it and
     // open it. No public page per app yet (F-2122), so the store's home.
     AndroidStore: { Name: 'SQWIRO App Store', Url: 'https://appstore.sqwiro.com/' },
+    StoreUpdate: undefined,
     // MOB-222: the platform country. A phone number with no country code reads in it (baseui PhoneInput), never a
     // country written in code.
     CountryCode: 'KE',
