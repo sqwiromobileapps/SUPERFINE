@@ -6,19 +6,17 @@ const appMapping = require('../app-mapping.js');
 module.exports = function extractLinkedPackages(repoDir) {
   // Map containing linked packages and their real paths
   const linkedPackages = {
-    '@expocraft/react-native-media-console':
-      '/Users/bernardgaitho/@cloudhub/@expocraft/react-native-media-console',
-    '@cloudhub-ux/graphql':
-      '/Users/bernardgaitho/@cloudhub/@cloudhub-ux/graphql',
     '@sqwiro/app': PATH.resolve(__dirname, '../src/@sqwiro/app'),
     ...appMapping,
   };
 
-  const graphqlRootPackage = linkedPackages['@cloudhub-ux/graphql'];
   const appcorePackage = linkedPackages['@sqwiro/appcore'];
 
   // M4: core56 (@expocraft/core) is retired, so nothing is linked for it and none of its node_modules needs blocking.
-  const alternateRoots = [appcorePackage, graphqlRootPackage].filter(Boolean);
+  // MOB-250 (F-2091): graphql and media-console resolve from the host's own node_modules, at their locked versions, like
+  // every other dependency; linking them to the local checkouts put a second graphql copy in the bundle once MOB-248
+  // dropped the babel aliases.
+  const alternateRoots = [appcorePackage].filter(Boolean);
   const moduleBlacklist = [];
 
   // Recursively extract node_modules for repoDir and linked packages
