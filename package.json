@@ -19,7 +19,7 @@
     "ota:publish": "node ../SQWIRO_SCRIPTS/check-fingerprint.js && npx eas-cli update --channel sdk56"
   },
   "dependencies": {
-    "@cloudhub-ux/graphql": "latest",
+    "@cloudhub-ux/graphql": "1.2.178",
     "@cloudhub-ux/zstore": "^2.0.48",
     "@expo/vector-icons": "15.1.1",
     "@expocraft-icons/chub": "latest",

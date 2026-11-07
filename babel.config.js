@@ -43,10 +43,6 @@ module.exports = function (api) {
               './node_modules/react-native'
             ),
             '@sqwiro/app': path.resolve(__dirname, './src/@sqwiro/app'),
-            '@expocraft/react-native-media-console':
-              '/Users/bernardgaitho/@cloudhub/@expocraft/react-native-media-console',
-            '@cloudhub-ux/graphql':
-              '/Users/bernardgaitho/@cloudhub/@cloudhub-ux/graphql',
 
             ...appMapping,
           },
