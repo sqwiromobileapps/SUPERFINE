@@ -8,130 +8,187 @@
       import useAppNavigationContext from '@sqwiro/appcore/context/useAppNavigationContext';
       import { Images } from '@sqwiro/appcore/theme';
 
+      // MOB-296: an app's root as a component that loads the app's code the first time it renders. No error
+      // boundary of its own, so an app that throws fails as it did when it was imported at launch.
+      function lazyRoot(loader: () => Promise<any>, name: string) {
+        const Root = React.lazy(() =>
+          loader().then((module) => ({ default: module[name] || module.default }))
+        );
+        function LazyRoot(props: any) {
+          return (
+            <React.Suspense fallback={<LoadingComponent />}>
+              <Root {...props} />
+            </React.Suspense>
+          );
+        }
+        LazyRoot.displayName = name;
+        return LazyRoot;
+      }
 
       
         import { Cs50MenuButton } from '@sqwiro/customapps/cs50/Cs50MenuButton';
-        import { Cs50App } from '@sqwiro/customapps/cs50/Cs50App';
+        const loadCs50App = () => Promise.resolve().then(() => require("@sqwiro/customapps/cs50/Cs50App"));
+        const Cs50App = lazyRoot(loadCs50App, "Cs50App");
         
         import { MpesaproMenuButton } from '@sqwiro/apiapps/mpesapro/MpesaproMenuButton';
-        import { MpesaproApp } from '@sqwiro/apiapps/mpesapro/MpesaproApp';
+        const loadMpesaproApp = () => Promise.resolve().then(() => require("@sqwiro/apiapps/mpesapro/MpesaproApp"));
+        const MpesaproApp = lazyRoot(loadMpesaproApp, "MpesaproApp");
         
         import { WebsiteMenuButton } from '@sqwiro/cmsapps/website/WebsiteMenuButton';
-        import { WebsiteApp } from '@sqwiro/cmsapps/website/WebsiteApp';
+        const loadWebsiteApp = () => Promise.resolve().then(() => require("@sqwiro/cmsapps/website/WebsiteApp"));
+        const WebsiteApp = lazyRoot(loadWebsiteApp, "WebsiteApp");
         
         import { AvoproMenuButton } from '@sqwiro/agribusinessapps/avopro/AvoproMenuButton';
-        import { AvoproApp } from '@sqwiro/agribusinessapps/avopro/AvoproApp';
+        const loadAvoproApp = () => Promise.resolve().then(() => require("@sqwiro/agribusinessapps/avopro/AvoproApp"));
+        const AvoproApp = lazyRoot(loadAvoproApp, "AvoproApp");
         
         import { CstoreMenuButton } from '@sqwiro/agribusinessapps/cstore/CstoreMenuButton';
-        import { CstoreApp } from '@sqwiro/agribusinessapps/cstore/CstoreApp';
+        const loadCstoreApp = () => Promise.resolve().then(() => require("@sqwiro/agribusinessapps/cstore/CstoreApp"));
+        const CstoreApp = lazyRoot(loadCstoreApp, "CstoreApp");
         
         import { FarmbridgeMenuButton } from '@sqwiro/agribusinessapps/farmbridge/FarmbridgeMenuButton';
-        import { FarmbridgeApp } from '@sqwiro/agribusinessapps/farmbridge/FarmbridgeApp';
+        const loadFarmbridgeApp = () => Promise.resolve().then(() => require("@sqwiro/agribusinessapps/farmbridge/FarmbridgeApp"));
+        const FarmbridgeApp = lazyRoot(loadFarmbridgeApp, "FarmbridgeApp");
         
         import { MacsproMenuButton } from '@sqwiro/agribusinessapps/macspro/MacsproMenuButton';
-        import { MacsproApp } from '@sqwiro/agribusinessapps/macspro/MacsproApp';
+        const loadMacsproApp = () => Promise.resolve().then(() => require("@sqwiro/agribusinessapps/macspro/MacsproApp"));
+        const MacsproApp = lazyRoot(loadMacsproApp, "MacsproApp");
         
         import { OutsourcedavoproMenuButton } from '@sqwiro/agribusinessapps/outsourcedavopro/OutsourcedavoproMenuButton';
-        import { OutsourcedavoproApp } from '@sqwiro/agribusinessapps/outsourcedavopro/OutsourcedavoproApp';
+        const loadOutsourcedavoproApp = () => Promise.resolve().then(() => require("@sqwiro/agribusinessapps/outsourcedavopro/OutsourcedavoproApp"));
+        const OutsourcedavoproApp = lazyRoot(loadOutsourcedavoproApp, "OutsourcedavoproApp");
         
         import { OutsourcedmacsproMenuButton } from '@sqwiro/agribusinessapps/outsourcedmacspro/OutsourcedmacsproMenuButton';
-        import { OutsourcedmacsproApp } from '@sqwiro/agribusinessapps/outsourcedmacspro/OutsourcedmacsproApp';
+        const loadOutsourcedmacsproApp = () => Promise.resolve().then(() => require("@sqwiro/agribusinessapps/outsourcedmacspro/OutsourcedmacsproApp"));
+        const OutsourcedmacsproApp = lazyRoot(loadOutsourcedmacsproApp, "OutsourcedmacsproApp");
         
         import { SeedlinkMenuButton } from '@sqwiro/agribusinessapps/seedlink/SeedlinkMenuButton';
-        import { SeedlinkApp } from '@sqwiro/agribusinessapps/seedlink/SeedlinkApp';
+        const loadSeedlinkApp = () => Promise.resolve().then(() => require("@sqwiro/agribusinessapps/seedlink/SeedlinkApp"));
+        const SeedlinkApp = lazyRoot(loadSeedlinkApp, "SeedlinkApp");
         
         import { SmartfarmagentMenuButton } from '@sqwiro/agribusinessapps/smartfarmagent/SmartfarmagentMenuButton';
-        import { SmartfarmagentApp } from '@sqwiro/agribusinessapps/smartfarmagent/SmartfarmagentApp';
+        const loadSmartfarmagentApp = () => Promise.resolve().then(() => require("@sqwiro/agribusinessapps/smartfarmagent/SmartfarmagentApp"));
+        const SmartfarmagentApp = lazyRoot(loadSmartfarmagentApp, "SmartfarmagentApp");
         
         import { SmartfarmerMenuButton } from '@sqwiro/agribusinessapps/smartfarmer/SmartfarmerMenuButton';
-        import { SmartfarmerApp } from '@sqwiro/agribusinessapps/smartfarmer/SmartfarmerApp';
+        const loadSmartfarmerApp = () => Promise.resolve().then(() => require("@sqwiro/agribusinessapps/smartfarmer/SmartfarmerApp"));
+        const SmartfarmerApp = lazyRoot(loadSmartfarmerApp, "SmartfarmerApp");
         
         import { SmartfarminspectorMenuButton } from '@sqwiro/agribusinessapps/smartfarminspector/SmartfarminspectorMenuButton';
-        import { SmartfarminspectorApp } from '@sqwiro/agribusinessapps/smartfarminspector/SmartfarminspectorApp';
+        const loadSmartfarminspectorApp = () => Promise.resolve().then(() => require("@sqwiro/agribusinessapps/smartfarminspector/SmartfarminspectorApp"));
+        const SmartfarminspectorApp = lazyRoot(loadSmartfarminspectorApp, "SmartfarminspectorApp");
         
         import { SaccomisMenuButton } from '@sqwiro/saccoapps/saccomis/SaccomisMenuButton';
-        import { SaccomisApp } from '@sqwiro/saccoapps/saccomis/SaccomisApp';
+        const loadSaccomisApp = () => Promise.resolve().then(() => require("@sqwiro/saccoapps/saccomis/SaccomisApp"));
+        const SaccomisApp = lazyRoot(loadSaccomisApp, "SaccomisApp");
         
         import { SmartsaccowalletMenuButton } from '@sqwiro/saccoapps/smartsaccowallet/SmartsaccowalletMenuButton';
-        import { SmartsaccowalletApp } from '@sqwiro/saccoapps/smartsaccowallet/SmartsaccowalletApp';
+        const loadSmartsaccowalletApp = () => Promise.resolve().then(() => require("@sqwiro/saccoapps/smartsaccowallet/SmartsaccowalletApp"));
+        const SmartsaccowalletApp = lazyRoot(loadSmartsaccowalletApp, "SmartsaccowalletApp");
         
         import { SmartvumaenterprisewalletMenuButton } from '@sqwiro/saccoapps/smartvumaenterprisewallet/SmartvumaenterprisewalletMenuButton';
-        import { SmartvumaenterprisewalletApp } from '@sqwiro/saccoapps/smartvumaenterprisewallet/SmartvumaenterprisewalletApp';
+        const loadSmartvumaenterprisewalletApp = () => Promise.resolve().then(() => require("@sqwiro/saccoapps/smartvumaenterprisewallet/SmartvumaenterprisewalletApp"));
+        const SmartvumaenterprisewalletApp = lazyRoot(loadSmartvumaenterprisewalletApp, "SmartvumaenterprisewalletApp");
         
         import { CartifyMenuButton } from '@sqwiro/ecommerceapps/cartify/CartifyMenuButton';
-        import { CartifyApp } from '@sqwiro/ecommerceapps/cartify/CartifyApp';
+        const loadCartifyApp = () => Promise.resolve().then(() => require("@sqwiro/ecommerceapps/cartify/CartifyApp"));
+        const CartifyApp = lazyRoot(loadCartifyApp, "CartifyApp");
         
         import { SmartshoppingcartMenuButton } from '@sqwiro/ecommerceapps/smartshoppingcart/SmartshoppingcartMenuButton';
-        import { SmartshoppingcartApp } from '@sqwiro/ecommerceapps/smartshoppingcart/SmartshoppingcartApp';
+        const loadSmartshoppingcartApp = () => Promise.resolve().then(() => require("@sqwiro/ecommerceapps/smartshoppingcart/SmartshoppingcartApp"));
+        const SmartshoppingcartApp = lazyRoot(loadSmartshoppingcartApp, "SmartshoppingcartApp");
         
         import { SmartsqwiropayMenuButton } from '@sqwiro/ecommerceapps/smartsqwiropay/SmartsqwiropayMenuButton';
-        import { SmartsqwiropayApp } from '@sqwiro/ecommerceapps/smartsqwiropay/SmartsqwiropayApp';
+        const loadSmartsqwiropayApp = () => Promise.resolve().then(() => require("@sqwiro/ecommerceapps/smartsqwiropay/SmartsqwiropayApp"));
+        const SmartsqwiropayApp = lazyRoot(loadSmartsqwiropayApp, "SmartsqwiropayApp");
         
         import { FleetmanagerMenuButton } from '@sqwiro/transportapps/fleetmanager/FleetmanagerMenuButton';
-        import { FleetmanagerApp } from '@sqwiro/transportapps/fleetmanager/FleetmanagerApp';
+        const loadFleetmanagerApp = () => Promise.resolve().then(() => require("@sqwiro/transportapps/fleetmanager/FleetmanagerApp"));
+        const FleetmanagerApp = lazyRoot(loadFleetmanagerApp, "FleetmanagerApp");
         
         import { SmartdriverMenuButton } from '@sqwiro/transportapps/smartdriver/SmartdriverMenuButton';
-        import { SmartdriverApp } from '@sqwiro/transportapps/smartdriver/SmartdriverApp';
+        const loadSmartdriverApp = () => Promise.resolve().then(() => require("@sqwiro/transportapps/smartdriver/SmartdriverApp"));
+        const SmartdriverApp = lazyRoot(loadSmartdriverApp, "SmartdriverApp");
         
         import { AgencyproMenuButton } from '@sqwiro/fintechapps/agencypro/AgencyproMenuButton';
-        import { AgencyproApp } from '@sqwiro/fintechapps/agencypro/AgencyproApp';
+        const loadAgencyproApp = () => Promise.resolve().then(() => require("@sqwiro/fintechapps/agencypro/AgencyproApp"));
+        const AgencyproApp = lazyRoot(loadAgencyproApp, "AgencyproApp");
         
         import { EnterprisewalletMenuButton } from '@sqwiro/fintechapps/enterprisewallet/EnterprisewalletMenuButton';
-        import { EnterprisewalletApp } from '@sqwiro/fintechapps/enterprisewallet/EnterprisewalletApp';
+        const loadEnterprisewalletApp = () => Promise.resolve().then(() => require("@sqwiro/fintechapps/enterprisewallet/EnterprisewalletApp"));
+        const EnterprisewalletApp = lazyRoot(loadEnterprisewalletApp, "EnterprisewalletApp");
         
         import { PpcoreMenuButton } from '@sqwiro/fintechapps/ppcore/PpcoreMenuButton';
-        import { PpcoreApp } from '@sqwiro/fintechapps/ppcore/PpcoreApp';
+        const loadPpcoreApp = () => Promise.resolve().then(() => require("@sqwiro/fintechapps/ppcore/PpcoreApp"));
+        const PpcoreApp = lazyRoot(loadPpcoreApp, "PpcoreApp");
         
         import { PpwalletMenuButton } from '@sqwiro/fintechapps/ppwallet/PpwalletMenuButton';
-        import { PpwalletApp } from '@sqwiro/fintechapps/ppwallet/PpwalletApp';
+        const loadPpwalletApp = () => Promise.resolve().then(() => require("@sqwiro/fintechapps/ppwallet/PpwalletApp"));
+        const PpwalletApp = lazyRoot(loadPpwalletApp, "PpwalletApp");
         
         import { SmartpesapurseMenuButton } from '@sqwiro/fintechapps/smartpesapurse/SmartpesapurseMenuButton';
-        import { SmartpesapurseApp } from '@sqwiro/fintechapps/smartpesapurse/SmartpesapurseApp';
+        const loadSmartpesapurseApp = () => Promise.resolve().then(() => require("@sqwiro/fintechapps/smartpesapurse/SmartpesapurseApp"));
+        const SmartpesapurseApp = lazyRoot(loadSmartpesapurseApp, "SmartpesapurseApp");
         
         import { FinanceMenuButton } from '@sqwiro/businessapps/finance/FinanceMenuButton';
-        import { FinanceApp } from '@sqwiro/businessapps/finance/FinanceApp';
+        const loadFinanceApp = () => Promise.resolve().then(() => require("@sqwiro/businessapps/finance/FinanceApp"));
+        const FinanceApp = lazyRoot(loadFinanceApp, "FinanceApp");
         
         import { MakercheckerMenuButton } from '@sqwiro/businessapps/makerchecker/MakercheckerMenuButton';
-        import { MakercheckerApp } from '@sqwiro/businessapps/makerchecker/MakercheckerApp';
+        const loadMakercheckerApp = () => Promise.resolve().then(() => require("@sqwiro/businessapps/makerchecker/MakercheckerApp"));
+        const MakercheckerApp = lazyRoot(loadMakercheckerApp, "MakercheckerApp");
         
         import { MasterdataMenuButton } from '@sqwiro/businessapps/masterdata/MasterdataMenuButton';
-        import { MasterdataApp } from '@sqwiro/businessapps/masterdata/MasterdataApp';
+        const loadMasterdataApp = () => Promise.resolve().then(() => require("@sqwiro/businessapps/masterdata/MasterdataApp"));
+        const MasterdataApp = lazyRoot(loadMasterdataApp, "MasterdataApp");
         
         import { MediamanagerMenuButton } from '@sqwiro/businessapps/mediamanager/MediamanagerMenuButton';
-        import { MediamanagerApp } from '@sqwiro/businessapps/mediamanager/MediamanagerApp';
+        const loadMediamanagerApp = () => Promise.resolve().then(() => require("@sqwiro/businessapps/mediamanager/MediamanagerApp"));
+        const MediamanagerApp = lazyRoot(loadMediamanagerApp, "MediamanagerApp");
         
         import { ProcurementMenuButton } from '@sqwiro/businessapps/procurement/ProcurementMenuButton';
-        import { ProcurementApp } from '@sqwiro/businessapps/procurement/ProcurementApp';
+        const loadProcurementApp = () => Promise.resolve().then(() => require("@sqwiro/businessapps/procurement/ProcurementApp"));
+        const ProcurementApp = lazyRoot(loadProcurementApp, "ProcurementApp");
         
         import { RetailMenuButton } from '@sqwiro/businessapps/retail/RetailMenuButton';
-        import { RetailApp } from '@sqwiro/businessapps/retail/RetailApp';
+        const loadRetailApp = () => Promise.resolve().then(() => require("@sqwiro/businessapps/retail/RetailApp"));
+        const RetailApp = lazyRoot(loadRetailApp, "RetailApp");
         
         import { SalesMenuButton } from '@sqwiro/businessapps/sales/SalesMenuButton';
-        import { SalesApp } from '@sqwiro/businessapps/sales/SalesApp';
+        const loadSalesApp = () => Promise.resolve().then(() => require("@sqwiro/businessapps/sales/SalesApp"));
+        const SalesApp = lazyRoot(loadSalesApp, "SalesApp");
         
         import { SmartapproverMenuButton } from '@sqwiro/businessapps/smartapprover/SmartapproverMenuButton';
-        import { SmartapproverApp } from '@sqwiro/businessapps/smartapprover/SmartapproverApp';
+        const loadSmartapproverApp = () => Promise.resolve().then(() => require("@sqwiro/businessapps/smartapprover/SmartapproverApp"));
+        const SmartapproverApp = lazyRoot(loadSmartapproverApp, "SmartapproverApp");
         
         import { SmartvendoraccountMenuButton } from '@sqwiro/businessapps/smartvendoraccount/SmartvendoraccountMenuButton';
-        import { SmartvendoraccountApp } from '@sqwiro/businessapps/smartvendoraccount/SmartvendoraccountApp';
+        const loadSmartvendoraccountApp = () => Promise.resolve().then(() => require("@sqwiro/businessapps/smartvendoraccount/SmartvendoraccountApp"));
+        const SmartvendoraccountApp = lazyRoot(loadSmartvendoraccountApp, "SmartvendoraccountApp");
         
         import { SystemMenuButton } from '@sqwiro/systemapps/system/SystemMenuButton';
-        import { SystemApp } from '@sqwiro/systemapps/system/SystemApp';
+        const loadSystemApp = () => Promise.resolve().then(() => require("@sqwiro/systemapps/system/SystemApp"));
+        const SystemApp = lazyRoot(loadSystemApp, "SystemApp");
         
         import { SmartcustomerhelpMenuButton } from '@sqwiro/customercareapps/smartcustomerhelp/SmartcustomerhelpMenuButton';
-        import { SmartcustomerhelpApp } from '@sqwiro/customercareapps/smartcustomerhelp/SmartcustomerhelpApp';
+        const loadSmartcustomerhelpApp = () => Promise.resolve().then(() => require("@sqwiro/customercareapps/smartcustomerhelp/SmartcustomerhelpApp"));
+        const SmartcustomerhelpApp = lazyRoot(loadSmartcustomerhelpApp, "SmartcustomerhelpApp");
         
         import { SmartsqwirosupportMenuButton } from '@sqwiro/customercareapps/smartsqwirosupport/SmartsqwirosupportMenuButton';
-        import { SmartsqwirosupportApp } from '@sqwiro/customercareapps/smartsqwirosupport/SmartsqwirosupportApp';
+        const loadSmartsqwirosupportApp = () => Promise.resolve().then(() => require("@sqwiro/customercareapps/smartsqwirosupport/SmartsqwirosupportApp"));
+        const SmartsqwirosupportApp = lazyRoot(loadSmartsqwirosupportApp, "SmartsqwirosupportApp");
         
         import { SqwiropayMenuButton } from '@sqwiro/cloudhubapps/sqwiropay/SqwiropayMenuButton';
-        import { SqwiropayApp } from '@sqwiro/cloudhubapps/sqwiropay/SqwiropayApp';
+        const loadSqwiropayApp = () => Promise.resolve().then(() => require("@sqwiro/cloudhubapps/sqwiropay/SqwiropayApp"));
+        const SqwiropayApp = lazyRoot(loadSqwiropayApp, "SqwiropayApp");
         
         import { HrMenuButton } from '@sqwiro/hrapps/hr/HrMenuButton';
-        import { HrApp } from '@sqwiro/hrapps/hr/HrApp';
+        const loadHrApp = () => Promise.resolve().then(() => require("@sqwiro/hrapps/hr/HrApp"));
+        const HrApp = lazyRoot(loadHrApp, "HrApp");
         
         import { SmartstaffMenuButton } from '@sqwiro/hrapps/smartstaff/SmartstaffMenuButton';
-        import { SmartstaffApp } from '@sqwiro/hrapps/smartstaff/SmartstaffApp';
+        const loadSmartstaffApp = () => Promise.resolve().then(() => require("@sqwiro/hrapps/smartstaff/SmartstaffApp"));
+        const SmartstaffApp = lazyRoot(loadSmartstaffApp, "SmartstaffApp");
         
 
 
@@ -170,9 +227,7 @@
           loadComponent: () => {
             return (
               <SafeLazy
-                loader={() => {
-                  return import("@sqwiro/customapps/cs50/Cs50App");
-                }}
+                loader={loadCs50App}
                 fallback={<LoadingComponent />}
                 errorFallback={AppNotFound}
               />
@@ -182,7 +237,7 @@
             return (
               <SafeLazy
                 loader={() => {
-                   return import("@sqwiro/customapps/cs50/Cs50MenuButton");
+                  return Promise.resolve({ default: Cs50MenuButton });
                 }}
                 fallback={<LoadingMenuButton />}
                 errorFallback={<LoadingMenuButton />}
@@ -202,9 +257,7 @@
           loadComponent: () => {
             return (
               <SafeLazy
-                loader={() => {
-                  return import("@sqwiro/apiapps/mpesapro/MpesaproApp");
-                }}
+                loader={loadMpesaproApp}
                 fallback={<LoadingComponent />}
                 errorFallback={AppNotFound}
               />
@@ -214,7 +267,7 @@
             return (
               <SafeLazy
                 loader={() => {
-                   return import("@sqwiro/apiapps/mpesapro/MpesaproMenuButton");
+                  return Promise.resolve({ default: MpesaproMenuButton });
                 }}
                 fallback={<LoadingMenuButton />}
                 errorFallback={<LoadingMenuButton />}
@@ -234,9 +287,7 @@
           loadComponent: () => {
             return (
               <SafeLazy
-                loader={() => {
-                  return import("@sqwiro/cmsapps/website/WebsiteApp");
-                }}
+                loader={loadWebsiteApp}
                 fallback={<LoadingComponent />}
                 errorFallback={AppNotFound}
               />
@@ -246,7 +297,7 @@
             return (
               <SafeLazy
                 loader={() => {
-                   return import("@sqwiro/cmsapps/website/WebsiteMenuButton");
+                  return Promise.resolve({ default: WebsiteMenuButton });
                 }}
                 fallback={<LoadingMenuButton />}
                 errorFallback={<LoadingMenuButton />}
@@ -266,9 +317,7 @@
           loadComponent: () => {
             return (
               <SafeLazy
-                loader={() => {
-                  return import("@sqwiro/agribusinessapps/avopro/AvoproApp");
-                }}
+                loader={loadAvoproApp}
                 fallback={<LoadingComponent />}
                 errorFallback={AppNotFound}
               />
@@ -278,7 +327,7 @@
             return (
               <SafeLazy
                 loader={() => {
-                   return import("@sqwiro/agribusinessapps/avopro/AvoproMenuButton");
+                  return Promise.resolve({ default: AvoproMenuButton });
                 }}
                 fallback={<LoadingMenuButton />}
                 errorFallback={<LoadingMenuButton />}
@@ -298,9 +347,7 @@
           loadComponent: () => {
             return (
               <SafeLazy
-                loader={() => {
-                  return import("@sqwiro/agribusinessapps/cstore/CstoreApp");
-                }}
+                loader={loadCstoreApp}
                 fallback={<LoadingComponent />}
                 errorFallback={AppNotFound}
               />
@@ -310,7 +357,7 @@
             return (
               <SafeLazy
                 loader={() => {
-                   return import("@sqwiro/agribusinessapps/cstore/CstoreMenuButton");
+                  return Promise.resolve({ default: CstoreMenuButton });
                 }}
                 fallback={<LoadingMenuButton />}
                 errorFallback={<LoadingMenuButton />}
@@ -330,9 +377,7 @@
           loadComponent: () => {
             return (
               <SafeLazy
-                loader={() => {
-                  return import("@sqwiro/agribusinessapps/farmbridge/FarmbridgeApp");
-                }}
+                loader={loadFarmbridgeApp}
                 fallback={<LoadingComponent />}
                 errorFallback={AppNotFound}
               />
@@ -342,7 +387,7 @@
             return (
               <SafeLazy
                 loader={() => {
-                   return import("@sqwiro/agribusinessapps/farmbridge/FarmbridgeMenuButton");
+                  return Promise.resolve({ default: FarmbridgeMenuButton });
                 }}
                 fallback={<LoadingMenuButton />}
                 errorFallback={<LoadingMenuButton />}
@@ -362,9 +407,7 @@
           loadComponent: () => {
             return (
               <SafeLazy
-                loader={() => {
-                  return import("@sqwiro/agribusinessapps/macspro/MacsproApp");
-                }}
+                loader={loadMacsproApp}
                 fallback={<LoadingComponent />}
                 errorFallback={AppNotFound}
               />
@@ -374,7 +417,7 @@
             return (
               <SafeLazy
                 loader={() => {
-                   return import("@sqwiro/agribusinessapps/macspro/MacsproMenuButton");
+                  return Promise.resolve({ default: MacsproMenuButton });
                 }}
                 fallback={<LoadingMenuButton />}
                 errorFallback={<LoadingMenuButton />}
@@ -394,9 +437,7 @@
           loadComponent: () => {
             return (
               <SafeLazy
-                loader={() => {
-                  return import("@sqwiro/agribusinessapps/outsourcedavopro/OutsourcedavoproApp");
-                }}
+                loader={loadOutsourcedavoproApp}
                 fallback={<LoadingComponent />}
                 errorFallback={AppNotFound}
               />
@@ -406,7 +447,7 @@
             return (
               <SafeLazy
                 loader={() => {
-                   return import("@sqwiro/agribusinessapps/outsourcedavopro/OutsourcedavoproMenuButton");
+                  return Promise.resolve({ default: OutsourcedavoproMenuButton });
                 }}
                 fallback={<LoadingMenuButton />}
                 errorFallback={<LoadingMenuButton />}
@@ -426,9 +467,7 @@
           loadComponent: () => {
             return (
               <SafeLazy
-                loader={() => {
-                  return import("@sqwiro/agribusinessapps/outsourcedmacspro/OutsourcedmacsproApp");
-                }}
+                loader={loadOutsourcedmacsproApp}
                 fallback={<LoadingComponent />}
                 errorFallback={AppNotFound}
               />
@@ -438,7 +477,7 @@
             return (
               <SafeLazy
                 loader={() => {
-                   return import("@sqwiro/agribusinessapps/outsourcedmacspro/OutsourcedmacsproMenuButton");
+                  return Promise.resolve({ default: OutsourcedmacsproMenuButton });
                 }}
                 fallback={<LoadingMenuButton />}
                 errorFallback={<LoadingMenuButton />}
@@ -458,9 +497,7 @@
           loadComponent: () => {
             return (
               <SafeLazy
-                loader={() => {
-                  return import("@sqwiro/agribusinessapps/seedlink/SeedlinkApp");
-                }}
+                loader={loadSeedlinkApp}
                 fallback={<LoadingComponent />}
                 errorFallback={AppNotFound}
               />
@@ -470,7 +507,7 @@
             return (
               <SafeLazy
                 loader={() => {
-                   return import("@sqwiro/agribusinessapps/seedlink/SeedlinkMenuButton");
+                  return Promise.resolve({ default: SeedlinkMenuButton });
                 }}
                 fallback={<LoadingMenuButton />}
                 errorFallback={<LoadingMenuButton />}
@@ -490,9 +527,7 @@
           loadComponent: () => {
             return (
               <SafeLazy
-                loader={() => {
-                  return import("@sqwiro/agribusinessapps/smartfarmagent/SmartfarmagentApp");
-                }}
+                loader={loadSmartfarmagentApp}
                 fallback={<LoadingComponent />}
                 errorFallback={AppNotFound}
               />
@@ -502,7 +537,7 @@
             return (
               <SafeLazy
                 loader={() => {
-                   return import("@sqwiro/agribusinessapps/smartfarmagent/SmartfarmagentMenuButton");
+                  return Promise.resolve({ default: SmartfarmagentMenuButton });
                 }}
                 fallback={<LoadingMenuButton />}
                 errorFallback={<LoadingMenuButton />}
@@ -522,9 +557,7 @@
           loadComponent: () => {
             return (
               <SafeLazy
-                loader={() => {
-                  return import("@sqwiro/agribusinessapps/smartfarmer/SmartfarmerApp");
-                }}
+                loader={loadSmartfarmerApp}
                 fallback={<LoadingComponent />}
                 errorFallback={AppNotFound}
               />
@@ -534,7 +567,7 @@
             return (
               <SafeLazy
                 loader={() => {
-                   return import("@sqwiro/agribusinessapps/smartfarmer/SmartfarmerMenuButton");
+                  return Promise.resolve({ default: SmartfarmerMenuButton });
                 }}
                 fallback={<LoadingMenuButton />}
                 errorFallback={<LoadingMenuButton />}
@@ -554,9 +587,7 @@
           loadComponent: () => {
             return (
               <SafeLazy
-                loader={() => {
-                  return import("@sqwiro/agribusinessapps/smartfarminspector/SmartfarminspectorApp");
-                }}
+                loader={loadSmartfarminspectorApp}
                 fallback={<LoadingComponent />}
                 errorFallback={AppNotFound}
               />
@@ -566,7 +597,7 @@
             return (
               <SafeLazy
                 loader={() => {
-                   return import("@sqwiro/agribusinessapps/smartfarminspector/SmartfarminspectorMenuButton");
+                  return Promise.resolve({ default: SmartfarminspectorMenuButton });
                 }}
                 fallback={<LoadingMenuButton />}
                 errorFallback={<LoadingMenuButton />}
@@ -586,9 +617,7 @@
           loadComponent: () => {
             return (
               <SafeLazy
-                loader={() => {
-                  return import("@sqwiro/saccoapps/saccomis/SaccomisApp");
-                }}
+                loader={loadSaccomisApp}
                 fallback={<LoadingComponent />}
                 errorFallback={AppNotFound}
               />
@@ -598,7 +627,7 @@
             return (
               <SafeLazy
                 loader={() => {
-                   return import("@sqwiro/saccoapps/saccomis/SaccomisMenuButton");
+                  return Promise.resolve({ default: SaccomisMenuButton });
                 }}
                 fallback={<LoadingMenuButton />}
                 errorFallback={<LoadingMenuButton />}
@@ -618,9 +647,7 @@
           loadComponent: () => {
             return (
               <SafeLazy
-                loader={() => {
-                  return import("@sqwiro/saccoapps/smartsaccowallet/SmartsaccowalletApp");
-                }}
+                loader={loadSmartsaccowalletApp}
                 fallback={<LoadingComponent />}
                 errorFallback={AppNotFound}
               />
@@ -630,7 +657,7 @@
             return (
               <SafeLazy
                 loader={() => {
-                   return import("@sqwiro/saccoapps/smartsaccowallet/SmartsaccowalletMenuButton");
+                  return Promise.resolve({ default: SmartsaccowalletMenuButton });
                 }}
                 fallback={<LoadingMenuButton />}
                 errorFallback={<LoadingMenuButton />}
@@ -650,9 +677,7 @@
           loadComponent: () => {
             return (
               <SafeLazy
-                loader={() => {
-                  return import("@sqwiro/saccoapps/smartvumaenterprisewallet/SmartvumaenterprisewalletApp");
-                }}
+                loader={loadSmartvumaenterprisewalletApp}
                 fallback={<LoadingComponent />}
                 errorFallback={AppNotFound}
               />
@@ -662,7 +687,7 @@
             return (
               <SafeLazy
                 loader={() => {
-                   return import("@sqwiro/saccoapps/smartvumaenterprisewallet/SmartvumaenterprisewalletMenuButton");
+                  return Promise.resolve({ default: SmartvumaenterprisewalletMenuButton });
                 }}
                 fallback={<LoadingMenuButton />}
                 errorFallback={<LoadingMenuButton />}
@@ -682,9 +707,7 @@
           loadComponent: () => {
             return (
               <SafeLazy
-                loader={() => {
-                  return import("@sqwiro/ecommerceapps/cartify/CartifyApp");
-                }}
+                loader={loadCartifyApp}
                 fallback={<LoadingComponent />}
                 errorFallback={AppNotFound}
               />
@@ -694,7 +717,7 @@
             return (
               <SafeLazy
                 loader={() => {
-                   return import("@sqwiro/ecommerceapps/cartify/CartifyMenuButton");
+                  return Promise.resolve({ default: CartifyMenuButton });
                 }}
                 fallback={<LoadingMenuButton />}
                 errorFallback={<LoadingMenuButton />}
@@ -714,9 +737,7 @@
           loadComponent: () => {
             return (
               <SafeLazy
-                loader={() => {
-                  return import("@sqwiro/ecommerceapps/smartshoppingcart/SmartshoppingcartApp");
-                }}
+                loader={loadSmartshoppingcartApp}
                 fallback={<LoadingComponent />}
                 errorFallback={AppNotFound}
               />
@@ -726,7 +747,7 @@
             return (
               <SafeLazy
                 loader={() => {
-                   return import("@sqwiro/ecommerceapps/smartshoppingcart/SmartshoppingcartMenuButton");
+                  return Promise.resolve({ default: SmartshoppingcartMenuButton });
                 }}
                 fallback={<LoadingMenuButton />}
                 errorFallback={<LoadingMenuButton />}
@@ -746,9 +767,7 @@
           loadComponent: () => {
             return (
               <SafeLazy
-                loader={() => {
-                  return import("@sqwiro/ecommerceapps/smartsqwiropay/SmartsqwiropayApp");
-                }}
+                loader={loadSmartsqwiropayApp}
                 fallback={<LoadingComponent />}
                 errorFallback={AppNotFound}
               />
@@ -758,7 +777,7 @@
             return (
               <SafeLazy
                 loader={() => {
-                   return import("@sqwiro/ecommerceapps/smartsqwiropay/SmartsqwiropayMenuButton");
+                  return Promise.resolve({ default: SmartsqwiropayMenuButton });
                 }}
                 fallback={<LoadingMenuButton />}
                 errorFallback={<LoadingMenuButton />}
@@ -778,9 +797,7 @@
           loadComponent: () => {
             return (
               <SafeLazy
-                loader={() => {
-                  return import("@sqwiro/transportapps/fleetmanager/FleetmanagerApp");
-                }}
+                loader={loadFleetmanagerApp}
                 fallback={<LoadingComponent />}
                 errorFallback={AppNotFound}
               />
@@ -790,7 +807,7 @@
             return (
               <SafeLazy
                 loader={() => {
-                   return import("@sqwiro/transportapps/fleetmanager/FleetmanagerMenuButton");
+                  return Promise.resolve({ default: FleetmanagerMenuButton });
                 }}
                 fallback={<LoadingMenuButton />}
                 errorFallback={<LoadingMenuButton />}
@@ -810,9 +827,7 @@
           loadComponent: () => {
             return (
               <SafeLazy
-                loader={() => {
-                  return import("@sqwiro/transportapps/smartdriver/SmartdriverApp");
-                }}
+                loader={loadSmartdriverApp}
                 fallback={<LoadingComponent />}
                 errorFallback={AppNotFound}
               />
@@ -822,7 +837,7 @@
             return (
               <SafeLazy
                 loader={() => {
-                   return import("@sqwiro/transportapps/smartdriver/SmartdriverMenuButton");
+                  return Promise.resolve({ default: SmartdriverMenuButton });
                 }}
                 fallback={<LoadingMenuButton />}
                 errorFallback={<LoadingMenuButton />}
@@ -842,9 +857,7 @@
           loadComponent: () => {
             return (
               <SafeLazy
-                loader={() => {
-                  return import("@sqwiro/fintechapps/agencypro/AgencyproApp");
-                }}
+                loader={loadAgencyproApp}
                 fallback={<LoadingComponent />}
                 errorFallback={AppNotFound}
               />
@@ -854,7 +867,7 @@
             return (
               <SafeLazy
                 loader={() => {
-                   return import("@sqwiro/fintechapps/agencypro/AgencyproMenuButton");
+                  return Promise.resolve({ default: AgencyproMenuButton });
                 }}
                 fallback={<LoadingMenuButton />}
                 errorFallback={<LoadingMenuButton />}
@@ -874,9 +887,7 @@
           loadComponent: () => {
             return (
               <SafeLazy
-                loader={() => {
-                  return import("@sqwiro/fintechapps/enterprisewallet/EnterprisewalletApp");
-                }}
+                loader={loadEnterprisewalletApp}
                 fallback={<LoadingComponent />}
                 errorFallback={AppNotFound}
               />
@@ -886,7 +897,7 @@
             return (
               <SafeLazy
                 loader={() => {
-                   return import("@sqwiro/fintechapps/enterprisewallet/EnterprisewalletMenuButton");
+                  return Promise.resolve({ default: EnterprisewalletMenuButton });
                 }}
                 fallback={<LoadingMenuButton />}
                 errorFallback={<LoadingMenuButton />}
@@ -906,9 +917,7 @@
           loadComponent: () => {
             return (
               <SafeLazy
-                loader={() => {
-                  return import("@sqwiro/fintechapps/ppcore/PpcoreApp");
-                }}
+                loader={loadPpcoreApp}
                 fallback={<LoadingComponent />}
                 errorFallback={AppNotFound}
               />
@@ -918,7 +927,7 @@
             return (
               <SafeLazy
                 loader={() => {
-                   return import("@sqwiro/fintechapps/ppcore/PpcoreMenuButton");
+                  return Promise.resolve({ default: PpcoreMenuButton });
                 }}
                 fallback={<LoadingMenuButton />}
                 errorFallback={<LoadingMenuButton />}
@@ -938,9 +947,7 @@
           loadComponent: () => {
             return (
               <SafeLazy
-                loader={() => {
-                  return import("@sqwiro/fintechapps/ppwallet/PpwalletApp");
-                }}
+                loader={loadPpwalletApp}
                 fallback={<LoadingComponent />}
                 errorFallback={AppNotFound}
               />
@@ -950,7 +957,7 @@
             return (
               <SafeLazy
                 loader={() => {
-                   return import("@sqwiro/fintechapps/ppwallet/PpwalletMenuButton");
+                  return Promise.resolve({ default: PpwalletMenuButton });
                 }}
                 fallback={<LoadingMenuButton />}
                 errorFallback={<LoadingMenuButton />}
@@ -970,9 +977,7 @@
           loadComponent: () => {
             return (
               <SafeLazy
-                loader={() => {
-                  return import("@sqwiro/fintechapps/smartpesapurse/SmartpesapurseApp");
-                }}
+                loader={loadSmartpesapurseApp}
                 fallback={<LoadingComponent />}
                 errorFallback={AppNotFound}
               />
@@ -982,7 +987,7 @@
             return (
               <SafeLazy
                 loader={() => {
-                   return import("@sqwiro/fintechapps/smartpesapurse/SmartpesapurseMenuButton");
+                  return Promise.resolve({ default: SmartpesapurseMenuButton });
                 }}
                 fallback={<LoadingMenuButton />}
                 errorFallback={<LoadingMenuButton />}
@@ -1002,9 +1007,7 @@
           loadComponent: () => {
             return (
               <SafeLazy
-                loader={() => {
-                  return import("@sqwiro/businessapps/finance/FinanceApp");
-                }}
+                loader={loadFinanceApp}
                 fallback={<LoadingComponent />}
                 errorFallback={AppNotFound}
               />
@@ -1014,7 +1017,7 @@
             return (
               <SafeLazy
                 loader={() => {
-                   return import("@sqwiro/businessapps/finance/FinanceMenuButton");
+                  return Promise.resolve({ default: FinanceMenuButton });
                 }}
                 fallback={<LoadingMenuButton />}
                 errorFallback={<LoadingMenuButton />}
@@ -1034,9 +1037,7 @@
           loadComponent: () => {
             return (
               <SafeLazy
-                loader={() => {
-                  return import("@sqwiro/businessapps/makerchecker/MakercheckerApp");
-                }}
+                loader={loadMakercheckerApp}
                 fallback={<LoadingComponent />}
                 errorFallback={AppNotFound}
               />
@@ -1046,7 +1047,7 @@
             return (
               <SafeLazy
                 loader={() => {
-                   return import("@sqwiro/businessapps/makerchecker/MakercheckerMenuButton");
+                  return Promise.resolve({ default: MakercheckerMenuButton });
                 }}
                 fallback={<LoadingMenuButton />}
                 errorFallback={<LoadingMenuButton />}
@@ -1066,9 +1067,7 @@
           loadComponent: () => {
             return (
               <SafeLazy
-                loader={() => {
-                  return import("@sqwiro/businessapps/masterdata/MasterdataApp");
-                }}
+                loader={loadMasterdataApp}
                 fallback={<LoadingComponent />}
                 errorFallback={AppNotFound}
               />
@@ -1078,7 +1077,7 @@
             return (
               <SafeLazy
                 loader={() => {
-                   return import("@sqwiro/businessapps/masterdata/MasterdataMenuButton");
+                  return Promise.resolve({ default: MasterdataMenuButton });
                 }}
                 fallback={<LoadingMenuButton />}
                 errorFallback={<LoadingMenuButton />}
@@ -1098,9 +1097,7 @@
           loadComponent: () => {
             return (
               <SafeLazy
-                loader={() => {
-                  return import("@sqwiro/businessapps/mediamanager/MediamanagerApp");
-                }}
+                loader={loadMediamanagerApp}
                 fallback={<LoadingComponent />}
                 errorFallback={AppNotFound}
               />
@@ -1110,7 +1107,7 @@
             return (
               <SafeLazy
                 loader={() => {
-                   return import("@sqwiro/businessapps/mediamanager/MediamanagerMenuButton");
+                  return Promise.resolve({ default: MediamanagerMenuButton });
                 }}
                 fallback={<LoadingMenuButton />}
                 errorFallback={<LoadingMenuButton />}
@@ -1130,9 +1127,7 @@
           loadComponent: () => {
             return (
               <SafeLazy
-                loader={() => {
-                  return import("@sqwiro/businessapps/procurement/ProcurementApp");
-                }}
+                loader={loadProcurementApp}
                 fallback={<LoadingComponent />}
                 errorFallback={AppNotFound}
               />
@@ -1142,7 +1137,7 @@
             return (
               <SafeLazy
                 loader={() => {
-                   return import("@sqwiro/businessapps/procurement/ProcurementMenuButton");
+                  return Promise.resolve({ default: ProcurementMenuButton });
                 }}
                 fallback={<LoadingMenuButton />}
                 errorFallback={<LoadingMenuButton />}
@@ -1162,9 +1157,7 @@
           loadComponent: () => {
             return (
               <SafeLazy
-                loader={() => {
-                  return import("@sqwiro/businessapps/retail/RetailApp");
-                }}
+                loader={loadRetailApp}
                 fallback={<LoadingComponent />}
                 errorFallback={AppNotFound}
               />
@@ -1174,7 +1167,7 @@
             return (
               <SafeLazy
                 loader={() => {
-                   return import("@sqwiro/businessapps/retail/RetailMenuButton");
+                  return Promise.resolve({ default: RetailMenuButton });
                 }}
                 fallback={<LoadingMenuButton />}
                 errorFallback={<LoadingMenuButton />}
@@ -1194,9 +1187,7 @@
           loadComponent: () => {
             return (
               <SafeLazy
-                loader={() => {
-                  return import("@sqwiro/businessapps/sales/SalesApp");
-                }}
+                loader={loadSalesApp}
                 fallback={<LoadingComponent />}
                 errorFallback={AppNotFound}
               />
@@ -1206,7 +1197,7 @@
             return (
               <SafeLazy
                 loader={() => {
-                   return import("@sqwiro/businessapps/sales/SalesMenuButton");
+                  return Promise.resolve({ default: SalesMenuButton });
                 }}
                 fallback={<LoadingMenuButton />}
                 errorFallback={<LoadingMenuButton />}
@@ -1226,9 +1217,7 @@
           loadComponent: () => {
             return (
               <SafeLazy
-                loader={() => {
-                  return import("@sqwiro/businessapps/smartapprover/SmartapproverApp");
-                }}
+                loader={loadSmartapproverApp}
                 fallback={<LoadingComponent />}
                 errorFallback={AppNotFound}
               />
@@ -1238,7 +1227,7 @@
             return (
               <SafeLazy
                 loader={() => {
-                   return import("@sqwiro/businessapps/smartapprover/SmartapproverMenuButton");
+                  return Promise.resolve({ default: SmartapproverMenuButton });
                 }}
                 fallback={<LoadingMenuButton />}
                 errorFallback={<LoadingMenuButton />}
@@ -1258,9 +1247,7 @@
           loadComponent: () => {
             return (
               <SafeLazy
-                loader={() => {
-                  return import("@sqwiro/businessapps/smartvendoraccount/SmartvendoraccountApp");
-                }}
+                loader={loadSmartvendoraccountApp}
                 fallback={<LoadingComponent />}
                 errorFallback={AppNotFound}
               />
@@ -1270,7 +1257,7 @@
             return (
               <SafeLazy
                 loader={() => {
-                   return import("@sqwiro/businessapps/smartvendoraccount/SmartvendoraccountMenuButton");
+                  return Promise.resolve({ default: SmartvendoraccountMenuButton });
                 }}
                 fallback={<LoadingMenuButton />}
                 errorFallback={<LoadingMenuButton />}
@@ -1290,9 +1277,7 @@
           loadComponent: () => {
             return (
               <SafeLazy
-                loader={() => {
-                  return import("@sqwiro/systemapps/system/SystemApp");
-                }}
+                loader={loadSystemApp}
                 fallback={<LoadingComponent />}
                 errorFallback={AppNotFound}
               />
@@ -1302,7 +1287,7 @@
             return (
               <SafeLazy
                 loader={() => {
-                   return import("@sqwiro/systemapps/system/SystemMenuButton");
+                  return Promise.resolve({ default: SystemMenuButton });
                 }}
                 fallback={<LoadingMenuButton />}
                 errorFallback={<LoadingMenuButton />}
@@ -1322,9 +1307,7 @@
           loadComponent: () => {
             return (
               <SafeLazy
-                loader={() => {
-                  return import("@sqwiro/customercareapps/smartcustomerhelp/SmartcustomerhelpApp");
-                }}
+                loader={loadSmartcustomerhelpApp}
                 fallback={<LoadingComponent />}
                 errorFallback={AppNotFound}
               />
@@ -1334,7 +1317,7 @@
             return (
               <SafeLazy
                 loader={() => {
-                   return import("@sqwiro/customercareapps/smartcustomerhelp/SmartcustomerhelpMenuButton");
+                  return Promise.resolve({ default: SmartcustomerhelpMenuButton });
                 }}
                 fallback={<LoadingMenuButton />}
                 errorFallback={<LoadingMenuButton />}
@@ -1354,9 +1337,7 @@
           loadComponent: () => {
             return (
               <SafeLazy
-                loader={() => {
-                  return import("@sqwiro/customercareapps/smartsqwirosupport/SmartsqwirosupportApp");
-                }}
+                loader={loadSmartsqwirosupportApp}
                 fallback={<LoadingComponent />}
                 errorFallback={AppNotFound}
               />
@@ -1366,7 +1347,7 @@
             return (
               <SafeLazy
                 loader={() => {
-                   return import("@sqwiro/customercareapps/smartsqwirosupport/SmartsqwirosupportMenuButton");
+                  return Promise.resolve({ default: SmartsqwirosupportMenuButton });
                 }}
                 fallback={<LoadingMenuButton />}
                 errorFallback={<LoadingMenuButton />}
@@ -1386,9 +1367,7 @@
           loadComponent: () => {
             return (
               <SafeLazy
-                loader={() => {
-                  return import("@sqwiro/cloudhubapps/sqwiropay/SqwiropayApp");
-                }}
+                loader={loadSqwiropayApp}
                 fallback={<LoadingComponent />}
                 errorFallback={AppNotFound}
               />
@@ -1398,7 +1377,7 @@
             return (
               <SafeLazy
                 loader={() => {
-                   return import("@sqwiro/cloudhubapps/sqwiropay/SqwiropayMenuButton");
+                  return Promise.resolve({ default: SqwiropayMenuButton });
                 }}
                 fallback={<LoadingMenuButton />}
                 errorFallback={<LoadingMenuButton />}
@@ -1418,9 +1397,7 @@
           loadComponent: () => {
             return (
               <SafeLazy
-                loader={() => {
-                  return import("@sqwiro/hrapps/hr/HrApp");
-                }}
+                loader={loadHrApp}
                 fallback={<LoadingComponent />}
                 errorFallback={AppNotFound}
               />
@@ -1430,7 +1407,7 @@
             return (
               <SafeLazy
                 loader={() => {
-                   return import("@sqwiro/hrapps/hr/HrMenuButton");
+                  return Promise.resolve({ default: HrMenuButton });
                 }}
                 fallback={<LoadingMenuButton />}
                 errorFallback={<LoadingMenuButton />}
@@ -1450,9 +1427,7 @@
           loadComponent: () => {
             return (
               <SafeLazy
-                loader={() => {
-                  return import("@sqwiro/hrapps/smartstaff/SmartstaffApp");
-                }}
+                loader={loadSmartstaffApp}
                 fallback={<LoadingComponent />}
                 errorFallback={AppNotFound}
               />
@@ -1462,7 +1437,7 @@
             return (
               <SafeLazy
                 loader={() => {
-                   return import("@sqwiro/hrapps/smartstaff/SmartstaffMenuButton");
+                  return Promise.resolve({ default: SmartstaffMenuButton });
                 }}
                 fallback={<LoadingMenuButton />}
                 errorFallback={<LoadingMenuButton />}
