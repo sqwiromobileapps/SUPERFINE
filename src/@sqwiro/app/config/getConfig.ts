@@ -1,5 +1,6 @@
 import Constants from 'expo-constants';
 import { appStore } from '@cloudhub-ux/zstore';
+import { isLocalStack } from '@sqwiro/appcore/config/localRelease';
 const { getState } = appStore;
 
 const config = require('./config.json');
@@ -20,7 +21,11 @@ const ServerIp = config.ipAddress;
 
 // const ServerIp = '192.168.8.200';
 
-const serverPort = __DEV__ ? 1377 : '';
+// MOB-297 (F-2597): the local stack in a development build and in any debug binary (its JS comes from a dev server),
+// with JS dev mode off too; production only for a store or OTA bundle.
+const LOCAL = isLocalStack();
+
+const serverPort = LOCAL ? 1377 : '';
 
 // const ServerDomain = __DEV__ ? `localsqwiro.com` : `sqwiro.com`;
 
@@ -53,7 +58,7 @@ const getConfig = () => {
     MerchantCode,
     merchant_code: `sqwiro-${MerchantCode}`,
     ...appconstants,
-    API_ENDPOINT: __DEV__
+    API_ENDPOINT: LOCAL
       ? `http://${ServerIp}:${serverPort}/api`
       : `https://${MerchantCode}.sqwiro.com/api`,
   };
