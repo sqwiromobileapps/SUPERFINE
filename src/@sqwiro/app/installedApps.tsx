@@ -118,6 +118,10 @@
         const loadEnterprisewalletApp = () => Promise.resolve().then(() => require("@sqwiro/fintechapps/enterprisewallet/EnterprisewalletApp"));
         const EnterprisewalletApp = lazyRoot(loadEnterprisewalletApp, "EnterprisewalletApp");
         
+        import { SmartenterprisewalletMenuButton } from '@sqwiro/fintechapps/smartenterprisewallet/SmartenterprisewalletMenuButton';
+        const loadSmartenterprisewalletApp = () => Promise.resolve().then(() => require("@sqwiro/fintechapps/smartenterprisewallet/SmartenterprisewalletApp"));
+        const SmartenterprisewalletApp = lazyRoot(loadSmartenterprisewalletApp, "SmartenterprisewalletApp");
+        
         import { PpcoreMenuButton } from '@sqwiro/fintechapps/ppcore/PpcoreMenuButton';
         const loadPpcoreApp = () => Promise.resolve().then(() => require("@sqwiro/fintechapps/ppcore/PpcoreApp"));
         const PpcoreApp = lazyRoot(loadPpcoreApp, "PpcoreApp");
@@ -898,6 +902,36 @@
               <SafeLazy
                 loader={() => {
                   return Promise.resolve({ default: EnterprisewalletMenuButton });
+                }}
+                fallback={<LoadingMenuButton />}
+                errorFallback={<LoadingMenuButton />}
+              />
+            );
+          },
+        },
+"magneta_application/smartenterprisewallet": {
+          id: "smartenterprisewallet",
+          _ref: "magneta_application/smartenterprisewallet",
+          AppId: "smartenterprisewallet",
+          packageName: "@sqwiromobilefintechapps/smartenterprisewallet",
+          appRoot: "@sqwiro/fintechapps/smartenterprisewallet",
+          RootComponent: SmartenterprisewalletApp,
+          MenuButton: SmartenterprisewalletMenuButton,
+          groupId: "fintechapps",
+          loadComponent: () => {
+            return (
+              <SafeLazy
+                loader={loadSmartenterprisewalletApp}
+                fallback={<LoadingComponent />}
+                errorFallback={AppNotFound}
+              />
+            );
+          },
+          loadMenuButton: () => {
+            return (
+              <SafeLazy
+                loader={() => {
+                  return Promise.resolve({ default: SmartenterprisewalletMenuButton });
                 }}
                 fallback={<LoadingMenuButton />}
                 errorFallback={<LoadingMenuButton />}

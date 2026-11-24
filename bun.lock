@@ -73,6 +73,7 @@
         "@sqwiromobilefintechapps/enterprisewallet": "^0.0.12",
         "@sqwiromobilefintechapps/ppcore": "^0.0.3",
         "@sqwiromobilefintechapps/ppwallet": "latest",
+        "@sqwiromobilefintechapps/smartenterprisewallet": "^0.0.3",
         "@sqwiromobilefintechapps/smartpesapurse": "^0.0.8",
         "@sqwiromobilehrapps/hr": "^0.0.4",
         "@sqwiromobilehrapps/smartstaff": "^0.0.5",
@@ -773,6 +774,8 @@
     "@sqwiromobilefintechapps/ppcore": ["@sqwiromobilefintechapps/ppcore@0.0.3", "https://npm.pkg.github.com/download/@sqwiromobilefintechapps/ppcore/0.0.3/fccf799b06e7a45baa0a37be6347bab2c4eac9c4", {}, "sha512-RfFFiBbK/rGzc+CB62+2jqL0HvpPJAahPA1zUoKApRjyzRg0MA/kF8S8TYjUAfcpHW5kGoHdYxxP2PhtEkMxGQ=="],
 
     "@sqwiromobilefintechapps/ppwallet": ["@sqwiromobilefintechapps/ppwallet@0.0.14", "https://npm.pkg.github.com/download/@sqwiromobilefintechapps/ppwallet/0.0.14/0dfcaa5e33872bf1af6178e48aa3aee65484aacd", {}, "sha512-t0usrobyce3SkW3RTwgyfRU1dAK1Ve+X/RK/ZMwEao4MTUHqdXVeGHylA2s1AEdoJBfvqZ5E+nQgmayGIQz4Sg=="],
+
+    "@sqwiromobilefintechapps/smartenterprisewallet": ["@sqwiromobilefintechapps/smartenterprisewallet@0.0.3", "https://npm.pkg.github.com/download/@sqwiromobilefintechapps/smartenterprisewallet/0.0.3/717a422c90dd4561894b9e570348265593d0f75b", {}, "sha512-46tQUGIU5Oecc4Udn63sOY2hSYLRuGAUBBWQqjVqYAP+BLooTHHWA4RHERkUystw5lPJQc5ke6xTo3EcLfvpow=="],
 
     "@sqwiromobilefintechapps/smartpesapurse": ["@sqwiromobilefintechapps/smartpesapurse@0.0.8", "https://npm.pkg.github.com/download/@sqwiromobilefintechapps/smartpesapurse/0.0.8/6874d887fe5f869d7f7f6e63a6d99fd6cc2b155b", {}, "sha512-Ce31ydZZODJaouHfofqgIHWYAyhcXHoAd4du/C8bngb4sP/mwDeqJa8j/nQ8cUO/cCKhWTWWgqGMBCx/P24seg=="],
 
