@@ -23,6 +23,7 @@ module.exports = {
   "@sqwiro/transportapps/smartdriver": "/Users/bernardgaitho/@cloudhub/@sqwiroapps/mobileapps/@sqwiromobiletransportapps/smartdriver/src",
   "@sqwiro/fintechapps/agencypro": "/Users/bernardgaitho/@cloudhub/@sqwiroapps/mobileapps/@sqwiromobilefintechapps/agencypro/src",
   "@sqwiro/fintechapps/enterprisewallet": "/Users/bernardgaitho/@cloudhub/@sqwiroapps/mobileapps/@sqwiromobilefintechapps/enterprisewallet/src",
+  "@sqwiro/fintechapps/smartenterprisewallet": "/Users/bernardgaitho/@cloudhub/@sqwiroapps/mobileapps/@sqwiromobilefintechapps/smartenterprisewallet/src",
   "@sqwiro/fintechapps/ppcore": "/Users/bernardgaitho/@cloudhub/@sqwiroapps/mobileapps/@sqwiromobilefintechapps/ppcore/src",
   "@sqwiro/fintechapps/ppwallet": "/Users/bernardgaitho/@cloudhub/@sqwiroapps/mobileapps/@sqwiromobilefintechapps/ppwallet/src",
   "@sqwiro/fintechapps/smartpesapurse": "/Users/bernardgaitho/@cloudhub/@sqwiroapps/mobileapps/@sqwiromobilefintechapps/smartpesapurse/src",
