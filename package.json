@@ -85,6 +85,7 @@
     "@sqwiromobileecommerceapps/smartsqwiropay": "^0.0.3",
     "@sqwiromobilefintechapps/agencypro": "^0.0.2",
     "@sqwiromobilefintechapps/enterprisewallet": "^0.0.12",
+    "@sqwiromobilefintechapps/smartenterprisewallet": "^0.0.3",
     "@sqwiromobilefintechapps/ppcore": "^0.0.3",
     "@sqwiromobilefintechapps/ppwallet": "latest",
     "@sqwiromobilefintechapps/smartpesapurse": "^0.0.8",
