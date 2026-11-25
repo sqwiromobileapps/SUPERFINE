@@ -1,5 +1,5 @@
 import Constants from 'expo-constants';
-import { appStore } from '@cloudhub-ux/zstore';
+import { appStore } from '@sqwiroux/zstore';
 import { isLocalStack } from '@sqwiro/appcore/config/localRelease';
 const { getState } = appStore;
 
