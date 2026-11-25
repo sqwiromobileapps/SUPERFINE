@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { appStore } from '@cloudhub-ux/zstore';
+import { appStore } from '@sqwiroux/zstore';
 import getConfig, { appconstants } from '@sqwiro/app/config/getConfig';
 
 const { getState } = appStore;
