@@ -63,8 +63,8 @@
         "@sqwiromobilecloudhubapps/sqwiropay": "^0.0.3",
         "@sqwiromobilecmsapps/website": "^0.0.4",
         "@sqwiromobilecustomapps/cs50": "^0.0.2",
-        "@sqwiromobilecustomercareapps/smartcustomerhelp": "^0.0.7",
-        "@sqwiromobilecustomercareapps/smartsqwirosupport": "^0.0.4",
+        "@sqwiromobilecustomercareapps/smartcustomercare": "^0.0.1",
+        "@sqwiromobilecustomercareapps/sqwirosupport": "^0.0.1",
         "@sqwiromobileecommerceapps/cartify": "^0.0.6",
         "@sqwiromobileecommerceapps/smartshoppingcart": "^0.0.7",
         "@sqwiromobileecommerceapps/smartsqwiropay": "^0.0.3",
@@ -753,9 +753,9 @@
 
     "@sqwiromobilecustomapps/cs50": ["@sqwiromobilecustomapps/cs50@0.0.2", "https://npm.pkg.github.com/download/@sqwiromobilecustomapps/cs50/0.0.2/57274615ed4035a52098206b0c8e3d91be7bdf2e", {}, "sha512-zN0w5ra5+vRTtE8a1w2qUolKsu96/kpfqmOuxv2tdy1XiWaFzTduzJQ+Ua/Ww6DgWltOs4eUfxUf+UPoFI7NoA=="],
 
-    "@sqwiromobilecustomercareapps/smartcustomerhelp": ["@sqwiromobilecustomercareapps/smartcustomerhelp@0.0.7", "https://npm.pkg.github.com/download/@sqwiromobilecustomercareapps/smartcustomerhelp/0.0.7/3747391956c3f59784d2983d507a128249a672ac", {}, "sha512-K4wR/FYSG70fSsyG6snL+niupz7r5u5Afr2bQ4ynqcWPUF+LoPsDCqatsqd/abmP/rD/zyrzbPl9E6I2+vcXfA=="],
+    "@sqwiromobilecustomercareapps/smartcustomercare": ["@sqwiromobilecustomercareapps/smartcustomercare@0.0.1", "https://npm.pkg.github.com/download/@sqwiromobilecustomercareapps/smartcustomercare/0.0.1/c21d49181bd6940ac409cb93a7704b24fc837072", {}, "sha512-7pBpSsjgU+VRQTfcWZFBaoTZt9QmRbIjOEOZA5JlA9+X318qGKQAoxSc8+qrfkRpSou3A52nKNdpnq2Vu4qYAg=="],
 
-    "@sqwiromobilecustomercareapps/smartsqwirosupport": ["@sqwiromobilecustomercareapps/smartsqwirosupport@0.0.4", "https://npm.pkg.github.com/download/@sqwiromobilecustomercareapps/smartsqwirosupport/0.0.4/730f135c7c83780bcf3c850332c86767d9075d1d", {}, "sha512-GSSv5aC9hYq2j5JIb5RlXwomo7ofJihLpFIPVhP2SdCPQahJjEPyg2xaHtSiRP/D6jSzelNne1mKjpDnAw1hwA=="],
+    "@sqwiromobilecustomercareapps/sqwirosupport": ["@sqwiromobilecustomercareapps/sqwirosupport@0.0.1", "https://npm.pkg.github.com/download/@sqwiromobilecustomercareapps/sqwirosupport/0.0.1/25d1e23322663a2526239f4f070fffb7febed2dd", {}, "sha512-DiEYpNjY0N+MwSduUU4P/Iu5HjfymaQwRSglmMlJXxwJZAYPEebmfljO4yLZiKYBcpdT0zruEqeKGH6/+rPgKA=="],
 
     "@sqwiromobileecommerceapps/cartify": ["@sqwiromobileecommerceapps/cartify@0.0.6", "https://npm.pkg.github.com/download/@sqwiromobileecommerceapps/cartify/0.0.6/0770d210b28e3240fa418dd322e1f63ede8846a6", {}, "sha512-j1CKKc48h+j/9PwmAnrVX4dolIwgOZh7ifq+Nex3HsjrxBXHNlgRl+2FRHnb/EGaG3wChhpE+T0ykmCbRTreaQ=="],
 
