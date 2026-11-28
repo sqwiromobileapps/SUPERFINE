@@ -20,6 +20,7 @@
   },
   "dependencies": {
     "@cloudhub-ux/graphql": "1.2.178",
+    "@noble/hashes": "2.4.0",
     "@sqwiroux/zstore": "2.0.63",
     "@expo/vector-icons": "15.1.1",
     "@expocraft-icons/chub": "latest",
