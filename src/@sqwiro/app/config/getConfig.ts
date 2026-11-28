@@ -54,7 +54,7 @@ const getConfig = () => {
     // MOB-222: the platform country. A phone number with no country code reads in it (baseui PhoneInput), never a
     // country written in code.
     CountryCode: 'KE',
-    AppStoreId: 'superfine/id1564813296',
+    AppStoreId: '',
     MerchantCode,
     merchant_code: `sqwiro-${MerchantCode}`,
     ...appconstants,
